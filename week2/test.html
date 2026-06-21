@@ -26,9 +26,8 @@
             text-decoration: none;
         }
 
-        img {
+        img.example {
             display: block;
-            /*使图片成为块级元素*/
             margin: auto;
         }
 
@@ -42,16 +41,32 @@
             border: 2px solid #6697da;
             border-radius: 10px;
         }
+
+        img.try {
+            float: left;
+            margin: center;
+        }
+
+        /*img.try:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;*/
     </style>
 </head>
 
 <body>
     <h1>🤯Welcome to Website🤯</h1>
     <h1 class="nounderline">Heading 1</h1>
-    <img src="images/IU.jpg" width="200" alt="IU"><br>
-    <img src="images/IU.jpg" width="200" alt="IU"><br><br>
-    <p>&#169;This is a sample webpage created for testing purposes. It contains various HTML elements such as headings,
+    <img class="example" src="images/IU.jpg" width="200"
+        alt="Young woman with long dark hair holding a pale flower in front of her against a soft neutral background, conveying a calm and gentle mood"><br>
+    <p>This is a sample webpage created for testing purposes. It contains various HTML elements such as headings,
         paragraphs, images, and links.</p>
+
+    <a href="https://www.instagram.com/dlwlrma" target="_blank">
+        <img src="images/iu.jpg" alt="Instagram" width="120">
+    </a><br><br>
+
+    <img class="try" src="images/iu2.jpg" width="175">
+    <img class="try" src="images/iu3.jpg" width="200">
 </body>
 
 </html>
