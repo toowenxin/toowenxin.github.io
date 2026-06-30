@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise1</title>
+    <style>
+        body {
+            margin: 0 20px;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .center {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .fontcolor {
+            color: #f95b22
+        }
+
+        .end {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .phoneicon {
+            margin-top: 10px;
+        }
+
+        .end p {
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #f95b22;
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 10px;
+        }
+
+        .burgericon {
+            display: none;
+        }
+
+        @media screen and (max-width: 1200px) {
+            button {
+                display: none;
+            }
+
+            .burgericon {
+                display: block;
+            }
+
+            .center {
+                display: none;
+            }
+
+
+            @media screen and (max-width: 600px) {
+
+                .phoneicon,
+                p {
+                    display: none;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <div><img src="images/elementralogo.png" alt="elementra logo"></div>
+        <div class="center">
+            <div>Home</div>
+            <div class="fontcolor">Services</div>
+            <div>Work</div>
+            <div>Project Details</div>
+            <div>Contact</div>
+        </div>
+        <div class="end">
+            <div class="phoneicon"><img src="images/phoneicon.png" alt="phoneicon" width="20px"></div>
+            <div>
+                <p>555-123-4567</p>
+
+            </div>
+            <div><button>Contact</button></div>
+            <div class="burgericon"><img src="images/burger.png" alt="burgericon" width="30px"></div>
+        </div>
+    </div>
+</body>
+
+</html>
