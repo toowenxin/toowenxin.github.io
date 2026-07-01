@@ -36,7 +36,7 @@
             gap: 60px;
         }
 
-        h1 {
+        .smallbox h1 {
             font-size: 50px;
             padding-right: 150px;
             font-weight: 500;
@@ -76,6 +76,37 @@
 
         .a {
             filter: grayscale(100%);
+        }
+
+        .box3 {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .box3 p {
+            margin: 0 550px 0 0;
+        }
+
+        .box4 {
+            display: flex;
+            justify-content: space-around;
+            border: 1px solid black;
+            width: 50%;
+            align-items: center;
+            border-radius: 30px;
+            box-shadow: 0px 4px 0px black;
+            padding: 20px 0;
+        }
+
+        .smallbox4 {
+            width: 50%;
+        }
+
+        .ssmallbox4 {
+            display: flex;
+            gap: 10px;
+            align-items: center;
         }
     </style>
 </head>
@@ -119,6 +150,34 @@
         <div><img src="images/logo4.png" class="a" alt="logo"></div>
         <div> <img src="images/logo5.png" class="a" alt="logo"></div>
         <div><img src="images/logo6.png" class="a" alt="logo"></div>
+    </div>
+
+    <div class="box3">
+        <div>
+            <h1>Services</h1>
+        </div>
+        <div>
+            <p>At our digital marketing agency, we offer a range of services to help businesses grow and succeed
+                online.These services include:</p>
+        </div>
+    </div>
+
+    <div class="box4">
+        <div class="smallbox4">
+            <div>
+                <h1>Search engine optimization</h1>
+            </div>
+            <div class="ssmallbox4">
+                <div><img src="images/blackicon.png" alt="blackicon" width="30"></div>
+                <div>
+                    <p>Learn more
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div><img src="images/3a.png" alt="picture" width="100%"></div>
+
     </div>
 
 </body>
