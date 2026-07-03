@@ -182,7 +182,6 @@
 
         .box10 {
             display: flex;
-            /*justify-content: space-between;*/
             gap: 120px;
             background-color: #F3F3F3;
             border: none;
@@ -246,8 +245,7 @@
             }
 
             .bigbox {
-                flex-direction: column;
-                gap: 20px;
+                flex-wrap: wrap;
             }
 
             .box2 img {
@@ -301,33 +299,34 @@
             .small-img {
                 display: block;
             }
-
-            .learnmore {
-                margin-top: 10px;
-                display: flex;
-                align-items: end;
-                justify-content: space-between;
-            }
         }
 
         @media screen and (max-width: 500px) {
             .bigbox {
-                display: flex;
-                flex-direction: column;
                 justify-content: center;
-                align-items: center;
+            }
+
+            .box {
                 width: 100%;
+                padding: 50px;
+            }
+
+            .learnmore {
+                flex-direction: row;
+                align-items: end;
+                justify-content: space-between;
+                margin-top: 10px;
+
+            }
+
+            .icon img {
+                width: 45px;
             }
 
             .box10 {
                 gap: 0px;
                 padding: 20px 0;
             }
-
-            .box {
-                width: 75%;
-            }
-
 
         }
     </style>
@@ -397,7 +396,7 @@
                         <span>Search engine<br>optimization</span>
                     </div>
                     <div class="learnmore">
-                        <div><img src="images/blackicon.png" alt="blackicon" width="30"></div>
+                        <div class="icon"><img src="images/blackicon.png" alt="blackicon" width="30"></div>
                         <div>
                             <p>Learn more
                             </p>
@@ -420,7 +419,7 @@
                         <span>Pay-per-click advertising</span>
                     </div>
                     <div class="learnmore">
-                        <div><img src="images/blackicon.png" alt="blackicon" width="30"></div>
+                        <div class="icon"><img src="images/blackicon.png" alt="blackicon" width="30"></div>
                         <div>
                             <p>Learn more
                             </p>
@@ -442,7 +441,7 @@
                         <span>Social Media Marketing</span>
                     </div>
                     <div class="learnmore">
-                        <div><img src="images/whiteicon.png" alt="whiteicon" width="30"></div>
+                        <div class="icon"><img src="images/whiteicon.png" alt="whiteicon" width="30"></div>
                         <div>
                             <p>Learn more
                             </p>
@@ -463,7 +462,7 @@
                         <span>Email<br>Marketing</span>
                     </div>
                     <div class="learnmore">
-                        <div><img src="images/blackicon.png" alt="blackicon" width="30"></div>
+                        <div class="icon"><img src="images/blackicon.png" alt="blackicon" width="30"></div>
                         <div>
                             <p>Learn more
                             </p>
@@ -485,7 +484,7 @@
                         <span>Content<br>Creation</span>
                     </div>
                     <div class="learnmore">
-                        <div><img src="images/blackicon.png" alt="blackicon" width="30"></div>
+                        <div class="icon"><img src="images/blackicon.png" alt="blackicon" width="30"></div>
                         <div>
                             <p>Learn more
                             </p>
@@ -506,7 +505,7 @@
                         <span>Analytics and Tracking</span>
                     </div>
                     <div class="learnmore">
-                        <div><img src="images/whiteicon.png" alt="whiteicon" width="30"></div>
+                        <div class="icon"><img src="images/whiteicon.png" alt="whiteicon" width="30"></div>
                         <div>
                             <p>Learn more
                             </p>

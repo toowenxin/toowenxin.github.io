@@ -4,26 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>exercise2</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
         body {
             font-family: "Space Grotesk", sans-serif;
             font-size: 18px;
             margin: 30px 100px;
-
         }
 
         .box4,
         .box7 {
             background-color: #F3F3F3;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             border: 1px solid black;
-            width: 50%;
             align-items: center;
+            width: 50%;
             border-radius: 30px;
             box-shadow: 0px 4px 0px black;
-            padding: 20px 0;
+            padding: 30px 50px;
         }
 
         span {
@@ -32,7 +33,8 @@
         }
 
         .box4 span,
-        .box7 span {
+        .box7 span,
+        .box11 span {
             background-color: #B9FF66;
         }
 
@@ -51,13 +53,13 @@
         .box8 {
             background-color: #B9FF66;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             border: 1px solid black;
             width: 50%;
             align-items: center;
             border-radius: 30px;
             box-shadow: 0px 4px 0px black;
-            padding: 20px 0;
+            padding: 30px 50px;
         }
 
         .box5 span,
@@ -71,13 +73,13 @@
         .box9 {
             background-color: #191A23;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             border: 1px solid black;
             width: 50%;
             align-items: center;
             border-radius: 30px;
             box-shadow: 0px 4px 0px black;
-            padding: 20px 0;
+            padding: 30px 50px;
         }
 
         .box6 p,
@@ -88,156 +90,235 @@
         .bigbox {
             display: flex;
             gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .small-img {
+            display: none;
+        }
+
+        @media screen and (max-width: 1350px) {
+            body {
+                margin: 20px 60px;
+            }
+
+            .smallbox {
+                display: none;
+            }
+
+            .img {
+                display: block;
+            }
+
+            .logo {
+                flex-wrap: wrap;
+            }
+
+            .box3 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .box3 p {
+                margin: 0;
+                text-align: center;
+            }
+
+            .box3 h1 {
+                background-color: #B9FF66;
+            }
         }
 
         @media screen and (max-width: 1000px) {
             body {
-                margin: 30px 20px;
+                margin: 25px 25px;
             }
 
             .bigbox {
-                flex-direction: column;
-                gap: 50px;
+                flex-wrap: wrap;
+                /*flex-direction: column;
+                gap: 20px;*/
             }
 
-            .box4,
-            .box5,
-            .box6,
-            .box7,
-            .box8,
-            .box9 {
+            .content {
                 width: 100%;
             }
 
-            .small-img {
+            .content p {
                 display: none;
             }
+
+            .picture {
+                display: none;
+            }
+
+            .small-img {
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .bigbox {
+                justify-content: center;
+            }
+
+            .box {
+                width: 100%;
+            }
+
+            .learnmore {
+                flex-direction: row;
+                align-items: end;
+                justify-content: space-between;
+                margin-top: 10px;
+
+            }
+
+            .icon img {
+                width: 40px;
+            }
+
         }
     </style>
 </head>
 
 <body>
-
-    <div class="bigbox">
-        <div class="box4">
-            <div class="content">
-                <div>
-                    <span>Search engine optimization</span>
-                </div>
-                <div class="learnmore">
-                    <div><img src="images/blackicon.png" alt="blackicon" width="30"></div>
+    <div class="container">
+        <div class="bigbox">
+            <div class="box4 box">
+                <div class="content">
                     <div>
-                        <p>Learn more
-                        </p>
+                        <span>Search engine<br>optimization</span>
                     </div>
+                    <div class="learnmore">
+                        <div class="icon"><img src="images/blackicon.png" alt="blackicon" width="30"></div>
+                        <div>
+                            <p>Learn more
+                            </p>
+                            <div class="small-img">
+                                <img src="images/3a.png" alt="picture" width="100%">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="picture">
+                    <div><img src="images/3a.png" alt="picture" width="100%"></div>
                 </div>
 
             </div>
-            <div class="small-img">
-                <div><img src="images/3a.png" alt="picture" width="100%"></div>
-            </div>
-        </div>
 
-    </div>
-
-    <div class="box5">
-        <div class="content">
-            <div>
-                <span>Pay-per-click advertising</span>
-            </div>
-            <div class="learnmore">
-                <div><img src="images/blackicon.png" alt="blackicon" width="30"></div>
-                <div>
-                    <p>Learn more
-                    </p>
-                </div>
-            </div>
-
-        </div>
-        <div class="small-img">
-            <div><img src="images/3b.png" alt="picture" width="100%"></div>
-        </div>
-
-    </div>
-    </div>
-    <div class="bigbox">
-        <div class="box6">
-            <div class="content">
-                <div>
-                    <span>Social Media Marketing</span>
-                </div>
-                <div class="learnmore">
-                    <div><img src="images/whiteicon.png" alt="whiteicon" width="30"></div>
+            <div class="box5 box">
+                <div class="content">
                     <div>
-                        <p>Learn more
-                        </p>
+                        <span>Pay-per-click advertising</span>
                     </div>
-                </div>
+                    <div class="learnmore">
+                        <div><img src="images/blackicon.png" alt="blackicon" width="30"></div>
+                        <div>
+                            <p>Learn more
+                            </p>
+                            <div class="small-img">
+                                <img src="images/3b.png" alt="picture" width="100%">
+                            </div>
+                        </div>
+                    </div>
 
-            </div>
-            <div class="small-img">
-                <div><img src="images/3c.png" alt="picture" width="100%"></div>
+                </div>
+                <div class="picture"><img src="images/3b.png" alt="picture" width="100%"></div>
+
             </div>
         </div>
-
-        <div class="box7">
-            <div class="content">
-                <div>
-                    <span>Email<br> Marketing</span>
-                </div>
-                <div class="learnmore">
-                    <div><img src="images/blackicon.png" alt="blackicon" width="30"></div>
+        <div class="bigbox">
+            <div class="box6 box">
+                <div class="content">
                     <div>
-                        <p>Learn more
-                        </p>
+                        <span>Social Media Marketing</span>
                     </div>
+                    <div class="learnmore">
+                        <div><img src="images/whiteicon.png" alt="whiteicon" width="30"></div>
+                        <div>
+                            <p>Learn more
+                            </p>
+                            <div class="small-img">
+                                <img src="images/3c.png" alt="picture" width="100%">
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+                <div class="picture"><img src="images/3c.png" alt="picture" width="100%"></div>
 
             </div>
-            <div class="small-img">
-                <div><img src="images/3d.png" alt="picture" width="100%"></div>
+
+            <div class="box7 box">
+                <div class="content">
+                    <div>
+                        <span>Email<br>Marketing</span>
+                    </div>
+                    <div class="learnmore">
+                        <div><img src="images/blackicon.png" alt="blackicon" width="30"></div>
+                        <div>
+                            <p>Learn more
+                            </p>
+                            <div class="small-img">
+                                <img src="images/3d.png" alt="picture" width="100%">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="picture"><img src="images/3d.png" alt="picture" width="100%"></div>
+
+            </div>
+        </div>
+        <div class="bigbox">
+            <div class="box8 box">
+                <div class="content">
+                    <div>
+                        <span>Content<br>Creation</span>
+                    </div>
+                    <div class="learnmore">
+                        <div><img src="images/blackicon.png" alt="blackicon" width="30"></div>
+                        <div>
+                            <p>Learn more
+                            </p>
+                            <div class="small-img">
+                                <img src="images/3e.png" alt="picture" width="100%">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="picture"><img src="images/3e.png" alt="picture" width="100%"></div>
+
             </div>
 
+            <div class="box9 box">
+                <div class="content">
+                    <div>
+                        <span>Analytics and Tracking</span>
+                    </div>
+                    <div class="learnmore">
+                        <div><img src="images/whiteicon.png" alt="whiteicon" width="30"></div>
+                        <div>
+                            <p>Learn more
+                            </p>
+                            <div class="small-img">
+                                <img src="images/3f.png" alt="picture" width="100%">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="picture"><img src="images/3f.png" alt="picture" width="100%"></div>
+
+            </div>
         </div>
     </div>
-    <div class="box8">
-        <div class="content">
-            <div>
-                <span>Content<br> Creation</span>
-            </div>
-            <div class="learnmore">
-                <div><img src="images/blackicon.png" alt="blackicon" width="30"></div>
-                <div>
-                    <p>Learn more
-                    </p>
-                </div>
-            </div>
 
-        </div>
-        <div class="small-img">
-            <div><img src="images/3e.png" alt="picture" width="100%"></div>
-        </div>
-
-    </div>
-    <div class="box9">
-        <div class="content">
-            <div>
-                <span>Analytics and<br>Tracking</span>
-            </div>
-            <div class="learnmore">
-                <div><img src="images/whiteicon.png" alt="whiteicon" width="30"></div>
-                <div>
-                    <p>Learn more
-                    </p>
-                </div>
-            </div>
-
-        </div>
-        <div class="small-img">
-            <div><img src="images/3f.png" alt="picture" width="100%"></div>
-        </div>
-
-    </div>
 
 </body>
 
