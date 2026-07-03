@@ -10,6 +10,7 @@
             font-family: "Space Grotesk", sans-serif;
             font-size: 18px;
             margin: 30px 100px;
+
         }
 
         .box4,
@@ -89,24 +90,33 @@
             gap: 20px;
         }
 
-        .box11 {
-            display: flex;
-            align-items: center;
-            gap: 100px;
-            margin: 50px 0;
+        @media screen and (max-width: 1000px) {
+            body {
+                margin: 30px 20px;
+            }
+
+            .bigbox {
+                flex-direction: column;
+                gap: 50px;
+            }
+
+            .box4,
+            .box5,
+            .box6,
+            .box7,
+            .box8,
+            .box9 {
+                width: 100%;
+            }
+
+            .small-img {
+                display: none;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div class="box11">
-        <div>
-            <span>Case Studies</span>
-        </div>
-        <div>
-            <p>Explore Real-Life Examples of Our Proven Digital Marketing<br>Success through Our Case Studies</p>
-        </div>
-    </div>
 
     <div class="bigbox">
         <div class="box4">
@@ -123,27 +133,32 @@
                 </div>
 
             </div>
-            <div><img src="images/3a.png" alt="picture" width="100%"></div>
-
-        </div>
-
-        <div class="box5">
-            <div class="content">
-                <div>
-                    <span>Pay-per-click advertising</span>
-                </div>
-                <div class="learnmore">
-                    <div><img src="images/blackicon.png" alt="blackicon" width="30"></div>
-                    <div>
-                        <p>Learn more
-                        </p>
-                    </div>
-                </div>
-
+            <div class="small-img">
+                <div><img src="images/3a.png" alt="picture" width="100%"></div>
             </div>
-            <div><img src="images/3b.png" alt="picture" width="100%"></div>
+        </div>
+
+    </div>
+
+    <div class="box5">
+        <div class="content">
+            <div>
+                <span>Pay-per-click advertising</span>
+            </div>
+            <div class="learnmore">
+                <div><img src="images/blackicon.png" alt="blackicon" width="30"></div>
+                <div>
+                    <p>Learn more
+                    </p>
+                </div>
+            </div>
 
         </div>
+        <div class="small-img">
+            <div><img src="images/3b.png" alt="picture" width="100%"></div>
+        </div>
+
+    </div>
     </div>
     <div class="bigbox">
         <div class="box6">
@@ -160,8 +175,9 @@
                 </div>
 
             </div>
-            <div><img src="images/3c.png" alt="picture" width="100%"></div>
-
+            <div class="small-img">
+                <div><img src="images/3c.png" alt="picture" width="100%"></div>
+            </div>
         </div>
 
         <div class="box7">
@@ -178,7 +194,9 @@
                 </div>
 
             </div>
-            <div><img src="images/3d.png" alt="picture" width="100%"></div>
+            <div class="small-img">
+                <div><img src="images/3d.png" alt="picture" width="100%"></div>
+            </div>
 
         </div>
     </div>
@@ -196,7 +214,9 @@
             </div>
 
         </div>
-        <div><img src="images/3e.png" alt="picture" width="100%"></div>
+        <div class="small-img">
+            <div><img src="images/3e.png" alt="picture" width="100%"></div>
+        </div>
 
     </div>
     <div class="box9">
@@ -213,7 +233,9 @@
             </div>
 
         </div>
-        <div><img src="images/3f.png" alt="picture" width="100%"></div>
+        <div class="small-img">
+            <div><img src="images/3f.png" alt="picture" width="100%"></div>
+        </div>
 
     </div>
 

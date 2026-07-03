@@ -107,8 +107,8 @@
             display: flex;
             justify-content: space-between;
             border: 1px solid black;
-            width: 50%;
             align-items: center;
+            width: 50%;
             border-radius: 30px;
             box-shadow: 0px 4px 0px black;
             padding: 30px 50px;
@@ -140,13 +140,13 @@
         .box8 {
             background-color: #B9FF66;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             border: 1px solid black;
             width: 50%;
             align-items: center;
             border-radius: 30px;
             box-shadow: 0px 4px 0px black;
-            padding: 30px 30px;
+            padding: 30px 50px;
         }
 
         .box5 span,
@@ -160,13 +160,13 @@
         .box9 {
             background-color: #191A23;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             border: 1px solid black;
             width: 50%;
             align-items: center;
             border-radius: 30px;
             box-shadow: 0px 4px 0px black;
-            padding: 30px 30px;
+            padding: 30px 50px;
         }
 
         .box6 p,
@@ -182,7 +182,8 @@
 
         .box10 {
             display: flex;
-            justify-content: space-around;
+            /*justify-content: space-between;*/
+            gap: 120px;
             background-color: #F3F3F3;
             border: none;
             border-radius: 30px;
@@ -193,6 +194,15 @@
 
         .small-img {
             display: none;
+        }
+
+        .box10 .smallbox2 {
+            padding: 50px;
+        }
+
+        .box10 img {
+            margin: 10px;
+            width: 100%;
         }
 
 
@@ -276,14 +286,9 @@
                 padding: 15px 0;
             }
 
-            /*.box {
+            .content {
                 width: 100%;
-                padding: 15px;
-            }*/
-            /*.box4 {
-                width: 100%;
-            }*/
-
+            }
 
             .content p {
                 display: none;
@@ -296,10 +301,20 @@
             .small-img {
                 display: block;
             }
+        }
 
-            .learnmore {
+        @media screen and (max-width: 500px) {
+            .bigbox {
                 display: flex;
-                align-items: flex-end;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+
+            .box10 {
+                gap: 0px;
+                padding: 20px 0;
             }
         }
     </style>
@@ -366,7 +381,7 @@
             <div class="box4 box">
                 <div class="content">
                     <div>
-                        <span>Search engine optimization</span>
+                        <span>Search engine<br>optimization</span>
                     </div>
                     <div class="learnmore">
                         <div><img src="images/blackicon.png" alt="blackicon" width="30"></div>
