@@ -33,6 +33,7 @@
 
         .links a {
             text-decoration: none;
+            color: #3E5879;
         }
 
         .header {
@@ -53,11 +54,13 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin: 50px;
         }
 
         .profile p {
             text-align: center;
-            padding: 0 200px;
+            text-align: center;
+            padding: 0 250px;
         }
 
         .profile img {
@@ -65,7 +68,7 @@
         }
 
         .week {
-            background-color: rgb(245, 239, 231, 0.8);
+            background-color: rgb(245, 239, 231, 0.7);
             border-radius: 10px;
             padding: 20px 100px;
         }
@@ -73,6 +76,8 @@
         .box {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
+            flex-wrap: wrap;
         }
 
         .content {
@@ -86,6 +91,48 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            gap: 6px;
+            margin: 10px;
+        }
+
+        .content {
+            border-bottom: 2px solid #0A2947;
+        }
+
+        .footer {
+            background-color: #0A2947;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 10px 10px;
+            margin-top: 50px;
+        }
+
+        @media screen and (max-width: 700px) {
+
+            .personalogo {
+                width: 40px;
+            }
+
+            .main {
+                margin: 0 20px;
+            }
+
+            .week {
+                margin-bottom: 50px;
+            }
+
+            .box {
+                flex-direction: column;
+            }
+
+            .content {
+                justify-content: center
+            }
+
+            .profile p {
+                padding: 0;
+            }
         }
     </style>
 </head>
@@ -129,10 +176,13 @@
         <div class="box">
             <div class="week2 week">
                 <div class="content">
+
                     <div><img src="images/check.png" alt="Exercise 1" width="20"></div>
                     <div>
                         <h2>Week 2</h2>
+
                     </div>
+
                 </div>
                 <div class="links">
                     <div><a href="http://127.0.0.1:5500/week2/button.html" target="_blank">Exercise 1</a></div>
@@ -165,6 +215,21 @@
                     <div><a href="http://127.0.0.1:5500/week4/home.html" target="_blank">Exercise 2</a></div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="logo">
+            <div> <a href="https://www.instagram.com/wenxintoo/" target="_blank">
+                    <img src="images/instagram.png" width="30" alt="Instagram icon"></a></div>
+
+            <div> <a href="https://www.facebook.com/wenxin.too" target="_blank">
+                    <img src="images/facebook.png" width="25" alt="TikTok icon"></a></div>
+            <div> <a href="https://www.tiktok.com/en/" target="_blank">
+                    <img src="images/tiktok.png" width="35" alt="TikTok icon"></a></div>
+        </div>
+        <div class="disclaimer">
+            <p>Disclaimer</p>
         </div>
     </div>
 
