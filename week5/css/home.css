@@ -1,29 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 body {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 18px;
     margin: 30px 100px;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.button1 {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 18px;
-    background-color: white;
-    padding: 15px 25px;
-    border-radius: 16px;
-}
-
-.box1 {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    justify-content: space-between;
-    padding-bottom: 30px;
 }
 
 .img {
@@ -63,16 +41,6 @@ body {
 
 .smallbox2 {
     width: 45%;
-}
-
-.button2 {
-    background-color: black;
-    color: white;
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 18px;
-    padding: 15px 38px;
-    border-radius: 16px;
-    margin-top: 20px;
 }
 
 .logo {
@@ -183,7 +151,6 @@ span {
     border: none;
     border-radius: 30px;
     align-items: center;
-    height: 340px;
     width: 100%;
     margin-top: 100px;
 }
@@ -206,10 +173,75 @@ span {
     flex-direction: row;
 }
 
+.smallbox div,
+.pp {
+    text-decoration: underline;
+}
+
+.iconfooter {
+    display: flex;
+    gap: 20px;
+}
+
+.details {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0;
+}
+
+.details span {
+    background-color: #B9FF66;
+    border-radius: 5px;
+    color: black;
+    font-size: 20px;
+    padding: 2px 5px;
+}
+
+.db {
+    background-color: #292A32;
+    width: 50%;
+}
+
+.dsb {
+    padding: 58px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.email {
+    border: 1px solid white;
+    border-radius: 14px;
+    padding: 20px 200px 20px 20px;
+}
+
+.subscribe {
+    background-color: #B9FF66;
+    border-radius: 14px;
+    color: black;
+    padding: 20px 35px;
+
+}
+
+.privacy {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 40px;
+}
+
 
 @media screen and (max-width: 1350px) {
     body {
-        margin: 20px 60px;
+        margin: 20px 50px;
     }
 
     .smallbox {
@@ -327,7 +359,6 @@ span {
 
     .box10 {
         gap: 0px;
-        padding: 20px 0;
     }
 
 }
