@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+body {
+    margin: 30px 100px;
+}
+
+.box1 {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 50px 0;
+}
+
+.img {
+    display: none;
+}
+
+.smallbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.box1 h2 {
+    font-size: 40px;
+}
+
+.box1 span {
+    background-color: #B9FF66;
+}
+
+.box2 {
+    background-color: #191A23;
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.learnmore {
+    color: #B9FF66;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.sml1,
+.sml2,
+.sml3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: calc(100% / 3);
+}
+
+.sml1 {
+    padding: 0 50px 0 0;
+}
+
+.sml3 {
+    padding: 0 0 0 50px;
+}
+
+.sml1,
+.sml2 {
+    border-right: 1px solid white;
+}
+
+.sml2 {
+    padding: 0 50px 0 50px;
+}
+
+.box3 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.b31 {
+    background-color: #B9FF66;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0px 4px 0px black;
+    padding: 41px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box3 h1 {
+    font-size: 60px;
+}
+
+.num {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+    padding-bottom: 20px;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.text p {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.b32 {
+    background-color: #F3F3F3;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0px 4px 0px black;
+    padding: 41px 60px;
+}
+
+.num2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sb4 {
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 0px 4px 0px black;
+    padding: 2% 3%;
+}
+
+.people {
+    background-color: #B9FF66;
+}
+
+.name {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+}
