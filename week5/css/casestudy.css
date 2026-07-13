@@ -435,6 +435,10 @@ body {
         padding: 20px 20px;
     }
 
+    .iconfooter {
+        display: none;
+    }
+
     .iconfooter2 {
         display: block;
         display: flex;
