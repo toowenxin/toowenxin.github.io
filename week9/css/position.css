@@ -11,11 +11,15 @@
      background-position: center;
  }
 
- .relative {
+ div.relative {
      position: relative;
-     max-width: 600px;
-     margin: auto;
-     margin-top: 20px;
+     background-image: url("../images/people.jpg");
+     width: 50%;
+     height: 680px;
+     margin: 20px auto;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
  }
 
  div.box1 {
@@ -24,7 +28,7 @@
      width: 200px;
      height: 100px;
      border-radius: 10px;
-     right: -50px;
+     right: -20%;
      top: 50px;
  }
 
@@ -34,8 +38,8 @@
      width: 250px;
      height: 150px;
      border-radius: 10px;
-     left: -50px;
-     bottom: 60px;
+     left: -100px;
+     bottom: 50px;
  }
 
  .box {
