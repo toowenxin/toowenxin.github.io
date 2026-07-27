@@ -168,7 +168,7 @@ hr {
 
 /* === BODY === */
 body {
-    margin: 0;
+    margin: auto;
     min-width: 320px;
 }
 
