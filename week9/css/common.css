@@ -297,6 +297,7 @@ a {
 @media only screen and (max-width: 1024px) {
     .container {
         padding: 0 10%;
+        margin: auto;
     }
 
     /* === HEADER === */
@@ -315,38 +316,43 @@ a {
 }
 
 /* === Screen: Mobile  === */
-@media only screen and (max-width: 640px) {}
+@media only screen and (max-width: 640px) {
+    .container {
+        padding: 0 10%;
+        margin: auto;
+    }
 
-/* === GLOBAL TYPOGRAPHY  === */
-h1 {
-    font-size: 84px;
-    line-height: 101.9px;
-}
+    /* === GLOBAL TYPOGRAPHY  === */
+    .hero-title {
+        font-size: 84px;
+        line-height: 101.9px;
+    }
 
-h2 {
-    font-size: 63px;
-    line-height: 76.4px;
-}
+    .title {
+        font-size: 63px;
+        line-height: 76.4px;
+    }
 
-h3 {
-    font-size: 51px;
-    line-height: 81.3px;
-}
+    .sub-title {
+        font-size: 51px;
+        line-height: 81.3px;
+    }
 
-/* === Class Typo === */
-.section-title {
-    font-size: 43px;
-    line-height: 52px;
-    font-weight: Italic;
-}
+    /* === Class Typo === */
+    .section-title {
+        font-size: 43px;
+        line-height: 52px;
+        font-weight: Italic;
+    }
 
-.menu-title {
-    font-size: 38px;
-    line-height: 45.9px;
-    font-weight: Italic;
-}
+    .menu-title {
+        font-size: 38px;
+        line-height: 45.9px;
+        font-weight: Italic;
+    }
 
-/* === Layout === */
-.column-three {
-    width: 100%;
+    /* === Layout === */
+    .column-three {
+        width: 100%;
+    }
 }
