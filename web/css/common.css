@@ -208,7 +208,7 @@ a {
 
 .sub-navbar {
     position: absolute;
-    background-color: #333333;
+    background-color: var(--color-nav-background);
     border-radius: 6px;
     opacity: 0;
     pointer-events: none;
@@ -237,7 +237,7 @@ a {
 }
 
 .sub-navbar div:hover {
-    background-color: #BDA16B;
+    background-color: var(--color-hover);
 }
 
 .sub-navbar-first {
