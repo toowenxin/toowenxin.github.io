@@ -15,6 +15,8 @@
     --color-hover: #BDA16B;
     --color-nav-text: #A1A1A1;
     --color-nav-background: #333333;
+    --color-black: #000000;
+    --color-white: #FFFFFF;
 
     --font-title: "Bebas Neue", sans-serif;
     --font-base: "Lora", serif;
@@ -115,7 +117,7 @@
 
 hr {
     border: none;
-    border-top: 2px solid #d6d6d6;
+    border-top: 2px solid var(--color-grey);
     margin: 0px 0;
     max-width: 70px;
     margin: auto;
@@ -126,15 +128,15 @@ hr {
     padding: var(--btn-padding);
     background-color: var(--btn-background-color);
     color: var(--color-text-light);
-    border: 1px solid white;
+    border: 1px solid var(--color-white);
 }
 
 .btn-black:hover {
-    background-color: black;
+    background-color: var(--color-black);
 }
 
 .btn-white:hover {
-    background-color: white;
+    background-color: var(--color-white);
     color: var(--color-text-dark);
 }
 
@@ -143,7 +145,7 @@ hr {
 }
 
 .btn-outline:hover {
-    border: 1px solid black;
+    border: 1px solid var(--color-black);
 }
 
 /* === ICON === */
@@ -155,7 +157,7 @@ hr {
 }
 
 .footer-icon div {
-    background-color: white;
+    background-color: var(--color-white);
     padding: 15px;
     margin: 5px;
     border-radius: 50%;
@@ -169,7 +171,7 @@ hr {
 
 /* === HEADER === */
 .header {
-    background-color: #000000;
+    background-color: var(--color-black);
     display: flex;
     justify-content: space-between;
     align-items: center;
