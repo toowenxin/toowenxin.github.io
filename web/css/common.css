@@ -36,12 +36,6 @@
 }
 
 /* === GLOBAL TYPOGRAPHY  === */
-body {
-    font-family: var(--font-base);
-    color: var(--color-text-dark);
-    line-height: 33.3px;
-}
-
 .hero-title,
 .title,
 .sub-title,
@@ -167,10 +161,10 @@ hr {
     border-radius: 50%;
 }
 
-/* === BODY === */
-body {
+/* === Layout Guide === */
+.container {
     margin: auto;
-    min-width: 320px;
+    padding: 0 10%;
 }
 
 /* === HEADER === */
