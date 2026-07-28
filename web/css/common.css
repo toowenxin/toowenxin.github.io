@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === ROOT VARIABLES === */
+:root {
+    --color-text-dark: #000000;
+    --color-text-light: #FFFFFF;
+    --color-light-grey: #F2F2F2;
+    --color-grey: #D3D3D3;
+    --color-hover: #BDA16B;
+    --color-nav-text: #A1A1A1;
+    --color-nav-background: #333333;
+
+    --font-title: "Bebas Neue", sans-serif;
+    --font-base: "Lora", serif;
+    --font-heading: "Work Sans", sans-serif;
+    --font-hero-title: 95px;
+    --font-title: 70px;
+    --font-sub-title: 56px;
+    --font-object-title: 30px;
+    --font-sub-object-title: 25px;
+    --font-section-title: 46px;
+    --font-menu-title: 40px;
+    --font-paragraph: 19px;
+    --font-eyebrow-heading: 15px;
+    --font-button: 15px;
+    --font-sub-navbar: 13px;
+
+    --btn-padding: 13px 29px;
+    --btn-background-color: transparent;
+}
+
+/* === GLOBAL TYPOGRAPHY  === */
+body {
+    font-family: var(--font-base);
+    color: var(--color-text-dark);
+    line-height: 33.3px;
+}
+
+.hero-title,
+.title,
+.sub-title,
+.object-title,
+.sub-object-title {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hero-title {
+    font-size: var(--font-hero-title);
+    line-height: 114px;
+}
+
+.title {
+    font-size: var(--font-title);
+    line-height: 84px;
+}
+
+.sub-title {
+    font-size: var(--font-sub-title);
+    line-height: 64px;
+}
+
+.object-title {
+    font-size: var(--font-object-title);
+    line-height: 36px;
+}
+
+.sub-object-title {
+    font-size: var(--font-sub-object-title);
+    line-height: 30px;
+}
+
+/* === Class Typo === */
+.section-title {
+    font-family: var(--font-base);
+    font-size: var(--font-section-title);
+    line-height: 55.2px;
+    font-weight: Italic;
+}
+
+.menu-title {
+    font-family: var(--font-base);
+    font-size: var(--font-menu-title);
+    line-height: 48px;
+    font-weight: Italic;
+}
+
+.paragraph {
+    font-family: var(--font-base);
+    font-size: var(--font-paragraph);
+    line-height: 33.3px;
+}
+
+.eyebrow-heading {
+    font-family: var(--font-heading);
+    font-size: var(--font-eyebrow-heading);
+    line-height: 18px;
+    letter-spacing: 1.4px;
+}
+
+.btn {
+    font-family: var(--font-heading);
+    font-size: var(--font-button);
+    line-height: 18px;
+    letter-spacing: 1px;
+}
+
+.sub-navbar {
+    font-family: var(--font-heading);
+    font-size: var(--font-sub-navbar);
+    line-height: 22.8px;
+    letter-spacing: 1px;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #d6d6d6;
+    margin: 0px 0;
+    max-width: 70px;
+    margin: auto;
+}
+
+/* === BUTTON === */
+.btn {
+    padding: var(--btn-padding);
+    background-color: var(--btn-background-color);
+    color: var(--color-text-light);
+    border: 1px solid white;
+}
+
+.btn-black:hover {
+    background-color: black;
+}
+
+.btn-white:hover {
+    background-color: white;
+    color: var(--color-text-dark);
+}
+
+.btn-outline {
+    border: 1px solid #D3D3D3;
+}
+
+.btn-outline:hover {
+    border: 1px solid black;
+}
+
+/* === ICON === */
+.footer-icon img {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icon div {
+    background-color: white;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+/* === BODY === */
+body {
+    margin: auto;
+    min-width: 320px;
+}
+
+/* === HEADER === */
+.header {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 6%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-nav-text);
+}
+
+.navbar {
+    margin: 15px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.menu-icon {
+    display: none;
+    position: relative;
+}
+
+.has-sub-navbar {
+    position: relative;
+}
+
+.bar-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.sub-navbar {
+    position: absolute;
+    background-color: #333333;
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+}
+
+.sub-navbar a {
+    color: var(--color-text-light);
+}
+
+.sub-navbar div {
+    padding: 12px 20px;
+}
+
+.bar-icon:hover a {
+    color: var(--color-text-light);
+}
+
+.bar-icon:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.has-sub-navbar:hover>.sub-navbar {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.sub-navbar div:hover {
+    background-color: #BDA16B;
+}
+
+.sub-navbar-first {
+    border-radius: 6px 6px 0px 0px;
+}
+
+.sub-navbar-last {
+    border-radius: 0px 0px 6px 6px;
+}
+
+.sub-navbar-one {
+    border-radius: 6px;
+}
+
+/* === FOOTER === */
+.footer {
+    background-image: url("../images/image-footer.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+    color: var(--color-text-light);
+}
+
+.romaliya-logo {
+    margin-bottom: 20px;
+}
+
+.footer p {
+    color: #d6d6d6;
+    max-width: 60%;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.footer-icon {
+    display: flex;
+    flex-direction: row;
+}
+
+.mobile-navbar {
+    display: none;
+}
+
+/* === Layout === */
+.column-three {
+    width: calc(100% / 3);
+}
+
+/* === Screen: Tablet  === */
+@media only screen and (max-width: 1024px) {
+    .container {
+        padding: 0 10%;
+        margin: auto;
+    }
+
+    /* === HEADER === */
+    .navbar {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /* === Layout === */
+    .column-three {
+        width: 100%;
+    }
+}
+
+/* === Screen: Mobile  === */
+@media only screen and (max-width: 640px) {
+    .container {
+        padding: 0 10%;
+        margin: auto;
+    }
+
+    /* === GLOBAL TYPOGRAPHY  === */
+    .hero-title {
+        font-size: 84px;
+        line-height: 101.9px;
+    }
+
+    .title {
+        font-size: 63px;
+        line-height: 76.4px;
+    }
+
+    .sub-title {
+        font-size: 51px;
+        line-height: 81.3px;
+    }
+
+    /* === Class Typo === */
+    .section-title {
+        font-size: 43px;
+        line-height: 52px;
+        font-weight: Italic;
+    }
+
+    .menu-title {
+        font-size: 38px;
+        line-height: 45.9px;
+        font-weight: Italic;
+    }
+
+    /* === Layout === */
+    .column-three {
+        width: 100%;
+    }
+}
