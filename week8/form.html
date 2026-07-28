@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>exercise1</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>Registration Form-Middle School</h1>
+        </div>
+        <form action="/action_page.php">
+            <div class="">
+                <input type="text" id="fname" placeholder="First name*" required>
+
+                <input type="text" id="lname" placeholder="Last name*" required>
+            </div>
+
+            <div class="space">
+                <div><label for="date-of-birth">Date of Birth*</label></div>
+                <input type="date" id="date-of-birth" required>
+
+                <input type="email" id="email-address" placeholder="Email Address*" required>
+            </div>
+
+            <div>
+                <input type="url" id="Homepage URL" placeholder="Homepage URL">
+
+                <label for="favourite-color">Favourite Color:</label>
+                <select name="favourite-color" id="favourite-color">
+                    <option value="red">Red</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="orange">Orange</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="purple">Purple</option>
+                    <option value="pink">Pink</option>
+                </select>
+            </div>
+
+            <textarea id="self-introduction" name="self-introduction" rows="4" cols="50">Self-introduction</textarea>
+
+            <div><input type="submit" value="Submit"></div>
+        </form>
+    </div>
+</body>
+
+</html>
