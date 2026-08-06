@@ -149,6 +149,23 @@ hr {
 }
 
 /* === ICON === */
+.menu-icon {
+    display: none;
+    position: relative;
+    cursor: pointer;
+    font-size: 30px;
+    color: var(--color-white);
+}
+
+/*.line1,
+.line2,
+.line3 {
+    width: 30px;
+    height: 2px;
+    background-color: var(--color-white);
+    margin: 6px 0;
+}*/
+
 .footer-icon img {
 
     display: flex;
@@ -182,6 +199,7 @@ hr {
 a {
     text-decoration: none;
     color: var(--color-nav-text);
+    white-space: nowrap;
 }
 
 .navbar {
@@ -190,11 +208,6 @@ a {
     justify-content: flex-end;
     gap: 30px;
     flex-wrap: wrap;
-}
-
-.menu-icon {
-    display: none;
-    position: relative;
 }
 
 .has-sub-navbar {
@@ -254,6 +267,10 @@ a {
     border-radius: 6px;
 }
 
+.mobile-navbar {
+    display: none;
+}
+
 /* === FOOTER === */
 .footer {
     background-image: url("../images/image-footer.png");
@@ -281,13 +298,21 @@ a {
     flex-direction: row;
 }
 
-.mobile-navbar {
-    display: none;
-}
-
 /* === Layout === */
 .column-three {
     width: calc(100% / 3);
+}
+
+/* === Navbar  === */
+@media only screen and (max-width: 1130px) {
+    .navbar {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
 }
 
 /* === Screen: Tablet  === */
@@ -297,13 +322,61 @@ a {
         margin: auto;
     }
 
-    /* === HEADER === */
-    .navbar {
+    .footer {
         display: none;
     }
 
-    .menu-icon {
+    /* === HEADER === */
+    .mobile-navbar a {
+        color: var(--color-text-light);
+    }
+
+    .mobile-navbar {
         display: block;
+        position: fixed;
+        opacity: 0;
+        transition: all 1s ease;
+        left: 0%;
+        width: 100%;
+        background-color: #333333;
+    }
+
+    .mobile-bar-icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 55px;
+        padding: 0 4%;
+    }
+
+    .mobile-bar-icon img {
+        filter: brightness(0) invert(1);
+    }
+
+    .mobile-has-sub-navbar {
+        position: relative;
+    }
+
+    .mobile-sub-navbar {
+        position: absolute;
+        background-color: #333333;
+        border-radius: 6px;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 1s;
+    }
+
+    .mobile-bar-icon:hover {
+        background-color: #BDA16B;
+    }
+
+    .mobile-navbar.active {
+        opacity: 1;
+    }
+
+    /*.mobile-has-sub-navbar:hover>.mobile-sub-navbar {
+        opacity: 1;
+        pointer-events: auto;
     }
 
     /* === Layout === */
