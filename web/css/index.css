@@ -1,0 +1,81 @@
+.hero-line {
+    background-color: #D6D6D6;
+    height: 0.8px;
+    width: 50px;
+    margin-top: 9px;
+}
+
+.hero-image {
+    background-image: url("../images/half-restaurant.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.hero-image-hidden {
+    display: none;
+}
+
+.hero-line-container {
+    padding-right: 8%;
+}
+
+.for-2-img {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-black);
+
+}
+
+.half {
+    width: 50%;
+}
+
+.page-1-content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 12%;
+    padding: 0 10%;
+}
+
+.grey-color {
+    color: #D6D6D6;
+}
+
+.white-color {
+    color: var(--color-white);
+}
+
+.e-h-space {
+    margin-bottom: 8%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .half {
+        width: 100%;
+    }
+
+    .hero-image {
+        background-image: none;
+        min-height: 0vh;
+    }
+
+    .hero-image-hidden {
+        display: block;
+    }
+
+    .hero-image-hidden img {
+        width: 100%;
+    }
+
+    .for-2-img {
+        flex-direction: column-reverse;
+    }
+
+    .page-1-content-container {
+        margin-top: 0;
+        padding-top: 12%;
+    }
+}

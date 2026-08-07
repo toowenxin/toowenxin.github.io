@@ -18,6 +18,7 @@
     --color-black: #000000;
     --color-white: #FFFFFF;
 
+
     --font-title: "Bebas Neue", sans-serif;
     --font-base: "Lora", serif;
     --font-heading: "Work Sans", sans-serif;
@@ -188,12 +189,14 @@ hr {
 
 /* === HEADER === */
 .header {
-    background-color: var(--color-black);
+    background-color: var(--color-transparent);
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px 6%;
     margin: auto;
+    position: absolute;
 }
 
 a {
@@ -322,11 +325,11 @@ a {
         margin: auto;
     }
 
-    .footer {
-        display: none;
+    /* === HEADER === */
+    .header {
+        background-color: var(--color-black);
     }
 
-    /* === HEADER === */
     .mobile-navbar a {
         color: var(--color-text-light);
     }
