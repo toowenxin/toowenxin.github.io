@@ -1,3 +1,4 @@
+/* === HERO SECTION === */
 .hero-line {
     background-color: #D6D6D6;
     height: 0.8px;
@@ -9,7 +10,7 @@
     background-image: url("../images/half-restaurant.png");
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
+    min-height: 120vh;
 }
 
 .hero-image-hidden {
@@ -24,19 +25,18 @@
     display: flex;
     flex-direction: row;
     background-color: var(--color-black);
-
 }
 
 .half {
     width: 50%;
 }
 
-.page-1-content-container {
+.section-1-content-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 12%;
+    margin-top: 15%;
     padding: 0 10%;
 }
 
@@ -50,6 +50,44 @@
 
 .e-h-space {
     margin-bottom: 8%;
+}
+
+/* === SECTION 2 === */
+.container {
+    padding: 7% 10%;
+}
+
+.under-picture-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-2-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 60%;
+    margin: auto;
+}
+
+.three-picture {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.under-picture-content img,
+.picture-title,
+.paragraph-space {
+    margin-bottom: 4%;
+}
+
+.under-section-title {
+    margin: 3% 0;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -74,8 +112,17 @@
         flex-direction: column-reverse;
     }
 
-    .page-1-content-container {
+    .section-1-content-container {
+        flex-direction: column;
         margin-top: 0;
         padding-top: 12%;
+    }
+
+    .hero-line {
+        width: 100px;
+    }
+
+    .hero-line-container {
+        padding-bottom: 4%;
     }
 }
