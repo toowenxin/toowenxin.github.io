@@ -293,7 +293,7 @@ a {
 
 .footer p {
     color: #d6d6d6;
-    max-width: 60%;
+    /*max-width: 60%;*/
     margin-bottom: 45px;
     text-align: center;
 }
@@ -311,7 +311,7 @@ a {
 }
 
 /* === Navbar  === */
-@media only screen and (max-width: 1130px) {
+@media only screen and (max-width: 1160px) {
     .navbar {
         display: none;
     }
