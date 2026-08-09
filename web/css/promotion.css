@@ -1,0 +1,43 @@
+.hero-image {
+    background-image: url("../images/promotion-img.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 120vh;
+}
+
+.hero-image-hidden {
+    display: none;
+}
+
+.for-2-img {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-black);
+}
+
+.half {
+    width: 50%;
+}
+
+.section-1-content-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 250px;
+    padding: 0 7%;
+}
+
+.grey-color {
+    color: #D6D6D6;
+}
+
+.white-color {
+    color: var(--color-white);
+}
+
+.e-h-space {
+    margin-bottom: 8%;
+}
+
+.section-1-space {
+    margin-bottom: 2%;
+}
