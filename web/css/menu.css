@@ -4,7 +4,12 @@
     align-items: center;
     justify-content: center;
     color: var(--color-text-light);
+}
+
+.banner-background-recommendation {
     background-image: url('../images/recommendation.png');
+    background-size: cover;
+    background-position: center;
     padding: 100px 20px;
 }
 
@@ -25,10 +30,70 @@
     box-shadow: 0px 0px 10px var(--color-nav-text);
 }
 
-.object-title {
+.dish-card .object-title {
     position: absolute;
     bottom: 15px;
     right: 15px;
+}
+
+.main-course {
+    display: flex;
+}
+
+.main-course-right {
+    flex-basis: 50%;
+}
+
+.main-course img {
+    width: 100%;
+    max-width: 756px;
+    height: auto;
+}
+
+.main-course hr {
+    margin-bottom: 20px
+}
+
+.main-course-text {
+    padding: 25px;
+}
+
+.main-course-text p {
+    max-width: 85%;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-background-dessert {
+    background-image: url('../images/menu-dessert.png');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+}
+
+.dessert {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.dessert-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 293px;
+    height: auto;
+}
+
+@media screen and (max-width: 1400px) {
+    .main-course-text p {
+        max-width: 100%;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -39,11 +104,24 @@
     .dish-card img {
         width: 570px;
     }
+
+    .main-course {
+        display: block;
+    }
+
+    .main-course img {
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 640px) {
 
     .dish-card img {
         width: 413px;
+    }
+
+    .main-course img {
+        display: none;
     }
 }
