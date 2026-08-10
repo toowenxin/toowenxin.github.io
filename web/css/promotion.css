@@ -1,0 +1,200 @@
+/* === SECTION 1 === */
+.hero-image {
+    background-image: url("../images/promotion-img.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 120vh;
+}
+
+.hero-image-hidden {
+    display: none;
+}
+
+.for-2-img {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-black);
+}
+
+.half {
+    width: 50%;
+}
+
+.section-1-content-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12%;
+    padding: 0 7%;
+}
+
+.grey-color {
+    color: #D6D6D6;
+}
+
+.white-color {
+    color: var(--color-white);
+}
+
+.section-1-space {
+    margin-bottom: 8%;
+}
+
+.section-1-under-paragraph {
+    margin-bottom: 2%;
+}
+
+/* === SECTION 2 === */
+.container {
+    padding: 7% 10%;
+}
+
+.section-2-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 60%;
+    margin: auto;
+}
+
+.under-section-title {
+    margin: 5% 0 3%;
+}
+
+.three-picture {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section-2-img-size {
+    border-radius: 500px;
+    width: 370px;
+    height: 500px;
+}
+
+.section-2-garlic {
+    background-image: url(../images/section-2-garlic.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.section-2-steak {
+    background-image: url(../images/section-2-steak.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.section-2-sparkler {
+    background-image: url(../images/section-2-sparkler.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.under-picture-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.under-picture-content div,
+.paragraph-space {
+    margin-bottom: 5%;
+}
+
+.text-align {
+    max-width: 370px;
+    text-align: center;
+}
+
+/* === SECTION 3 === */
+.section-3-relative {
+    background-image: url(../images/section-3-romantic-dining.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 490px;
+    color: var(--color-text-light);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-3-absolute {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 60%;
+}
+
+.eyebrow-heading-space {
+    margin-bottom: 2%;
+}
+
+.section-3-under-eyebrow-heading {
+    margin-bottom: 3%;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    /* === SECTION 1=== */
+    .half {
+        width: 100%;
+    }
+
+    .hero-image {
+        background-image: none;
+        min-height: 0vh;
+    }
+
+    .hero-image-hidden {
+        display: block;
+    }
+
+    .hero-image-hidden img {
+        width: 100%;
+    }
+
+    .hero-image-hidden img {
+        width: 100%;
+    }
+
+    .for-2-img {
+        flex-direction: column;
+    }
+
+    .section-1-content-container {
+        flex-direction: column;
+        margin-top: 0;
+        padding: 12% 15%;
+    }
+
+    /* === SECTION 2=== */
+    .three-picture {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .under-picture-content {
+        margin-bottom: 10%;
+    }
+
+    .section-2-content {
+        max-width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 640px) {
+
+    /* === SECTION 3 === */
+    .section-3-absolute {
+        max-width: 100%;
+        padding: 0 10%;
+    }
+}

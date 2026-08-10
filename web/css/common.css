@@ -196,7 +196,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 6%;
+    padding: 30px 6%;
     margin: auto;
     position: absolute;
 }
@@ -332,6 +332,8 @@ a {
     /* === HEADER === */
     .header {
         background-color: var(--color-black);
+        position: static;
+
     }
 
     .mobile-navbar a {
