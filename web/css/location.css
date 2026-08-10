@@ -1,0 +1,11 @@
+.section-1 {
+    background-color: black;
+}
+
+.white-color {
+    color: var(--color-text-light);
+}
+
+.grey-color {
+    color: var(--color-grey);
+}
