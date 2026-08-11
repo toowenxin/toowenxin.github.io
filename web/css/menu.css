@@ -38,6 +38,7 @@
 
 .main-course {
     display: flex;
+    margin-bottom: 50px;
 }
 
 .main-course-right {
@@ -47,7 +48,8 @@
 .main-course img {
     width: 100%;
     max-width: 756px;
-    height: auto;
+    height: 865px;
+    object-fit: cover;
 }
 
 .main-course hr {
@@ -79,7 +81,11 @@
 .dessert {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
     margin: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .dessert-card {
@@ -88,11 +94,71 @@
     justify-content: space-between;
     max-width: 293px;
     height: auto;
+
+}
+
+.dessert-down {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 60px;
+}
+
+.dessert-up {
+    margin-bottom: 60px;
+    margin-top: 250px;
+}
+
+.crocktails-container {
+    position: relative;
+    width: 100%;
+}
+
+.crocktails-container img {
+    display: block;
+    width: 100%;
+}
+
+.crocktails-text {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.crocktails-text p {
+    margin-top: 30px;
+    max-width: 35%;
+}
+
+.crocktails-text .hr {
+    margin-top: 90px;
+}
+
+.crocktails-text button {
+    margin-top: 50px;
 }
 
 @media screen and (max-width: 1400px) {
     .main-course-text p {
         max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .crocktails-text p {
+        max-width: 50%;
+    }
+
+    .main-course-right {
+        flex-basis: 70%;
+    }
+}
+
+@media screen and (max-width: 1038px) {
+    .main-course img {
+        width: 100%;
+        max-width: 756px;
+        height: 900px;
+        object-fit: cover;
     }
 }
 
@@ -113,6 +179,39 @@
         max-width: 100%;
         width: 100%;
     }
+
+    .crocktails-container img {
+        height: 900px;
+        object-fit: cover;
+    }
+
+    .dessert {
+        margin: 100px;
+    }
+
+    .dessert-down {
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .dessert-up {
+        margin-bottom: 60px;
+        margin-top: 250px;
+    }
+
+}
+
+@media screen and (max-width: 830px) {
+    .dessert-down {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .dessert-up {
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -123,5 +222,13 @@
 
     .main-course img {
         display: none;
+    }
+
+    .crocktails-text .hero-title {
+        max-width: 50px;
+    }
+
+    .crocktails-text p {
+        max-width: 70%;
     }
 }
