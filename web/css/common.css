@@ -121,6 +121,7 @@
     height: 0.8px;
     width: 70px;
     margin-top: 20px;
+    margin-bottom: 4%;
 }
 
 /* === BUTTON === */
@@ -158,6 +159,18 @@
     cursor: pointer;
     font-size: 30px;
     color: var(--color-white);
+}
+
+.margin-bottom-small {
+    padding: 20px;
+}
+
+.margin-bottom-large {
+    padding: 8%;
+}
+
+.italic-space {
+    margin-bottom: 2%;
 }
 
 /*.line1,
