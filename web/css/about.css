@@ -44,6 +44,42 @@
     margin: 0 50px;
 }
 
+.culinary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.culinary p {
+    margin: 0 200px;
+}
+
+.commitment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--color-black);
+    color: var(--color-text-light);
+}
+
+.commitment-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--color-black);
+    color: var(--color-text-light);
+}
+
+.commitment-left {
+    flex-basis: 40%;
+}
+
 @media screen and (max-width: 1024px) {
     .about-hero {
         flex-direction: column;
@@ -52,6 +88,10 @@
     .about-hero-text {
         max-width: 55%;
     }
+}
+
+.culinary p {
+    margin: 0 100px;
 }
 
 @media screen and (max-width: 811px) {
@@ -70,4 +110,8 @@
         margin: 0 10px;
     }
 
+}
+
+.culinary p {
+    margin: 0 20px;
 }
