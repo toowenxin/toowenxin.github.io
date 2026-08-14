@@ -1,0 +1,80 @@
+.recipes-hero-contents {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+    bottom: 450px;
+    margin-left: 100px;
+}
+
+.recipes-hero-contents .hero-title {
+    max-width: 400px;
+    width: 450px;
+    height: 20%;
+    border-right: 1px solid white;
+    color: white;
+}
+
+.recipes-hero-contents .paragraph {
+    max-width: 400px;
+    color: white;
+}
+
+.horizontal-line {
+    background-color: white;
+    height: 1px;
+    width: 250px;
+    height: 20%;
+}
+
+.reservation-container {
+    padding: 0px 200px;
+    text-align: center;
+    padding-bottom: 150px;
+}
+
+.reservation-form {
+    justify-content: center;
+    gap: 30px;
+    line-height: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    padding-top: 80px;
+}
+
+.form-group select {
+    font-family: var(--font-heading);
+    font-size: var(--font-button);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    padding: var(--btn-padding);
+    background-color: var(--btn-background-color);
+    color: var(--color-text-black);
+    border: 1px solid var(--color-grey);
+}
+
+.form-group input {
+    font-family: var(--font-heading);
+    font-size: var(--font-button);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    padding: var(--btn-padding);
+    background-color: var(--btn-background-color);
+    color: var(--color-text-black);
+    border: 1px solid var(--color-grey);
+}
+
+.time-slots {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    line-height: 18px;
+    letter-spacing: 1px;
+}
