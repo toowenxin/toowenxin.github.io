@@ -215,8 +215,6 @@
         flex-direction: column;
         align-items: center;
     }
-
-
 }
 
 
@@ -233,6 +231,14 @@
         justify-content: center;
         align-items: center;
         gap: 0;
+    }
+
+    .featured .sub-title {
+        text-align: center;
+    }
+
+    .featured .featured-content {
+        padding-top: 50px;
     }
 
     .ingredients {
@@ -256,6 +262,10 @@
 
     .preparation-content .sub-title {
         line-height: normal;
+    }
+
+    .chef-note-container {
+        padding: 150px 50px;
     }
 
 }
