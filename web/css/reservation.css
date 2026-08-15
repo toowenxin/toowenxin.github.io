@@ -38,9 +38,24 @@
     justify-content: center;
     gap: 30px;
     line-height: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     display: flex;
     padding-top: 80px;
+    border-bottom: 1px solid #A1A1A1;
+}
+
+.reservation-contents {
+    line-height: 150px;
+}
+
+.form-group .paragraph {
+    text-align: left;
+}
+
+.form-group label {
+    text-align: left;
+    font-family: var(--font-base);
+    font-size: var(--font-paragraph);
 }
 
 .form-group select {
@@ -77,4 +92,37 @@
     gap: 20px;
     line-height: 18px;
     letter-spacing: 1px;
+}
+
+.time-slots-container {
+    line-height: 150px;
+}
+
+.time-slots-container .paragraph {
+    text-align: left;
+    padding-top: 40px;
+}
+
+.dining-guidelines-container {
+    color: var(--color-text-light);
+    background-color: #000000;
+    padding: 150px 200px;
+    display: flex;
+    gap: 80px;
+    flex-direction: column;
+}
+
+.dining-guidelines-container .sub-title {
+    text-align: center;
+}
+
+.dining-guidelines-card {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-items: center
+}
+
+.dining-guidelines-card .paragraph {
+    max-width: 430px;
 }
