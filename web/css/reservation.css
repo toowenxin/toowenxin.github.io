@@ -126,3 +126,33 @@
 .dining-guidelines-card .paragraph {
     max-width: 430px;
 }
+
+.dining-guidelines-card-text .object-title {
+    padding-bottom: 30px;
+}
+
+.experiences-container {
+    color: var(--color-text-light);
+    background-color: #000000;
+    padding: 150px 200px;
+    text-align: center;
+    padding-bottom: 150px;
+}
+
+.experiences-card {
+    position: relative;
+    margin: 70px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.experiences-card .object-title {
+    position: absolute;
+    bottom: 50px;
+}
+
+.experiences-contents {
+    display: flex;
+    gap: 20px;
+}
