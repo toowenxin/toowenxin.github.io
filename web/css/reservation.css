@@ -1,4 +1,4 @@
-.recipes-hero-contents {
+.rerservation-hero-contents {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -8,7 +8,7 @@
     margin-left: 100px;
 }
 
-.recipes-hero-contents .hero-title {
+.rerservation-hero-contents .hero-title {
     max-width: 400px;
     width: 450px;
     height: 20%;
@@ -16,7 +16,7 @@
     color: white;
 }
 
-.recipes-hero-contents .paragraph {
+.rerservation-hero-contents .paragraph {
     max-width: 400px;
     color: white;
 }
@@ -103,6 +103,10 @@
     padding-top: 40px;
 }
 
+.reserve-button {
+    padding-top: 50px;
+}
+
 .dining-guidelines-container {
     color: var(--color-text-light);
     background-color: #000000;
@@ -116,14 +120,16 @@
     text-align: center;
 }
 
-.dining-guidelines-card {
+.dining-guidelines-card-left,
+.dining-guidelines-card-right {
     display: flex;
     flex-direction: row;
     gap: 100px;
     align-items: center
 }
 
-.dining-guidelines-card .paragraph {
+.dining-guidelines-card-left .paragraph,
+.dining-guidelines-card-right .paragraph {
     max-width: 430px;
 }
 
@@ -155,4 +161,123 @@
 .experiences-contents {
     display: flex;
     gap: 20px;
+}
+
+.google-map-container {
+    padding: 150px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.google-map-description {
+    padding: 0px 200px;
+}
+
+.google-map-description .object-title {
+    padding-bottom: 30px;
+}
+
+.google-map-container .location-img {
+    position: relative;
+    bottom: 280px;
+    right: 15px;
+}
+
+.google-map-container .place-icon-img {
+    position: relative;
+    bottom: 700px;
+    right: 25px;
+}
+
+
+@media only screen and (max-width: 1280px) {
+    .rerservation-hero-contents {
+        bottom: 400px;
+    }
+
+    .google-map iframe {
+        width: 1280px;
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .reservation-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .google-map iframe {
+        width: 1024px;
+        height: 325px;
+    }
+
+    .dining-guidelines-card-right {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dining-guidelines-card-left {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .experiences-contents {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .rerservation-hero-contents {
+        color: var(--color-text-light);
+        background-color: #000000;
+        padding: 150px 50px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: auto;
+        bottom: 10px;
+    }
+
+    .rerservation-hero-contents .hero-title {
+        border-right: 0px;
+        border-bottom: 1px solid white;
+    }
+
+    .reservation-container {
+        padding: 150px 50px;
+    }
+
+    .reservation-form {
+        border-bottom: 0px;
+    }
+
+    .time-slots-container {
+        display: none;
+    }
+
+    .reserve-button {
+        padding-top: 0px;
+    }
+
+    .dining-guidelines-container {
+        padding: 150px 100px;
+    }
+
+    .experiences-container {
+        padding: 150px 0px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .google-map iframe {
+        width: 640px;
+        height: 250px;
+    }
 }
