@@ -184,6 +184,19 @@
     border-radius: 50%;
 }
 
+/* === MARGIIN  === */
+.margin-bottom-small {
+    padding: 20px;
+}
+
+.margin-bottom-large {
+    padding: 8%;
+}
+
+.italic-space {
+    margin-bottom: 2%;
+}
+
 /* === LAYOUT GUIDE === */
 .container {
     margin: auto;
