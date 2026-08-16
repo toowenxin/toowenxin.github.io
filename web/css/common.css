@@ -171,13 +171,12 @@
 }*/
 
 .footer-icon img {
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.footer-icon div {
+.footer-icon-only {
     background-color: var(--color-white);
     padding: 15px;
     margin: 5px;
@@ -307,7 +306,6 @@ a {
 
 .footer p {
     color: #d6d6d6;
-    /*max-width: 60%;*/
     margin-bottom: 45px;
     text-align: center;
 }
@@ -315,6 +313,40 @@ a {
 .footer-icon {
     display: flex;
     flex-direction: row;
+}
+
+.icon-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.text-top-icon p {
+    font-size: 12px;
+    background-color: #1a1a1a;
+    padding: 0 6px;
+}
+
+.text-top-icon {
+    position: absolute;
+    top: -40px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s;
+}
+
+.icon-text:hover>.text-top-icon {
+    opacity: 1;
+}
+
+.icon-text:hover>.footer-icon-only {
+    background-color: var(--color-black);
+}
+
+.icon-text:hover>.footer-icon-only img {
+    filter: invert(1);
 }
 
 /* === Layout === */
@@ -334,16 +366,6 @@ a {
         display: block;
     }
 
-}
-
-/* === Screen: Tablet  === */
-@media only screen and (max-width: 1024px) {
-    .container {
-        padding: 0 10%;
-        margin: auto;
-    }
-
-    /* === HEADER === */
     .header {
         background-color: var(--color-black);
         position: static;
@@ -410,6 +432,14 @@ a {
 
     .change-icon.rotate {
         transform: rotate(180deg);
+    }
+}
+
+/* === Screen: Tablet  === */
+@media only screen and (max-width: 1024px) {
+    .container {
+        padding: 0 10%;
+        margin: auto;
     }
 
     /* === LAYOUT === */

@@ -18,10 +18,10 @@ const mobileNavbarText = document.getElementById("mobile-navbar-text");
 
 const mobileSubNavbarHidden = document.getElementById("mobile-sub-navbar-hidden");
 
-//const changeSubNavbarIcon = document.getElementById("change-sub-navbar-icon");
+const changeSubNavbarIcon = document.getElementById("change-sub-navbar-icon");
 
 mobileNavbarText.addEventListener("click", () => {
     mobileSubNavbarHidden.classList.toggle("active");
 
-    //changeSubNavbarIcon.classList.toggle("rotate");
+    changeSubNavbarIcon.classList.toggle("rotate");
 });
