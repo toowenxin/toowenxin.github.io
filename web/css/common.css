@@ -161,18 +161,6 @@
     color: var(--color-white);
 }
 
-.margin-bottom-small {
-    padding: 20px;
-}
-
-.margin-bottom-large {
-    padding: 8%;
-}
-
-.italic-space {
-    margin-bottom: 2%;
-}
-
 /*.line1,
 .line2,
 .line3 {
