@@ -186,11 +186,11 @@
 
 /* === MARGIIN  === */
 .margin-bottom-small {
-    padding: 20px;
+    margin-bottom: 20px;
 }
 
 .margin-bottom-large {
-    padding: 8%;
+    margin-bottom: 8%;
 }
 
 .italic-space {
