@@ -12,3 +12,16 @@ menuIcon.addEventListener("click", () => {
         menuIcon.style.fontSize = "30px";
     }
 });
+
+//subNavbar
+const mobileNavbarText = document.getElementById("mobile-navbar-text");
+
+const mobileSubNavbarHidden = document.getElementById("mobile-sub-navbar-hidden");
+
+//const changeSubNavbarIcon = document.getElementById("change-sub-navbar-icon");
+
+mobileNavbarText.addEventListener("click", () => {
+    mobileSubNavbarHidden.classList.toggle("active");
+
+    //changeSubNavbarIcon.classList.toggle("rotate");
+});

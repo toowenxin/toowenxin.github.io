@@ -356,7 +356,7 @@ a {
 
     .mobile-navbar {
         display: block;
-        position: fixed;
+        position: absolute;
         opacity: 0;
         transition: all 1s ease;
         left: 0%;
@@ -370,26 +370,33 @@ a {
         align-items: center;
         min-height: 55px;
         padding: 0 4%;
+        cursor: pointer;
     }
 
     .mobile-bar-icon img {
         filter: brightness(0) invert(1);
     }
 
-    .mobile-has-sub-navbar {
-        position: relative;
+    .mobile-sub-navbar div {
+        display: flex;
+        align-items: center;
+        background-color: #333333;
+        padding: 0 6%;
+        min-height: 55px;
     }
 
     .mobile-sub-navbar {
-        position: absolute;
-        background-color: #333333;
-        border-radius: 6px;
-        opacity: 0;
-        pointer-events: none;
-        transition: all 1s;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.5s ease;
     }
 
-    .mobile-bar-icon:hover {
+    .mobile-sub-navbar.active {
+        max-height: 110px;
+    }
+
+    .mobile-bar-icon:hover,
+    .mobile-sub-navbar div:hover {
         background-color: #BDA16B;
     }
 
@@ -397,9 +404,12 @@ a {
         opacity: 1;
     }
 
-    /*.mobile-has-sub-navbar:hover>.mobile-sub-navbar {
-        opacity: 1;
-        pointer-events: auto;
+    .change-icon {
+        transition: transform 0.5s ease;
+    }
+
+    .change-icon.rotate {
+        transform: rotate(180deg);
     }
 
     /* === LAYOUT === */
