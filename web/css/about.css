@@ -7,19 +7,18 @@
 }
 
 .about-hero img {
-    max-width: 967px;
-    height: 757px;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .hero-left {
-    flex-basis: 60%;
+    max-width: 60%;
     width: 100%;
-    display: block;
 }
 
 .hero-right {
     flex-basis: 40%;
-    margin: 20px;
 }
 
 .about-hero-text {
@@ -29,8 +28,7 @@
     align-items: center;
     gap: 20px;
     text-align: center;
-    padding: 25px;
-    max-width: 70%;
+    padding: 45px;
 }
 
 .hero-eyebrow {
@@ -139,13 +137,23 @@
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .about-hero-text p {
+        padding: 30px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .about-hero {
         flex-direction: column;
     }
 
-    .about-hero-text {
-        max-width: 55%;
+    .hero-left {
+        max-width: none;
+    }
+
+    .about-hero-text p {
+        padding: 0;
     }
 
     .commitment-right {
@@ -181,9 +189,6 @@
 
 @media screen and (max-width: 640px) {
 
-    .about-hero-text {
-        max-width: 70%;
-    }
 
     .hero-eyebrow .hr {
         margin: 0 10px;
