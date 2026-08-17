@@ -23,5 +23,7 @@ const changeSubNavbarIcon = document.getElementById("change-sub-navbar-icon");
 mobileNavbarText.addEventListener("click", () => {
     mobileSubNavbarHidden.classList.toggle("active");
 
+    mobileNavbarText.classList.toggle("active");
+
     changeSubNavbarIcon.classList.toggle("rotate");
 });
