@@ -1,0 +1,49 @@
+.personalized {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-text-light);
+}
+
+.banner-background-personalized {
+    background-image: url('../images/personalized.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 200px 20px;
+}
+
+.personalized p {
+    padding-top: 50px;
+    margin: auto;
+    max-width: 40%;
+}
+
+.offer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    max-width: 70%;
+    margin: auto;
+    padding: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    .banner-background-personalized {
+        padding: 100px 20px;
+    }
+
+    .personalized p {
+        max-width: 60%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .personalized p {
+        max-width: none;
+        padding: 30px;
+    }
+}
