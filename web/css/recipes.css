@@ -12,6 +12,10 @@
     gap: 30px;
 }
 
+.section-header .paragraph {
+    text-align: center;
+}
+
 .featured {
     display: flex;
     flex-direction: row;
@@ -20,21 +24,25 @@
     gap: 50px;
 }
 
+.featured-img .sub-title {
+    text-align: left;
+}
+
 .featured-content {
-    margin: auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    max-width: 500px;
 }
 
 .container {
     color: var(--color-text-light);
     background-color: #000000;
-    padding: 50px;
+    padding: 150px 200px;
 }
 
 .featured-img {
-    padding-bottom: 250px;
+    padding-bottom: 280px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -61,29 +69,39 @@
     padding-bottom: 100px;
 }
 
-.ingredient-card {
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
+.ingredient-container {
+    padding: 150px 200px;
 }
 
-.ingredient-card p {
+.ingredient-card .paragraph {
     color: var(--color-text-light);
-    padding: 10px;
+    padding: 30px 30px;
     text-align: center;
 }
 
-.ingredient-card img {
-    object-fit: cover;
+.ingredient-card .object-title {
+    color: var(--color-text-light);
+    padding-top: 40px;
+    text-align: center;
 }
 
-.column-three {
+.ingredient-three-container {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    gap: 30px;
-    padding-bottom: 50px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.ingredient-card {
+    width: 280px;
+    background: black;
+}
+
+.ingredient-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
 }
 
 .object-title {
@@ -92,7 +110,7 @@
 
 .sub-title {
     text-align: center;
-    margin: 80px;
+    padding-bottom: 50px;
 }
 
 .process-card {
@@ -100,8 +118,6 @@
     flex-direction: row;
     align-items: stretch;
     text-align: center;
-    gap: 20px;
-    margin: 50px;
 }
 
 .preparation-content {
@@ -114,21 +130,67 @@
 }
 
 .preparation-content .sub-title {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: var(--font-object-title);
-    line-height: 36px;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     border: 1px solid var(--color-white);
     display: inline-flex;
-    align-items: center;
     justify-content: center;
 }
 
+.chef-note-container {
+    padding: 150px 200px;
+}
 
+.chef-note {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.chef-note-container .paragraph {
+    text-align: center;
+}
+
+.chef-note img {
+    object-fit: cover;
+    display: block;
+    width: 552px;
+    height: 527px;
+}
+
+.note-container {
+    width: 552px;
+    min-height: 527px;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+@media only screen and (max-width: 1280px) {
+    .chef-note {
+        flex-direction: column;
+    }
+
+    .note-container {
+        min-height: 300px;
+    }
+
+    .container {
+        padding: 150px 80px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .featured-img {
+        padding-bottom: 450px;
+    }
+}
 
 @media only screen and (max-width:1024px) {
     .section-header {
@@ -141,8 +203,17 @@
         flex-direction: column;
     }
 
+    .featured-img {
+        padding-bottom: 0px;
+    }
+
     .recipes-section {
         padding-bottom: 100px;
+    }
+
+    .process-card {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -162,8 +233,12 @@
         gap: 0;
     }
 
-    .featured-img {
-        padding: 50px;
+    .featured .sub-title {
+        text-align: center;
+    }
+
+    .featured .featured-content {
+        padding-top: 50px;
     }
 
     .ingredients {
@@ -182,8 +257,15 @@
     }
 
     .sub-title {
-        margin-left: auto;
         text-align: center;
+    }
+
+    .preparation-content .sub-title {
+        line-height: normal;
+    }
+
+    .chef-note-container {
+        padding: 150px 50px;
     }
 
 }
