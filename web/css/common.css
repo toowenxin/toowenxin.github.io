@@ -273,6 +273,14 @@ a {
     background-color: var(--color-hover);
 }
 
+.has-sub-navbar:hover>.bar-icon a {
+    color: var(--color-text-light);
+}
+
+.has-sub-navbar:hover>.bar-icon img {
+    filter: brightness(0) invert(1);
+}
+
 .sub-navbar-first {
     border-radius: 6px 6px 0px 0px;
 }
@@ -408,13 +416,15 @@ a {
     }
 
     .mobile-sub-navbar {
+        opacity: 0;
         max-height: 0;
         overflow: hidden;
-        transition: all 0.5s ease;
+        transition: all 0.5s ease-in;
     }
 
     .mobile-sub-navbar.active {
         max-height: 110px;
+        opacity: 1;
     }
 
     .mobile-bar-icon:hover,
@@ -422,12 +432,12 @@ a {
         background-color: #BDA16B;
     }
 
-    .mobile-navbar.active {
-        opacity: 1;
+    .mobile-bar-icon.active {
+        background-color: #BDA16B;
     }
 
-    .change-icon {
-        transition: transform 0.5s ease;
+    .mobile-navbar.active {
+        opacity: 1;
     }
 
     .change-icon.rotate {
