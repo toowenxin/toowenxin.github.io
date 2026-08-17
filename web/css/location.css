@@ -8,12 +8,16 @@
     margin-bottom: 1%;
 }
 
-.section-1-paragraphy-button-space {
+.section-1-paragraphy-button-space,
+.traffic,
+.text-align {
     margin-bottom: 5%;
 }
 
 .under-paragraph-space,
-.under-restaurant-outside-space {
+.under-restaurant-outside-space,
+.section-2 p,
+.section-3-title {
     margin-bottom: 4%;
 }
 
@@ -80,6 +84,30 @@
     text-align: center;
 }
 
+/* === SECTION 3 === */
+.section-3-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.accessibility-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 10%;
+}
+
+.section-3-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
 @media only screen and (max-width: 1024px) {
 
     /* === SECTION 1 === */
@@ -105,5 +133,11 @@
     .different-place {
         display: flex;
         flex-direction: column-reverse;
+    }
+
+
+    /* === SECTION 3 === */
+    .section-3-content {
+        flex-direction: column;
     }
 }
