@@ -7,7 +7,7 @@
 }
 
 .about-hero img {
-    width: 100%;
+    width: 1000vh;
     height: auto;
     display: block;
 }
@@ -28,7 +28,7 @@
     align-items: center;
     gap: 20px;
     text-align: center;
-    padding: 45px;
+    padding: 5%;
 }
 
 .hero-eyebrow {
@@ -38,7 +38,7 @@
 }
 
 .hero-eyebrow .hr {
-    margin: 0 50px;
+    margin: 0 30px;
 }
 
 .culinary {
@@ -47,11 +47,15 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 30px;
+    margin: 40px 0;
+}
+
+.culinary-text {
+    padding: 30px 0;
 }
 
 .culinary p {
-    max-width: 85%;
+    max-width: 75%;
     margin: auto;
 }
 
@@ -78,7 +82,7 @@
 }
 
 .commitment-text p {
-    padding: 30px;
+    padding: 40px;
 }
 
 .commitment-right {
@@ -123,11 +127,11 @@
 }
 
 .achiement-card img {
-    max-width: 303px;
+    max-width: 300px;
     height: auto;
 }
 
-@media screen and (max-width: 1420px) {
+@media screen and (max-width: 1440px) {
     .commitment-right {
         padding-right: 0;
     }
@@ -138,6 +142,10 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .about-hero img {
+        width: 100%;
+    }
+
     .about-hero-text p {
         padding: 30px;
     }
@@ -173,11 +181,12 @@
         background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url('../images/commitment-cheers.png');
         background-size: cover;
         background-position: center;
-        padding: 100px 50px;
+        padding: 150px 50px;
     }
 
     .achiement-container {
-        flex-direction: column;
+        flex-wrap: wrap;
+        box-sizing: border-box;
     }
 }
 
@@ -192,6 +201,10 @@
 
     .hero-eyebrow .hr {
         margin: 0 10px;
+    }
+
+    .culinary img {
+        width: 400px;
     }
 
     .achiement-text p {
