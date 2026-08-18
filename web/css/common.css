@@ -318,6 +318,10 @@ a {
     text-align: center;
 }
 
+.footer-text {
+    max-width: 60%;
+}
+
 .footer-icon {
     display: flex;
     flex-direction: row;
@@ -480,6 +484,10 @@ a {
     .sub-title {
         font-size: 51px;
         line-height: 81.3px;
+    }
+
+    .footer-text {
+        max-width: 100%;
     }
 
     /* === ClASS TYPO === */
