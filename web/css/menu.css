@@ -148,10 +148,6 @@
     }
 }
 
-@media screen and (max-width: 1316px) {
-    .dessert-card {}
-}
-
 @media screen and (max-width: 1200px) {
     .crocktails-text p {
         max-width: 50%;
