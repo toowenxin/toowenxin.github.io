@@ -161,15 +161,6 @@
     color: var(--color-white);
 }
 
-/*.line1,
-.line2,
-.line3 {
-    width: 30px;
-    height: 2px;
-    background-color: var(--color-white);
-    margin: 6px 0;
-}*/
-
 .footer-icon img {
     display: flex;
     justify-content: center;
@@ -183,7 +174,7 @@
     border-radius: 50%;
 }
 
-/* === MARGIIN  === */
+/* === MARGIN  === */
 .margin-bottom-small {
     margin-bottom: 20px;
 }
@@ -200,6 +191,11 @@
 .container {
     margin: auto;
     padding: 0 10%;
+}
+
+/* === NAVBAR  === */
+.navbar-active a {
+    color: var(--color-text-light);
 }
 
 /* === HEADER === */
@@ -316,6 +312,10 @@ a {
     color: #d6d6d6;
     margin-bottom: 45px;
     text-align: center;
+}
+
+.footer-text {
+    max-width: 60%;
 }
 
 .footer-icon {
@@ -480,6 +480,10 @@ a {
     .sub-title {
         font-size: 51px;
         line-height: 81.3px;
+    }
+
+    .footer-text {
+        max-width: 100%;
     }
 
     /* === ClASS TYPO === */
