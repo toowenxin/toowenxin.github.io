@@ -29,7 +29,7 @@
 }
 
 .reservation-container {
-    padding: 0px 200px;
+    padding: 0px 150px;
     text-align: center;
     padding-bottom: 150px;
 }
@@ -110,7 +110,7 @@
 .dining-guidelines-container {
     color: var(--color-text-light);
     background-color: #000000;
-    padding: 150px 200px;
+    padding: 100px 150px;
     display: flex;
     gap: 80px;
     flex-direction: column;
@@ -140,7 +140,7 @@
 .experiences-container {
     color: var(--color-text-light);
     background-color: #000000;
-    padding: 150px 200px;
+    padding: 100px 150px;
     text-align: center;
     padding-bottom: 150px;
 }
@@ -164,7 +164,7 @@
 }
 
 .google-map-container {
-    padding: 150px 0px;
+    padding: 100px 0px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -236,7 +236,7 @@
     .rerservation-hero-contents {
         color: var(--color-text-light);
         background-color: #000000;
-        padding: 150px 50px;
+        padding: 100px 50px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -251,7 +251,7 @@
     }
 
     .reservation-container {
-        padding: 150px 50px;
+        padding: 100px 50px;
     }
 
     .reservation-form {
@@ -267,11 +267,11 @@
     }
 
     .dining-guidelines-container {
-        padding: 150px 100px;
+        padding: 100px 100px;
     }
 
     .experiences-container {
-        padding: 150px 0px;
+        padding: 100px 0px;
     }
 }
 
