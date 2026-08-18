@@ -36,7 +36,7 @@
 .team-member {
     display: flex;
     flex-direction: row;
-    gap: 80px;
+    gap: 50px;
     align-items: center;
 }
 
@@ -47,10 +47,18 @@
 .chef-info {
     padding: 20px 0px;
     line-height: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    line-height: 50px;
 }
 
 .chef-specialties {
     padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    line-height: 50px;
 }
 
 .landmark-container {
@@ -70,25 +78,90 @@
 .value-container {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 50px;
     text-align: center;
+    padding: 100px 150px;
 }
 
-.value-contents {
+.value-three-container {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     gap: 50px;
 }
 
 .value-intro {
-    max-width: 50%;
+    max-width: 90%;
+    margin: auto;
 }
 
 .value-card {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .value-card p {
-    max-width: 50%;
+    max-width: 90%;
+}
+
+.three-column {
+    color: var(--color-text-light);
+    background-color: #000000;
+    padding: 100px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+}
+
+.grow-intro p {
+    max-width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+.grow-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.grow-card .object-title {
+    position: absolute;
+    bottom: 180px;
+}
+
+.grow-card .paragraph {
+    max-width: 85%;
+    padding-top: 20px;
+}
+
+.grow-contents {
+    display: flex;
+    flex-direction: row;
+}
+
+.journey-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+
+.btn {
+    margin: auto;
+}
+
+
+
+
+
+.training-card .sub-title {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid var(--color-black);
+    display: inline-flex;
+    justify-content: center;
 }
