@@ -31,6 +31,57 @@
     padding: 30px;
 }
 
+.private-dining {
+    display: flex;
+    justify-content: space-between;
+}
+
+.private-dining-text {
+    padding: 60px;
+    min-width: 300px;
+    min-height: 300px;
+    color: var(--color-text-light);
+    background-color: var(--color-black);
+}
+
+.private-dining-text p {
+    padding: 50px 0;
+}
+
+.wine-pairing {
+    display: flex;
+
+    background-image: url(../images/wine-pairing.png);
+    color: var(--color-text-light);
+}
+
+.wine-pairing-left {
+    padding: 8%;
+}
+
+.wine-pairing-left .hero-title {
+    max-width: 40%;
+}
+
+.wine-pairing-left p {
+    margin-top: 3%;
+    max-width: 30%;
+}
+
+.wine-product {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.wine-product hr {
+    margin-bottom: 20px
+}
+
+.wine-product {
+    padding: 25px;
+}
+
 @media screen and (max-width: 1024px) {
     .banner-background-personalized {
         padding: 100px 20px;
