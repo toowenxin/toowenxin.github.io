@@ -183,7 +183,7 @@
     margin-bottom: 8%;
 }
 
-.italic-space {
+.margin-bottom-medium {
     margin-bottom: 2%;
 }
 
@@ -414,18 +414,20 @@ a {
         background-color: #333333;
         padding: 0 6%;
         min-height: 55px;
+        width: 100%;
     }
 
     .mobile-sub-navbar {
         opacity: 0;
-        max-height: 0;
-        overflow: hidden;
-        transition: all 0.5s ease-in;
+        position: absolute;
+        pointer-events: none;
     }
 
     .mobile-sub-navbar.active {
-        max-height: 110px;
+        position: relative;
         opacity: 1;
+        pointer-events: auto;
+        cursor: pointer;
     }
 
     .mobile-bar-icon:hover,
@@ -441,8 +443,13 @@ a {
         opacity: 1;
     }
 
+    .change-icon {
+        transition: all 1s ease;
+    }
+
     .change-icon.rotate {
         transform: rotate(180deg);
+        transition: all 1s ease;
     }
 }
 
