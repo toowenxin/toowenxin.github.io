@@ -14,32 +14,23 @@ menuIcon.addEventListener("click", () => {
 });
 
 //subNavbar
-const mobileNavbarText = document.getElementById("mobile-navbar-text");
+const submenus = document.querySelectorAll(".mobile-has-sub-navbar");
 
-//const mobileSubNavbarHidden = document.getElementById("mobile-sub-navbar-hidden");
+submenus.forEach((submenu) => {
 
-const changeSubNavbarIcon = document.getElementById("change-sub-navbar-icon");
+    submenu.addEventListener("click", () => {
 
-mobileNavbarText.addEventListener("click", () => {
-    //mobileSubNavbarHidden.classList.toggle("active");
+        const sub = submenu.querySelector(".mobile-sub-navbar");
 
-    //mobileNavbarText.classList.toggle("active");
+        sub.classList.toggle("active");
 
-    changeSubNavbarIcon.classList.toggle("rotate");
-});
+        const changeIcon = submenu.querySelector(".change-icon");
 
-
-
-const subNavbarActive = document.querySelectorAll(".sub-navbar-active");
-
-subNavbarActive.forEach((subNavbarActive) => {
-
-    subNavbarActive.addEventListener("click", () => {
-
-        const mobileSubNavbar = document.querySelectorAll(".mobile-sub-navbar");
-
-        mobileSubNavbar.classList.toggle("active");
+        changeIcon.classList.toggle("rotate");
 
     });
 
 });
+
+
+
