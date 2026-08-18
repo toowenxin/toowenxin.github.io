@@ -27,3 +27,8 @@ mobileNavbarText.addEventListener("click", () => {
 
     changeSubNavbarIcon.classList.toggle("rotate");
 });
+
+const boxes = document.querySelectorAll(".box");
+boxes.forEach((box) => {
+    box.style.backgroundColor = "lightgray";
+});
