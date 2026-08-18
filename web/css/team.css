@@ -1,0 +1,94 @@
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-light);
+    text-align: center;
+}
+
+.banner-background-team {
+    background-image: url('../images/team-hero.png');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+}
+
+.team p {
+    padding-top: 50px;
+    margin: auto;
+    max-width: 40%;
+}
+
+.team-container {
+    color: var(--color-text-light);
+    background-color: #000000;
+    padding: 100px 150px;
+}
+
+.team-contents {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0px;
+    gap: 100px;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    align-items: center;
+}
+
+.team-text {
+    max-width: 45%;
+}
+
+.chef-info {
+    padding: 20px 0px;
+    line-height: 50px;
+}
+
+.chef-specialties {
+    padding: 20px 0px;
+}
+
+.landmark-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.landmark {
+    border: 1px solid white;
+    height: 250px;
+    width: 300px;
+    text-align: center;
+    align-content: center;
+}
+
+.value-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    text-align: center;
+}
+
+.value-contents {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.value-intro {
+    max-width: 50%;
+}
+
+.value-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.value-card p {
+    max-width: 50%;
+}

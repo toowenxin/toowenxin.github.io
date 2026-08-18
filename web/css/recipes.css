@@ -1,3 +1,7 @@
+.stagger {
+    opacity: 0;
+}
+
 .recipes-hero {
     background-color: #000000;
     top: 200px;
@@ -38,7 +42,7 @@
 .container {
     color: var(--color-text-light);
     background-color: #000000;
-    padding: 150px 200px;
+    padding: 100px 150px;
 }
 
 .featured-img {
