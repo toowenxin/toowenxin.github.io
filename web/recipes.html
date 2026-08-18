@@ -49,7 +49,7 @@
                 </div>
                 <div class="sub-navbar">
                     <div class="sub-navbar-one">
-                        <a href="#">Delivery</a>
+                        <a href="delivery.html">Delivery</a>
                     </div>
                 </div>
             </div>
@@ -66,7 +66,7 @@
 
                 <div class="sub-navbar">
                     <div class="sub-navbar-one">
-                        <a href="#">Services</a>
+                        <a href="service.html">Services</a>
                     </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@
             <div class="has-sub-navbar">
                 <div class="bar-icon">
                     <div>
-                        <a href="#">About us</a>
+                        <a href="about.html">About us</a>
                     </div>
                     <div><img src="images/down-arrow.svg" alt="down-arrow" width="10px">
                     </div>
@@ -82,12 +82,12 @@
 
                 <div class="sub-navbar">
                     <div class="sub-navbar-first">
-                        <a href="#">News</a>
+                        <a href="news.html">News</a>
                     </div>
-                    <div><a href="#">Team</a></div>
-                    <div><a href="#">Location</a></div>
+                    <div><a href="team.html">Team</a></div>
+                    <div><a href="location.html">Location</a></div>
                     <div class="sub-navbar-last">
-                        <a href="#">FAQ</a>
+                        <a href="faq.html">FAQ</a>
                     </div>
                 </div>
 
@@ -310,7 +310,7 @@
     <div class="ingredient-container">
         <p class="sub-title">Our Ingredients</p>
         <div class="ingredient-three-container">
-            <div class="ingredient-card">
+            <div class="ingredient-card fade-in">
                 <div><img src="images/premium-beef.png" alt="premium-beef" width="100%"></div>
                 <p class="object-title">Premium Beef</p>
                 <p class="paragraph">Sourced from pasture-raised cattle, dry-aged for a minimum of 28 days to
@@ -320,7 +320,7 @@
                     result is beef that tastes of the land it came from — deep, rich, and unmistakably honest.</p>
             </div>
 
-            <div class="ingredient-card">
+            <div class="ingredient-card fade-in">
                 <div><img src="images/fresh-seafood.png" alt="fresh-seafood" width="100%"></div>
                 <p class="object-title">Fresh Seafood</p>
                 <p class="paragraph">Delivered daily from coastal waters, never frozen. Our fish and shellfish are
@@ -330,7 +330,7 @@
                     appear on our menu. Simple as that.</p>
             </div>
 
-            <div class="ingredient-card">
+            <div class="ingredient-card fade-in">
                 <div><img src="images/farm-fresh.png" alt="farm-fresh" width="100%"></div>
                 <p class="object-title">Farm Fresh</p>
                 <p class="paragraph">Produce that travels from soil to plate in hours, not days. We partner with local
@@ -428,6 +428,25 @@
             <div><img src="images/linkedin-icon.svg" alt="linkedin-icon" width="15px"></div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+    <script>
+        gsap.from(".fade-in", {
+            y: 200,
+            opacity: 0.5,
+            ease: "power2.out",
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".ingredient-card",
+                start: "top 100%",
+                scrub: true,
+
+            }
+
+        });
+
+    </script>
 
 </body>
 
