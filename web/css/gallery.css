@@ -1,3 +1,162 @@
-.image {
-    max-width: 10px;
+/* === section1 === */
+
+
+.hero-image {
+    display: block;
+    width: 100%;
+}
+
+
+.gallery {
+    background-color: #000;
+    color: white;
+    padding: 2px 0;
+}
+
+
+.section-1-history {
+    display: flex;
+    margin-top: 5%;
+    padding: 0 7%;
+}
+
+
+.history-left {
+    width: 50%;
+    padding: 50px 0px;
+    color: white;
+}
+
+
+.history-text {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+
+.history-right-img {
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+
+
+.section-1-founder {
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.founder-text {
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+.founder-text .section-title {
+    font-size: 55px;
+    font-style: italic;
+    color: white;
+}
+
+
+.founder-text .paragraph-grey-color {
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+
+.section-1-kitchen {
+    width: 100%;
+    margin-top: 5%;
+    padding: 0 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.kitchen-text {
+    width: 50%;
+    color: white;
+}
+
+
+/* === section2 === */
+
+
+.section-2-coffee {
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.coffee-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 130px;
+    margin-top: 80px;
+}
+
+
+.coffee-left {
+    width: 38%;
+}
+
+
+.coffee-left img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+
+.coffee-left p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+.coffee-right {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+
+.coffee-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+.coffee-item p {
+    text-align: right;
+    margin-top: 10px;
+}
+
+
+.coffee-item:last-child {
+    margin-left: 120px;
+}
+
+
+.latte-image {
+    width: 30%;
+    padding: 100px 0px;
 }
