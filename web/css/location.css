@@ -8,13 +8,13 @@
     margin-bottom: 1%;
 }
 
-.section-1-paragraphy-button-space,
 .traffic,
-.section-3-paragraph-button-space {
+.section-3-paragraph-button-space,
+.section-4-paragraph-space,
+.section-3-paragraph-space {
     margin-bottom: 5%;
 }
 
-.under-paragraph-space,
 .under-restaurant-outside-space,
 .section-2 p,
 .section-3-title {
@@ -24,7 +24,8 @@
 
 /* === SECTION 1 === */
 .section-1,
-.section-2 {
+.section-2,
+.section-4 {
     background-color: black;
 }
 
@@ -45,8 +46,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 60%;
     margin: auto;
+    margin-bottom: 6%;
 }
 
 .restaurant-image {
@@ -108,6 +109,29 @@
     text-align: center;
 }
 
+/* === SECTION 4 === */
+.section-4-time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.section-4-content,
+.section-4-restaurant {
+    width: 33.33%;
+}
+
+.section-4-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 25%;
+    margin: 14% 0;
+}
+
 @media only screen and (max-width: 1024px) {
 
     /* === SECTION 1 === */
@@ -144,5 +168,27 @@
     .accessibility-text {
         max-width: 100%;
         padding-bottom: 15%;
+    }
+
+
+    /* === SECTION 4 === */
+    .section-4-time {
+        flex-direction: column;
+    }
+
+    .section-4-content,
+    .section-4-restaurant {
+        width: 100%;
+    }
+
+    .section-4-content {
+        max-width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 640px) {
+    .section-2 {
+        padding: 5% 10%;
     }
 }
