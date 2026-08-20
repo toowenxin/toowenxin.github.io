@@ -34,6 +34,7 @@
 }
 
 .history-right-img {
+    width: 100%;
     margin-top: 7%;
     margin-bottom: 5%;
 }
@@ -78,6 +79,12 @@
     color: white;
 }
 
+.kitchen-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
 
 /* === section2 === */
 
@@ -85,9 +92,9 @@
 .section-2-coffee {
     width: 100%;
     margin-top: 5%;
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -101,44 +108,46 @@
 
 .coffee-left {
     width: 38%;
+    display: flex;
+    flex-direction: column;
 }
 
 .coffee-left img {
     width: 100%;
-    height: 700px;
-    object-fit: cover;
+    height: auto;
 }
 
 .coffee-left p {
-    text-align: center;
+    text-align: right;
     margin-top: 15px;
 }
 
 .coffee-right {
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-direction: column;
-    gap: 90px;
+    gap: 60px;
+}
+
+.coffee-item {
+    display: flex;
+    flex-direction: column;
 }
 
 .coffee-item img {
     width: 100%;
-    height: 500px;
-    object-fit: cover;
+    height: auto;
 }
 
 .coffee-item p {
     text-align: right;
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 40px;
 }
 
 .coffee-item:last-child {
-    margin-left: 120px;
-}
-
-.latte-image {
-    width: 30%;
-    padding: 100px 0px;
+    width: 60%;
+    align-self: flex-end;
 }
 
 
@@ -171,4 +180,11 @@
 .cocktail-left-img {
     width: 55%;
     padding: 100px 0px;
+}
+
+@media only screen and (max-width: 1383px) {
+
+    .founder-text {
+        margin-bottom: 10%;
+    }
 }
