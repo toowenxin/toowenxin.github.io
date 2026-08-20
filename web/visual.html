@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Romliya Restaurant</title>
+    <title>Visual Gallery</title>
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/visual.css">
 </head>
-
 
 <body>
     <div class="header">
@@ -50,7 +49,7 @@
                 </div>
                 <div class="sub-navbar">
                     <div class="sub-navbar-one">
-                        <a href="delivry.html">Delivery</a>
+                        <a href="delivery.html">Delivery</a>
                     </div>
                 </div>
             </div>
@@ -67,7 +66,7 @@
 
                 <div class="sub-navbar">
                     <div class="sub-navbar-one">
-                        <a href="service">Services</a>
+                        <a href="service.html">Services</a>
                     </div>
                 </div>
             </div>
@@ -91,7 +90,9 @@
                         <a href="faq.html">FAQ</a>
                     </div>
                 </div>
+
             </div>
+
 
             <div class="has-sub-navbar">
                 <div class="bar-icon">
@@ -117,28 +118,106 @@
     </div>
 
 
-    <div class="has-sub-navbar">
-        <div class="bar-icon">
-            <div>
-                <a href="#">OUR RESTAURANT</a>
+    <div class="mobile-navbar eyebrow-heading" id="mobileNavbar">
+        <div class="mobile-bar-icon">
+            <a href="index.html">Home</a>
+        </div>
+        <div class="mobile-has-sub-navbar">
+            <div class="mobile-bar-icon" id="mobile-navbar-text">
+                <div>
+                    <a href="menu.html">Menu</a>
+                </div>
+                <div class="change-icon" id="change-sub-navbar-icon"><img src="images/down-arrow.svg" alt="down-arrow"
+                        width="10px">
+                </div>
             </div>
-            <div><img src="images/down-arrow.svg" alt="down-arrow" width="10px">
+            <div class="mobile-sub-navbar" id="mobile-sub-navbar-hidden">
+                <div>
+                    <a href="promotion.html">Promotion</a>
+                </div>
+                <div>
+                    <a href="recipes.html">Recipes</a>
+                </div>
             </div>
         </div>
 
-        <div class="sub-navbar">
-            <div class="sub-navbar-first">
-                <a href="#">Reception & Bar</a>
+        <div class="mobile-has-sub-navbar">
+            <div class="mobile-bar-icon">
+                <div>
+                    <a href="orders.html">Ordes</a>
+                </div>
+                <div><img src="images/down-arrow.svg" alt="down-arrow" width="10px">
+                </div>
             </div>
-            <div class="sub-navbar-last">
-                <a href="#">Visual Gallery</a>
+            <div class="mobile-sub-navbar">
+                <div>
+                    <a href="delivery.html">Delivery</a>
+                </div>
             </div>
+        </div>
+
+        <div class="mobile-has-sub-navbar">
+            <div class="mobile-bar-icon">
+                <div>
+                    <a href="reservation.html">Reservations</a>
+                </div>
+                <div><img src="images/down-arrow.svg" alt="down-arrow" width="10px">
+                </div>
+            </div>
+            <div class="mobile-sub-navbar">
+                <div>
+                    <a href="services.html">Services</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-has-sub-navbar">
+            <div class="mobile-bar-icon">
+                <div>
+                    <a href="about.html">About us</a>
+                </div>
+                <div><img src="images/down-arrow.svg" alt="down-arrow" width="10px">
+                </div>
+            </div>
+            <div class="mobile-sub-navbar">
+                <div>
+                    <a href="news.html">News</a>
+                </div>
+                <div>
+                    <a href="team.html">Team</a>
+                </div>
+                <div>
+                    <a href="location.html">Location</a>
+                </div>
+                <div>
+                    <a href="faq.html">FAQ</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-has-sub-navbar">
+            <div class="mobile-bar-icon">
+                <div>
+                    <a href="restaurant.html">Our Restaurant</a>
+                </div>
+                <div><img src="images/down-arrow.svg" alt="down-arrow" width="10px">
+                </div>
+            </div>
+            <div class="mobile-sub-navbar">
+                <div>
+                    <a href="recipes.html">Reception & Bar</a>
+                </div>
+                <div>
+                    <a href="visual.html">Visual Gallery</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-bar-icon">
+            <a href="cart.html">Cart</a>
         </div>
     </div>
 
-    <div><img src="images/cart-icon.png" alt="cart-icon" width="19px"> </div>
-    </div>
-    </div>
 
 
     <div class="galleryhero">
@@ -147,8 +226,9 @@
 
     <div class="gallery">
         <div class="section-1-history">
+
             <div class="history-left">
-                <div class="eyebrow-heading">
+                <div class="eyebrow-heading fade-in">
                     <p>VISIT OUR</p>
                 </div>
                 <div class="hero-title">
@@ -170,9 +250,7 @@
             </div>
         </div>
 
-
         <div class="section-1-founder">
-
 
             <div class="founder-image">
                 <img src="images/gallery-founder.png">
@@ -184,13 +262,11 @@
                     <p>Our Founder</p>
                 </div>
 
-
                 <div class="paragraph-grey-color">
                     <p>Chef Marco</p>
                 </div>
             </div>
         </div>
-
 
         <div class="section-1-kitchen">
             <div class="kitchen-text">
@@ -200,14 +276,14 @@
                         made with passion.
                     </p>
                 </div>
-
-
             </div>
             <div class="kitchen-right">
                 <img src="images/gallery-kitchen.png">
             </div>
         </div>
-        <div><button class="btn btn-font-white btn-white">VIEW MORE</button></div>
+        <div class="kitchen-button">
+            <button class="btn btn-font-white btn-white">VIEW MORE</button>
+        </div>
     </div>
 
 
@@ -219,39 +295,40 @@
         </div>
         <div class="coffee-gallery">
             <div class="coffee-left">
-                <img src="images/latte-art.jpg" class="latte-image">
-                <p>Latte Art</p>
+                <img src="images/latte-art.jpg" alt="Latte Art">
+                <p>LATTE ART</p>
             </div>
-
 
             <div class="coffee-right">
                 <div class="coffee-item">
-                    <img src="images/aulait.jpg" class="latte-image">
+                    <img src="images/aulait.jpg" alt="Café au Lait">
                     <p>CAFÉ AU LAIT</p>
                 </div>
+
                 <div class="coffee-item">
-                    <img src="images/coffee-beans.jpg" class="latte-image">
-                    <p>COFFEE BEANS</p>
+                    <img src="images/coffee-beans.jpg" alt="Coffee Beans">
+                    <p>Our Signature Coffee Beans</p>
                 </div>
             </div>
         </div>
-        <div>
-            <div class="cocktail">
-                <div class="section-3-cocktail">
-                    <div class="cocktail-right">
-                        <div class="eyebrow-heading">
-                            <div class="hero-title">
-                                <p>Our Signature Cocktails</p>
-                            </div>
-                        </div>
-                        <div class="cocktail-image">
-                            <img src="images/cocktail.jpg" class="cocktail-left-img">
-                        </div>
-                    </div>
-                    <div class="paragraph-grey-color">
-                        <p>Experience the atmosphere, craftsmanship and flavours.</p>
+    </div>
+
+    <div class="cocktail">
+        <div class="section-3-cocktail">
+            <div class="cocktail-right">
+                <div class="eyebrow-heading">
+                    <div class="hero-title">
+                        <p>Our Signature Cocktails</p>
                     </div>
                 </div>
+                <div class="cocktail-image">
+                    <img src="images/cocktail.jpg" class="cocktail-left-img">
+                </div>
+            </div>
+            <div class="paragraph-grey-color">
+                <p>Experience the atmosphere, craftsmanship and flavours.</p>
+            </div>
+        </div>
 
 
 </body>
