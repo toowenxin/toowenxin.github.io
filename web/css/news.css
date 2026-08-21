@@ -1,6 +1,6 @@
 /* === SPACING === */
 .section-1-title {
-    margin-bottom: 7%;
+    margin: 7% 0 8%;
 }
 
 .section-1 {
@@ -62,3 +62,27 @@
 }
 
 /* === SECTION 2 === */
+
+.half {
+    width: 50%;
+}
+
+.column-2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.award-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 35%;
+    margin: auto;
+}
+
+.award-certificate {
+    max-width: 40%;
+}
+
+。
