@@ -210,9 +210,57 @@
     padding: 100px 0px;
 }
 
-@media only screen and (max-width: 1383px) {
 
-    .founder-text {
-        margin-bottom: 10%;
+@media screen and (max-width: 1024px) {
+    .section-1-history {
+        gap: 40px;
+        width: 90%;
+    }
+
+    .gallery-top-header .hero-title {
+        font-size: 38px;
+    }
+
+    .coffee-gallery {
+        gap: 40px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .section-1-history {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 5%;
+    }
+
+    .history-left-pic,
+    .history-right-text {
+        width: 100%;
+    }
+
+    .history-right-text {
+        text-align: center;
+        align-items: center;
+    }
+
+    .gallery-top-header .hero-title {
+        font-size: 28px;
+    }
+
+    .history-right-text .section-title {
+        font-size: 24px;
+    }
+
+    .coffee-gallery {
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+        padding: 0 5%;
+    }
+
+    .coffee-left,
+    .coffee-right {
+        width: 100%;
     }
 }
