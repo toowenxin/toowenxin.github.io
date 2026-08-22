@@ -1,0 +1,22 @@
+.order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-light);
+}
+
+.order-banner {
+    background-image: url('../images/orders_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 260px 20px;
+}
+
+.lobster-img {
+    display: block;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 260px 20px;
+}
