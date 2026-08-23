@@ -16,6 +16,11 @@
     padding: 7% 10%;
 }
 
+.section-2,
+.section-4-title {
+    padding: 7% 10% 0;
+}
+
 /* === SECTION 1 === */
 .section-1 {
     background-image: url(../images/section1-commingsoon.png);
@@ -33,6 +38,7 @@
 .section-1-title {
     display: flex;
     flex-direction: row;
+    white-space: nowrap;
 }
 
 .countdown {
@@ -40,14 +46,17 @@
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .time-number,
 .section-2-title,
-.section-3-title {
+.section-3-title,
+.section-4-title {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .section-1-content {
@@ -64,13 +73,15 @@
 
 /* === SECTION 2 === */
 
-.half {
-    width: 50%;
-}
-
 .column-2 {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10% 7%;
+}
+
+.photo-chef {
+    width: 650px;
 }
 
 .award-text {
@@ -78,31 +89,175 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 45%;
-    margin: auto;
+    width: 40%;
 }
 
 .award-certificate {
-    max-width: 28%;
+    max-width: 30%;
 }
 
 
 /* === SECTION 3 === */
-.section-3-container {
-    width: 30%;
-}
-
 .section-3 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    background-color: var(--color-black);
 }
 
-.section-3-4-images {
-    width: 10%;
+.section-3-container {
+    width: 30%;
+}
+
+.picture-2 {
     display: flex;
     flex-direction: row;
+}
+
+.picture-2 img {
+    width: 100%;
+    display: block;
+}
+
+/* === SECTION 4 === */
+.section-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3%;
     flex-wrap: wrap;
+}
+
+.section-4 img {
+    display: block;
+}
+
+.border {
+    border: 1px solid #afafaf;
+}
+
+.title-padding {
+    padding: 12% 10% 10%;
+}
+
+.event-title-padding {
+    padding: 6% 10%;
+}
+
+.family-news {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 350px;
+    margin: 0 10px 5% 0;
+}
+
+.event-news {
+    width: 500px;
+    margin: 0 10px 5%;
+}
+
+.career-news {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    margin: 0 0 5% 10px;
+}
+
+.chef-table-news {
+    width: 800px;
+    margin: 0 10px 5% 0;
+}
+
+.wine-news {
+    width: 350px;
+    margin: 0 0 5%;
+}
+
+@media only screen and (max-width: 1160px) {
+
+    /* === SECTION 3 === */
+    .section-3 {
+        flex-direction: column;
+    }
+
+    .section-3-container {
+        width: 100%;
+    }
+
+    .section-3-content {
+        padding: 7% 10%;
+        max-width: 70%;
+    }
+
+    /* === SECTION 4 === */
+    .section-4 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .family-news,
+    .career-news {
+        flex-direction: column-reverse;
+    }
+
+    .section-4-img-same-size {
+        margin: 0 0 5%;
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1370px) {
+
+    /* === SECTION 2 === */
+    .column-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo-chef {
+        width: 100%;
+        padding-bottom: 4%;
+    }
+
+    .award-text {
+        width: 100%;
+    }
+
+    .award-certificate {
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    /* === SECTION 2 === */
+    .column-2 {
+        padding: 5% 0 0;
+    }
+
+    .award-text {
+        padding: 0 10% 7%;
+    }
+
+    /* === SECTION 3 === */
+    .section-3-content {
+        padding: 10% 10%;
+        max-width: 100%;
+    }
+
+    .section-3,
+    .section-4 {
+        margin-top: 5%;
+    }
+
+    /* === SECTION 4 === */
+    .section-4-img-same-size {
+        margin: 0 0 10%;
+        width: 100%;
+    }
 }
