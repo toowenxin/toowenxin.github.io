@@ -180,7 +180,71 @@
 }
 
 
-/* === section3 === */
+/* === section3-bts === */
+.section-3-bts {
+    background-color: #000;
+    color: white;
+    padding: 80px 8%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.bts-header {
+    text-align: left;
+    margin-bottom: 80px;
+}
+
+.bts-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.bts-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.bts-left-col {
+    width: 25%;
+}
+
+.bts-middle-col {
+    width: 50%;
+}
+
+.bts-right-col {
+    width: 25%;
+}
+
+.bts-img-wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.bts-img-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.bts-text,
+.object-title h2 {
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
 
 .cocktail {
     background-color: #000;
