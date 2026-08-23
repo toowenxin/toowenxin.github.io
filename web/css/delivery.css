@@ -13,3 +13,12 @@
     background-position: center;
     padding: 150px 20px;
 }
+
+
+.lobster-img {
+    display: block;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 260px 20px;
+}
