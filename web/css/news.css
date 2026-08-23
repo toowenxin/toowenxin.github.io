@@ -38,7 +38,18 @@
 .section-1-title {
     display: flex;
     flex-direction: row;
+    align-items: center;
     white-space: nowrap;
+}
+
+.section-1-title p {
+    padding: 0 20px;
+}
+
+.text-line {
+    background-color: #D6D6D6;
+    height: 0.8px;
+    width: 50px;
 }
 
 .countdown {

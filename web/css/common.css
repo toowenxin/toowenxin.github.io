@@ -203,6 +203,10 @@
     filter: brightness(0) invert(1);
 }
 
+.mobile-navbar-active {
+    background-color: #BDA16B;
+}
+
 /* === HEADER === */
 .header {
     background-color: var(--color-transparent);

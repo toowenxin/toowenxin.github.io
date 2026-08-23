@@ -4,24 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Location-Romaliya Restaurant</title>
+    <title>Reception&Bar</title>
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/faq.css">
 </head>
 
 <body>
     <div class="header">
-        <div>
-            <p><a href="index.html"><img src="images/romaliya-logo.png" alt="romaliya-logo" width="200px"></a></p>
-        </div>
+        <div><img src="images/romaliya-logo.png" alt="romaliya-logo" width="200px"></div>
 
         <div class="menu-icon" id="menuIcon">&#9776;
         </div>
 
         <div class="navbar eyebrow-heading">
+            <div class="bar-icon">
+                <a href="index.html">Home</a>
+            </div>
+
             <div class="has-sub-navbar">
                 <div class="bar-icon">
-                    <div>
+                    <div class="navbar-active a">
                         <a href="menu.html">Menu</a>
                     </div>
                     <div><img src="images/down-arrow.svg" alt="down-arrow" width="10px">
@@ -70,7 +71,7 @@
             </div>
 
             <div class="has-sub-navbar">
-                <div class="bar-icon navbar-active">
+                <div class="bar-icon">
                     <div>
                         <a href="about.html">About us</a>
                     </div>
@@ -92,7 +93,7 @@
             </div>
 
 
-            <div class="has-sub-navbar">
+            <div class="has-sub-navbar navbar-active a">
                 <div class="bar-icon">
                     <div>
                         <a href="restaurant.html">Our restaurant</a>
@@ -103,12 +104,15 @@
 
                 <div class="sub-navbar">
                     <div class="sub-navbar-first">
-                        <a href="recipes.html">Reception & Bar</a>
+                        <a href="reception.html">Reception & Bar</a>
                     </div>
-                    <div class="sub-navar-last">
+                    <div class="sub-navbar-last">
+                        <a href="gallery.html">Visual Gallery</a>
                     </div>
                 </div>
             </div>
+
+            <div><img src="images/cart-icon.png" alt="cart-icon" width="19px"> </div>
         </div>
     </div>
 
@@ -122,10 +126,10 @@
                 <div>
                     <a href="menu.html">Menu</a>
                 </div>
-                <div class="change-icon"><img src="images/down-arrow.svg" alt="down-arrow" width="10px">
+                <div><img src="images/down-arrow.svg" alt="down-arrow" width="10px">
                 </div>
             </div>
-            <div class="mobile-sub-navbar submenu">
+            <div class="mobile-sub-navbar">
                 <div>
                     <a href="promotion.html">Promotion</a>
                 </div>
@@ -140,7 +144,7 @@
                 <div>
                     <a href="orders.html">Orders</a>
                 </div>
-                <div class="change-icon"><img src="images/down-arrow.svg" alt="down-arrow" width="10px">
+                <div><img src="images/down-arrow.svg" alt="down-arrow" width="10px">
                 </div>
             </div>
             <div class="mobile-sub-navbar">
@@ -155,7 +159,7 @@
                 <div>
                     <a href="reservation.html">Reservations</a>
                 </div>
-                <div class="change-icon"><img src="images/down-arrow.svg" alt="down-arrow" width="10px">
+                <div><img src="images/down-arrow.svg" alt="down-arrow" width="10px">
                 </div>
             </div>
             <div class="mobile-sub-navbar">
@@ -166,11 +170,11 @@
         </div>
 
         <div class="mobile-has-sub-navbar">
-            <div class="mobile-bar-icon mobile-navbar-active">
+            <div class="mobile-bar-icon">
                 <div>
                     <a href="about.html">About us</a>
                 </div>
-                <div class="change-icon"><img src="images/down-arrow.svg" alt="down-arrow" width="10px">
+                <div><img src="images/down-arrow.svg" alt="down-arrow" width="10px">
                 </div>
             </div>
             <div class="mobile-sub-navbar">
@@ -194,45 +198,29 @@
                 <div>
                     <a href="restaurant.html">Our Restaurant</a>
                 </div>
-                <div class="change-icon"><img src="images/down-arrow.svg" alt="down-arrow" width="10px">
+                <div><img src="images/down-arrow.svg" alt="down-arrow" width="10px">
                 </div>
             </div>
             <div class="mobile-sub-navbar">
                 <div>
-                    <a href="recipes.html">Reception & Bar</a>
+                    <a href="reception.html">Reception & Bar</a>
                 </div>
                 <div>
-                    <a href="visual.html">Visual Gallery</a>
+                    <a href="gallery.html">Visual Gallery</a>
                 </div>
             </div>
         </div>
+
+        <div class="mobile-bar-icon">
+            <a href="cart.html">Cart</a>
+        </div>
     </div>
 
-    <div class="faq faq-banner">
-        <div class="eyebrow-heading">Frequently Asked Questions</div>
-        <div class="hero-title">FAQS</div>
-    </div>
 
-    <div class="faq-container">
-        <details class="faq-box" open>
-            <summary class="faq-question">
-                <span>Do You Accept Reservations?</span>
-                <span class="arrow">^</span>
-            </summary>
-            <div class="faq-answer">
-                <p>Yes, we accept table reservations.</p>
-                <p>You can book your table through our website or contact us directly to secure your preferred time.</p>
-            </div>
-        </details>
 
-        <details class="faq-box" open>
-            <summary class="faq-question">
-                <span>What are your operating hours?</span>
-                <span class="arrow">^</span>
-            </summary>
-            <div class="faq-answer">
-                <p>We are open daily from 12:00 AM to 10:00 PM. Please note that our last order is at 9:30 PM.</p>
-            </div>
-        </details>
 
-    </div>
+
+
+</body>
+
+</html>
