@@ -9,19 +9,16 @@
 .gallery {
     background-color: #000;
     color: white;
-    padding: 2px 0;
+    padding: 7% 10%;
 }
 
 /* === .section-1-history === */
 
 .section-1-history {
     display: flex;
-    margin-top: 5%;
-    padding: 0 7%;
 }
 
 .history-left {
-    padding: 0 7%;
     margin-bottom: 2%;
 }
 
@@ -42,8 +39,6 @@
     width: 80%;
     height: auto;
     display: block;
-    margin-top: 2%;
-    margin-bottom: 5%;
 }
 
 
@@ -91,7 +86,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 7%;
     margin-top: 5%;
 }
 
@@ -120,8 +114,7 @@
 
 .section-2-coffee {
     width: 100%;
-    margin-top: 5%;
-    padding: 20px 0;
+    padding: 7% 4%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -184,9 +177,8 @@
 .section-3-bts {
     background-color: #000;
     color: white;
-    padding: 80px 8%;
+    padding: 7% 10%;
     width: 100%;
-    box-sizing: border-box;
 }
 
 .bts-header {
@@ -237,6 +229,73 @@
     display: block;
     margin-bottom: 20px;
 }
+
+
+
+/* === section4-experience === */
+
+.section-4-experience {
+    background-color: var(--color-black);
+    color: var(--color-text-light);
+    padding: 7% 10%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-header {
+    text-align: center;
+    margin-bottom: 2%;
+
+}
+
+.experience-text {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.atmos-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.atmos-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.atmos-pic-box {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.atmos-pic-box img {
+    width: 100%;
+    height: auto;
+}
+
+.atmos-textbox {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.row-right-img .atmos-textbox {
+    text-align: right;
+}
+
 
 
 
