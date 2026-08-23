@@ -107,6 +107,7 @@
     font-size: var(--font-button);
     line-height: 18px;
     letter-spacing: 1px;
+    cursor: pointer;
 }
 
 .sub-navbar {
@@ -196,6 +197,14 @@
 /* === NAVBAR  === */
 .navbar-active a {
     color: var(--color-text-light);
+}
+
+.navbar-active img {
+    filter: brightness(0) invert(1);
+}
+
+.mobile-navbar-active {
+    background-color: #BDA16B;
 }
 
 /* === HEADER === */

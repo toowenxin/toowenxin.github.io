@@ -1,4 +1,4 @@
-.delivery {
+.order {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,14 +6,12 @@
     color: var(--color-text-light);
 }
 
-
-.delivery-banner {
-    background-image: url('../images/delivery-banner.png');
+.order-banner {
+    background-image: url('../images/orders_banner.jpg');
     background-size: cover;
     background-position: center;
-    padding: 150px 20px;
+    padding: 260px 20px;
 }
-
 
 .lobster-img {
     display: block;

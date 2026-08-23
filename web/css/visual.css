@@ -1,0 +1,529 @@
+/* ====== section1 ====== */
+
+
+.hero-image {
+    display: block;
+    width: 100%;
+}
+
+.gallery {
+    background-color: #000;
+    color: white;
+    padding: 7% 10%;
+}
+
+/* === .section-1-history === */
+
+.section-1-history {
+    display: flex;
+}
+
+.history-left {
+    margin-bottom: 2%;
+}
+
+.history-text {
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.history-right {
+    width: 80%;
+}
+
+.history-right-img {
+    width: 80%;
+    height: auto;
+    display: block;
+}
+
+
+/* === .section-1-founder === */
+
+.section-1-founder {
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.founder-image-box {
+    width: 35%;
+    margin-bottom: 25px;
+}
+
+.founder-img {
+    width: 100%;
+    height: auto;
+}
+
+.founder-text {
+    text-align: center;
+}
+
+.founder-text .section-title {
+    font-size: 55px;
+    font-style: italic;
+    color: white;
+}
+
+.founder-text .paragraph-grey-color {
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+
+/* === .section-1-kitchen === */
+
+.section-1-kitchen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.kitchen-text {
+    width: 40%;
+    text-align: right;
+}
+
+.kitchen-right {
+    width: 50%;
+}
+
+.kitchen-img {
+    width: 100%;
+    height: auto;
+}
+
+.kitchen-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
+
+
+/* ====== section2 ====== */
+
+.section-2-coffee {
+    width: 100%;
+    padding: 7% 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coffee-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 130px;
+    margin-top: 80px;
+}
+
+.coffee-left {
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+}
+
+.coffee-left img {
+    width: 100%;
+    height: auto;
+}
+
+.coffee-left p {
+    text-align: right;
+    margin-top: 15px;
+}
+
+.coffee-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.coffee-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.coffee-item img {
+    width: 100%;
+    height: auto;
+}
+
+.coffee-item p {
+    text-align: right;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.coffee-item:last-child {
+    width: 60%;
+    align-self: flex-end;
+}
+
+
+/* ====== section3-bts ====== */
+.section-3-bts {
+    background-color: #000;
+    color: white;
+    padding: 7% 10%;
+    width: 100%;
+}
+
+.bts-header {
+    text-align: left;
+    margin-bottom: 80px;
+}
+
+.bts-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.bts-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.bts-left-col {
+    width: 25%;
+}
+
+.bts-middle-col {
+    width: 50%;
+}
+
+.bts-right-col {
+    width: 25%;
+}
+
+.bts-img-wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.bts-img-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.bts-text,
+.object-title h2 {
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+
+/* ====== section-4-experience ====== */
+
+.section-4-experience {
+    background-color: var(--color-black);
+    color: var(--color-text-light);
+    padding: 7% 10%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-header {
+    text-align: center;
+    margin-bottom: 2%;
+
+}
+
+.experience-text {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.atmos-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.atmos-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.atmos-pic-box {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.atmos-pic-box img {
+    width: 100%;
+    height: auto;
+}
+
+.atmos-textbox {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.row-right-img .atmos-textbox {
+    text-align: right;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+    .gallery-top-header .hero-title {
+        font-size: 38px;
+    }
+
+    /* ====== section-1- ====== */
+
+    .section-1-history {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 80px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .history-left {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .history-right {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .history-text {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 3%;
+    }
+
+    .section-1-founder {
+        width: 100%;
+    }
+
+    .founder-image-box {
+        width: 80%
+    }
+
+    .founder-text {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 3%;
+    }
+
+    .section-1-kitchen {
+        flex-direction: column-reverse;
+        gap: 30px;
+        margin-bottom: 60px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .kitchen-right {
+        width: 80%;
+    }
+
+    .kitchen-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* ====== section-2- ====== */
+
+    .coffee-gallery {
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+        padding: 0 5%;
+    }
+
+    .coffee-left,
+    .coffee-right {
+        width: 100%;
+    }
+
+    .coffee-gallery {
+        gap: 40px;
+        width: 90%;
+    }
+
+    /* ====== section-3- ====== */
+
+    .section-3-bts {
+        padding: 8% 5%；
+    }
+
+    .bts-header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .bts-container {
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+        width: 100%;
+    }
+
+    .bts-column,
+    .bts-left-col,
+    .bts-middle-col,
+    .bts-right-col {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .bts-img-wrapper {
+        width: 75%;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+
+    /* ====== section-4- ====== */
+
+    .section-4-experience {
+        padding: 10% 5% 8%;
+    }
+
+    .section-4-experience .section-title {
+        text-align: center;
+    }
+
+    .section-4-experience .hero-title {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .experience-text {
+        width: 90%;
+        margin: 0 auto 30px;
+        text-align: center;
+    }
+
+    .atmos-container {
+        width: 100%;
+        max-width: 100%;
+        gap: 55px;
+    }
+
+    .atmos-row {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .atmos-pic-box,
+    .atmos-textbox {
+        width: 90%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 10%;
+    }
+
+    .atmos-pic-box img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+
+    .atmos-textbox .object-title {
+        font-size: 32px;
+        margin-bottom: 6px;
+    }
+
+    .atmos-textbox .paragraph-grey-color {
+        font-size: 19px;
+        line-height: 1.5;
+    }
+
+    .atmos-row:nth-child(2) .atmos-pic-box {
+
+        .atmos-row:nth-child(3) .atmos-pic-box,
+        .atmos-row:nth-child(4) .atmos-pic-box {
+            max-width: 100%;
+        }
+
+    }
+
+
+
+    @media screen and (max-width: 640px) {
+        .section-1-history {
+            flex-direction: column;
+            gap: 30px;
+            padding: 0 5%;
+        }
+
+        .history-left-pic,
+        .history-right-text {
+            width: 100%;
+        }
+
+        .history-right-text {
+            text-align: center;
+            align-items: center;
+        }
+
+
+
+
+        /* ====== section-3- ====== */
+
+        .bts-header {
+            font-size: 63px;
+
+
+            /* ====== section-4- ====== */
+
+            .section-4-experience .hero-title {
+                font-size: 63px;
+            }
+        }
+
+    }

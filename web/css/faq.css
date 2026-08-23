@@ -1,0 +1,26 @@
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-light);
+}
+
+.faq-banner {
+    background-image: url('../images/faq-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 260px 20px;
+}
+
+.faq-container {
+    display: flex;
+}
+
+.faq-box {
+    
+}
+
+.faq-question {}
+
+.faq-answer {}

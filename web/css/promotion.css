@@ -26,6 +26,7 @@
 .hero-image {
     background-image: url("../images/promotion-img.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     min-height: 120vh;
 }
@@ -34,7 +35,7 @@
     display: none;
 }
 
-.for-2-img {
+.text-img {
     display: flex;
     flex-direction: row;
     background-color: var(--color-black);
@@ -70,7 +71,8 @@
     margin: auto;
 }
 
-.three-picture {
+.three-picture,
+.section-4-three-picture {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -86,18 +88,21 @@
 .section-2-garlic {
     background-image: url(../images/section-2-garlic.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
 .section-2-steak {
     background-image: url(../images/section-2-steak.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
 .section-2-sparkler {
     background-image: url(../images/section-2-sparkler.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
@@ -210,6 +215,10 @@
 /* === SECTION 4 === */
 .section-4-relative-img {
     background-image: url(../images/section-4-pour-wine.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
 .section-4-absolute {
@@ -230,14 +239,24 @@
 
 .card-classic {
     background-image: url(../images/section-4-classic.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
 .card-prestige {
     background-image: url(../images/section-4-prestige.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .card-elite {
     background-image: url(../images/section-4-elite.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .card-space {
@@ -256,18 +275,6 @@
     margin-bottom: 4%;
 }
 
-.card-button-classic {
-    margin-top: 132px;
-}
-
-.card-button-prestige {
-    margin-top: 52px;
-}
-
-.card-button-elite {
-    margin-top: 40px;
-}
-
 @media only screen and (max-width: 1383px) {
 
     .card-classic,
@@ -277,7 +284,7 @@
 }
 
 
-@media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 1420px) {
 
     /* === SECTION 3 === */
     .section-3-relative-menu {
@@ -292,9 +299,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 80%;
+        max-width: 60%;
         margin: auto;
-        margin-bottom: 10%;
+        margin-bottom: 6%;
         text-align: center;
     }
 }
@@ -324,7 +331,7 @@
         width: 100%;
     }
 
-    .for-2-img {
+    .text-img {
         flex-direction: column;
     }
 
@@ -361,6 +368,11 @@
         padding: 5%;
         margin-bottom: 10%;
     }
+
+    .section-4-three-picture {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 
@@ -371,6 +383,11 @@
     .section-4-absolute {
         max-width: 100%;
         padding: 0 10%;
+    }
+
+    .section-3-group-food-hidden {
+        max-width: 100%;
+        margin-bottom: 8%;
     }
 
 
