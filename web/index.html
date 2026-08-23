@@ -19,10 +19,6 @@
         </div>
 
         <div class="navbar eyebrow-heading">
-            <div class="bar-icon navbar-active">
-                <a href="index.html">Home</a>
-            </div>
-
             <div class="has-sub-navbar">
                 <div class="bar-icon">
                     <div>
@@ -125,7 +121,7 @@
         <div class="mobile-bar-icon">
             <a href="index.html">Home</a>
         </div>
-        <div class="mobile-has-sub-navbar has-submenu">
+        <div class="mobile-has-sub-navbar">
             <div class="mobile-bar-icon">
                 <div>
                     <a href="menu.html">Menu</a>
@@ -221,7 +217,7 @@
     </div>
 
 
-    <div class="for-2-img">
+    <div class="text-img">
         <div class="half section-1-content-container">
             <div class="hero-line-container">
                 <div class="hero-line">
@@ -279,7 +275,7 @@
                     <p>DESSERT
                     </p>
                 </div>
-                <div><button class="btn btn-outline">VIEW MORE</button></div>
+                <div><button class="btn btn-outline" onclick="document.location='menu.html'">VIEW MORE</button></div>
             </div>
 
             <div class="under-picture-content chef-specials-img">
@@ -288,7 +284,7 @@
                     <p>CHEF SPECIALS
                     </p>
                 </div>
-                <div><button class="btn btn-outline">View More</button></div>
+                <div><button class="btn btn-outline" onclick="document.location='menu.html'">VIEW MORE</button></div>
             </div>
 
             <div class="under-picture-content seasonal-img">
@@ -299,7 +295,7 @@
                     <p>SEASONAL
                     </p>
                 </div>
-                <div><button class="btn btn-outline">View More</button></div>
+                <div><button class="btn btn-outline" onclick="document.location='menu.html'">VIEW MORE</button></div>
             </div>
         </div>
     </div>
@@ -398,7 +394,65 @@
         gsap.fromTo(
             ".section-1-content-container",
             { x: -100, opacity: 0 }, // FROM
-            { x: 0, opacity: 1, duration: 1.5 } // TO
+            { x: 0, opacity: 1, duration: 1 } // TO
+        );
+
+        gsap.fromTo(".section-2-content",
+            {
+                opacity: 0,
+            },
+
+            {
+                opacity: 1,
+                duration: 1,
+                scrollTrigger:
+                {
+                    trigger: ".text-img",
+                    start: "50% 30%",
+                    end: "bottom 20%",
+                    scrub: 1,
+                }
+            }
+        );
+
+        gsap.fromTo(".three-picture",
+            {
+                y: 100,
+                opacity: 0,
+            },
+
+            {
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                scrollTrigger:
+                {
+                    trigger: ".container-index",
+                    start: "top 30%",
+                    end: "300 40%",
+                    scrub: 1,
+                }
+            }
+        );
+
+        gsap.fromTo(".atmosphere-relative",
+            {
+                y: 100,
+                opacity: 0,
+            },
+
+            {
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                scrollTrigger:
+                {
+                    trigger: ".container-index",
+                    start: "50% 30%",
+                    end: "bottom 40%",
+                    scrub: 1,
+                }
+            }
         );
 
     </script>

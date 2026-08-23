@@ -107,6 +107,7 @@
     font-size: var(--font-button);
     line-height: 18px;
     letter-spacing: 1px;
+    cursor: pointer;
 }
 
 .sub-navbar {
