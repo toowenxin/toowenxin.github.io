@@ -28,7 +28,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
 }
 
 .history-right {
@@ -91,6 +91,7 @@
 
 .kitchen-text {
     width: 40%;
+    text-align: right;
 }
 
 .kitchen-right {
@@ -110,7 +111,7 @@
 }
 
 
-/* === section2 === */
+/* ====== section2 ====== */
 
 .section-2-coffee {
     width: 100%;
@@ -173,7 +174,7 @@
 }
 
 
-/* === section3-bts === */
+/* ====== section3-bts ====== */
 .section-3-bts {
     background-color: #000;
     color: white;
@@ -232,7 +233,7 @@
 
 
 
-/* === section4-experience === */
+/* ====== section-4-experience ====== */
 
 .section-4-experience {
     background-color: var(--color-black);
@@ -298,82 +299,75 @@
 
 
 
-
-
-
-
-
-
-
-.cocktail {
-    background-color: #000;
-    color: white;
-    padding: 2px 0;
-}
-
-.section-3-cocktail {
-    display: flex;
-    margin-top: 5%;
-    padding: 0 7%;
-}
-
-.cocktail-right {
-    width: 50%;
-    padding: 50px 0px;
-    color: white;
-}
-
-.cocktail-image {
-    width: 55%;
-    padding: 100px 0px
-}
-
-.cocktail-left-img {
-    width: 55%;
-    padding: 100px 0px;
-}
-
-
 @media screen and (max-width: 1024px) {
-    .section-1-history {
-        gap: 40px;
-        width: 90%;
-    }
 
     .gallery-top-header .hero-title {
         font-size: 38px;
     }
 
-    .coffee-gallery {
-        gap: 40px;
-        width: 90%;
-    }
-}
+    /* ====== section-1- ====== */
 
-@media screen and (max-width: 640px) {
     .section-1-history {
         flex-direction: column;
         gap: 30px;
-        padding: 0 5%;
-    }
-
-    .history-left-pic,
-    .history-right-text {
+        margin-bottom: 80px;
         width: 100%;
-    }
-
-    .history-right-text {
-        text-align: center;
         align-items: center;
     }
 
-    .gallery-top-header .hero-title {
-        font-size: 28px;
+    .history-left {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
     }
 
-    .history-right-text .section-title {
-        font-size: 24px;
+    .history-right {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
     }
+
+    .history-text {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 3%;
+    }
+
+    .section-1-founder {
+        width: 100%;
+    }
+
+    .founder-image-box {
+        width: 80%
+    }
+
+    .founder-text {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 3%;
+    }
+
+    .section-1-kitchen {
+        flex-direction: column-reverse;
+        gap: 30px;
+        margin-bottom: 60px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .kitchen-right {
+        width: 80%;
+    }
+
+    .kitchen-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* ====== section-2- ====== */
 
     .coffee-gallery {
         flex-direction: column;
@@ -386,4 +380,150 @@
     .coffee-right {
         width: 100%;
     }
-}
+
+    .coffee-gallery {
+        gap: 40px;
+        width: 90%;
+    }
+
+    /* ====== section-3- ====== */
+
+    .section-3-bts {
+        padding: 8% 5%；
+    }
+
+    .bts-header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .bts-container {
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+        width: 100%;
+    }
+
+    .bts-column,
+    .bts-left-col,
+    .bts-middle-col,
+    .bts-right-col {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .bts-img-wrapper {
+        width: 75%;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+
+    /* ====== section-4- ====== */
+
+    .section-4-experience {
+        padding: 10% 5% 8%;
+    }
+
+    .section-4-experience .section-title {
+        text-align: center;
+    }
+
+    .section-4-experience .hero-title {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .experience-text {
+        width: 90%;
+        margin: 0 auto 30px;
+        text-align: center;
+    }
+
+    .atmos-container {
+        width: 100%;
+        max-width: 100%;
+        gap: 55px;
+    }
+
+    .atmos-row {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .atmos-pic-box,
+    .atmos-textbox {
+        width: 90%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 10%;
+    }
+
+    .atmos-pic-box img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+
+    .atmos-textbox .object-title {
+        font-size: 32px;
+        margin-bottom: 6px;
+    }
+
+    .atmos-textbox .paragraph-grey-color {
+        font-size: 19px;
+        line-height: 1.5;
+    }
+
+    .atmos-row:nth-child(2) .atmos-pic-box {
+
+        .atmos-row:nth-child(3) .atmos-pic-box,
+        .atmos-row:nth-child(4) .atmos-pic-box {
+            max-width: 100%;
+        }
+
+    }
+
+
+
+    @media screen and (max-width: 640px) {
+        .section-1-history {
+            flex-direction: column;
+            gap: 30px;
+            padding: 0 5%;
+        }
+
+        .history-left-pic,
+        .history-right-text {
+            width: 100%;
+        }
+
+        .history-right-text {
+            text-align: center;
+            align-items: center;
+        }
+
+
+
+
+        /* ====== section-3- ====== */
+
+        .bts-header {
+            font-size: 63px;
+
+
+            /* ====== section-4- ====== */
+
+            .section-4-experience .hero-title {
+                font-size: 63px;
+            }
+        }
+
+    }
