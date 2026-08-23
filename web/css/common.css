@@ -198,6 +198,10 @@
     color: var(--color-text-light);
 }
 
+.navbar-active img {
+    filter: brightness(0) invert(1);
+}
+
 /* === HEADER === */
 .header {
     background-color: var(--color-transparent);
