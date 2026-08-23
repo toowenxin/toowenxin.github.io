@@ -1,4 +1,4 @@
-/* === section1 === */
+/* ====== section1 ====== */
 
 
 .hero-image {
@@ -12,6 +12,8 @@
     padding: 2px 0;
 }
 
+/* === .section-1-history === */
+
 .section-1-history {
     display: flex;
     margin-top: 5%;
@@ -19,25 +21,33 @@
 }
 
 .history-left {
-    width: 50%;
-    padding: 50px 0px;
-    color: white;
+    padding: 0 7%;
+    margin-bottom: 2%;
 }
 
 .history-text {
-    width: 50%;
+    width: 46%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    color: white;
+    text-align: center;
+}
+
+.history-right {
+    width: 80%;
 }
 
 .history-right-img {
-    width: 100%;
-    margin-top: 7%;
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-top: 2%;
     margin-bottom: 5%;
 }
+
+
+/* === .section-1-founder === */
 
 .section-1-founder {
     width: 100%;
@@ -48,9 +58,18 @@
     align-items: center;
 }
 
+.founder-image-box {
+    width: 35%;
+    margin-bottom: 25px;
+}
+
+.founder-img {
+    width: 100%;
+    height: auto;
+}
+
 .founder-text {
     text-align: center;
-    margin-top: 25px;
 }
 
 .founder-text .section-title {
@@ -65,18 +84,28 @@
     font-size: 18px;
 }
 
+
+/* === .section-1-kitchen === */
+
 .section-1-kitchen {
-    width: 100%;
-    margin-top: 5%;
-    padding: 0 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 7%;
+    margin-top: 5%;
 }
 
 .kitchen-text {
+    width: 40%;
+}
+
+.kitchen-right {
     width: 50%;
-    color: white;
+}
+
+.kitchen-img {
+    width: 100%;
+    height: auto;
 }
 
 .kitchen-button {
@@ -86,8 +115,8 @@
     padding: 80px 0;
 }
 
-/* === section2 === */
 
+/* === section2 === */
 
 .section-2-coffee {
     width: 100%;
@@ -151,7 +180,70 @@
 }
 
 
-/* === section3 === */
+/* === section3-bts === */
+.section-3-bts {
+    background-color: #000;
+    color: white;
+    padding: 80px 8%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.bts-header {
+    text-align: left;
+    margin-bottom: 80px;
+}
+
+.bts-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.bts-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.bts-left-col {
+    width: 25%;
+}
+
+.bts-middle-col {
+    width: 50%;
+}
+
+.bts-right-col {
+    width: 25%;
+}
+
+.bts-img-wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.bts-img-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.bts-text,
+.object-title h2 {
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
 
 
 .cocktail {
@@ -182,9 +274,57 @@
     padding: 100px 0px;
 }
 
-@media only screen and (max-width: 1383px) {
 
-    .founder-text {
-        margin-bottom: 10%;
+@media screen and (max-width: 1024px) {
+    .section-1-history {
+        gap: 40px;
+        width: 90%;
+    }
+
+    .gallery-top-header .hero-title {
+        font-size: 38px;
+    }
+
+    .coffee-gallery {
+        gap: 40px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .section-1-history {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 5%;
+    }
+
+    .history-left-pic,
+    .history-right-text {
+        width: 100%;
+    }
+
+    .history-right-text {
+        text-align: center;
+        align-items: center;
+    }
+
+    .gallery-top-header .hero-title {
+        font-size: 28px;
+    }
+
+    .history-right-text .section-title {
+        font-size: 24px;
+    }
+
+    .coffee-gallery {
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+        padding: 0 5%;
+    }
+
+    .coffee-left,
+    .coffee-right {
+        width: 100%;
     }
 }
