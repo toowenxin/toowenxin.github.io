@@ -16,7 +16,8 @@
     padding: 7% 10%;
 }
 
-.section-2 {
+.section-2,
+.section-4-title {
     padding: 7% 10% 0;
 }
 
@@ -50,7 +51,8 @@
 
 .time-number,
 .section-2-title,
-.section-3-title {
+.section-3-title,
+.section-4-title {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,6 +120,50 @@
     width: 100%;
     display: block;
 }
+
+/* === SECTION 4 === */
+.section-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section-4 img {
+    display: block;
+}
+
+.border {
+    border: 1px solid #afafaf;
+}
+
+.title-padding {
+    padding: 12% 10% 10%;
+}
+
+.event-title-padding {
+    padding: 6% 10%;
+}
+
+.family-news {
+    width: 30%;
+}
+
+.event-news {
+    width: 40%;
+}
+
+.career-news {
+    width: 25%;
+}
+
+.chef-table-news {
+    width: 70%;
+}
+
+.wine-news {
+    width: 20%;
+}
+
 
 @media only screen and (max-width: 1370px) {
     .column-2 {
