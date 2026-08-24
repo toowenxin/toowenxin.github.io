@@ -224,8 +224,8 @@
             </div>
         </div>
 
-        <div class="for-2-img">
-            <div class="restaurant-place">
+        <div class="location">
+            <div class="restaurant-place" id="KL-location">
                 <div class="restaurant-image"><img src="images/KL-restaurant.jpg" alt="warm atmosphere restaurant"
                         width="100%">
                 </div>
@@ -240,7 +240,7 @@
                 </div>
             </div>
 
-            <div class="restaurant-place different-place">
+            <div class="restaurant-place different-place" id="Tokyo-location">
                 <div class="restaurant-text text-in-right-hand">
                     <div class="paragraph">
                         <p>Myfair, <span class="bold">Tokyo</span></p>
@@ -255,7 +255,7 @@
                 </div>
             </div>
 
-            <div class="restaurant-place">
+            <div class="restaurant-place" id="Dubai-location">
                 <div class="restaurant-image"><img src="images/Dubai-restaurant.jpg"
                         alt="Warmly lit restaurant interior with modern furnishings, elegant table settings, and framed artwork."
                         width="100%">
@@ -466,9 +466,49 @@
 
     <script>
         gsap.fromTo(
-            ".section-1-title",
-            { y: 120, opacity: 0 },
-            { y: 0, opacity: 1, duration: 1 }
+            "#KL-location",
+            { x: -200, opacity: 0 },
+            { x: 0, opacity: 1, duration: 1 }
+        );
+
+        gsap.fromTo("#Tokyo-location",
+            {
+                x: 200,
+                opacity: 0,
+            },
+
+            {
+                x: 0,
+                opacity: 1,
+                duration: 1.5,
+                scrollTrigger:
+                {
+                    trigger: "#KL-location",
+                    start: "top 30%",
+                    end: "300 40%",
+                    scrub: 1,
+                }
+            }
+        );
+
+        gsap.fromTo("#Dubai-location",
+            {
+                x: -200,
+                opacity: 0,
+            },
+
+            {
+                x: 0,
+                opacity: 1,
+                duration: 1.5,
+                scrollTrigger:
+                {
+                    trigger: "#Tokyo-location",
+                    start: "top 30%",
+                    end: "300 40%",
+                    scrub: 1,
+                }
+            }
         );
     </script>
 </body>
