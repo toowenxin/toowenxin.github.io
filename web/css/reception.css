@@ -13,3 +13,72 @@
     background-position: center;
     padding: 100px 20px;
 }
+
+.fine-dining-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    gap: 15px;
+}
+
+.text-line {
+    background-color: #D6D6D6;
+    height: 0.8px;
+    width: 50px;
+}
+
+.reception .paragraph {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: auto;
+    max-width: 40%;
+}
+
+.fine-dining-container {
+    display: flex;
+    color: var(--color-text-light);
+    background-color: #000000;
+    padding: 100px 150px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+}
+
+.fine-dining-container p {
+    max-width: 1000px;
+}
+
+.fine-dining-contents {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px;
+    gap: 50px;
+    line-height: 20px;
+}
+
+.signature-container {
+    display: flex;
+    color: var(--color-text-light);
+    background-color: #000000;
+    padding: 100px 150px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+}
+
+.signature-eyebrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    gap: 15px;
+}
+
+.signature-container p {
+    max-width: 1000px;
+}
