@@ -1,6 +1,4 @@
-body {
-
-}
+body {}
 
 
 .delivery {
@@ -68,4 +66,19 @@ body {
     text-align: left;
     width: 100%;
     margin-top: 12px;
+}
+
+
+
+/* === .section-2-order === */
+
+.product-detail-container {
+    padding: 7% 10%;
+}
+
+.dish-card {
+    display: flex;
+    background-color: black;
+    color: white;
+    min-height: 320px;
 }

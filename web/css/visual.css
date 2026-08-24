@@ -518,15 +518,13 @@
 
         /* ====== section-3- ====== */
 
-        .bts-header {
+
+
+        /* ====== section-4- ====== */
+
+        .section-4-experience .hero-title {
             font-size: 63px;
-
-
-            /* ====== section-4- ====== */
-
-            .section-4-experience .hero-title {
-                font-size: 63px;
-            }
         }
-
     }
+
+}
