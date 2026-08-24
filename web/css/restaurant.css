@@ -1,0 +1,29 @@
+.best-table {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-light);
+    background-color: var(--color-black);
+}
+
+.best-table-left {
+    padding: 8%;
+}
+
+.elegance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+.elegance-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: auto;
+}
