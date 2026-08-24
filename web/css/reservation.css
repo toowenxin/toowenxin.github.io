@@ -214,13 +214,13 @@
         height: 325px;
     }
 
-    .dining-guidelines-card-right {
+    .dining-guidelines-card-left {
         display: flex;
         flex-direction: column;
         text-align: center;
     }
 
-    .dining-guidelines-card-left {
+    .dining-guidelines-card-right {
         display: flex;
         flex-direction: column-reverse;
         text-align: center;

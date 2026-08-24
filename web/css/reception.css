@@ -1,0 +1,15 @@
+.reception {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-light);
+    text-align: center;
+}
+
+.banner-background-reception {
+    background-image: url('../images/reception&bar-hero.png');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+}
