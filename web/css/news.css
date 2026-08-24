@@ -60,6 +60,10 @@
     flex-wrap: wrap;
 }
 
+.time-number {
+    width: 20%;
+}
+
 .time-number,
 .section-2-title,
 .section-3-title,
@@ -245,6 +249,19 @@
 }
 
 @media only screen and (max-width: 640px) {
+    .section-1-title {
+        margin: 15% 0px;
+    }
+
+    .countdown {
+        justify-content: space-around;
+    }
+
+    .time-number {
+        width: 30%;
+        padding-bottom: 10%;
+    }
+
 
     /* === SECTION 2 === */
     .column-2 {

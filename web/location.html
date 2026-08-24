@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Location-Romaliya Restaurant</title>
+    <title>Location</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/location.css">
 </head>
@@ -224,8 +224,8 @@
             </div>
         </div>
 
-        <div class="for-2-img">
-            <div class="restaurant-place">
+        <div class="location">
+            <div class="restaurant-place" id="KL-location">
                 <div class="restaurant-image"><img src="images/KL-restaurant.jpg" alt="warm atmosphere restaurant"
                         width="100%">
                 </div>
@@ -240,7 +240,7 @@
                 </div>
             </div>
 
-            <div class="restaurant-place different-place">
+            <div class="restaurant-place different-place" id="Tokyo-location">
                 <div class="restaurant-text text-in-right-hand">
                     <div class="paragraph">
                         <p>Myfair, <span class="bold">Tokyo</span></p>
@@ -254,27 +254,28 @@
                         alt="A bright and comfortable atmosphere with diners enjoying their meals" width="100%">
                 </div>
             </div>
+        </div>
 
-            <div class="restaurant-place">
-                <div class="restaurant-image"><img src="images/Dubai-restaurant.jpg"
-                        alt="Warmly lit restaurant interior with modern furnishings, elegant table settings, and framed artwork."
-                        width="100%">
+        <div class="restaurant-place" id="Dubai-location">
+            <div class="restaurant-image"><img src="images/Dubai-restaurant.jpg"
+                    alt="Warmly lit restaurant interior with modern furnishings, elegant table settings, and framed artwork."
+                    width="100%">
+            </div>
+            <div class="restaurant-text">
+                <div class="paragraph">
+                    <p>Downtown, <span class="bold">Dubai</span></p>
                 </div>
-                <div class="restaurant-text">
-                    <div class="paragraph">
-                        <p>Downtown, <span class="bold">Dubai</span></p>
-                    </div>
-                    <div class="paragraph section-1-paragraphy-button-space">
-                        <p>Indulge in an unforgettable fine dining experience surrounded by timeless Parisian elegance.
-                        </p>
-                    </div>
+                <div class="paragraph section-1-paragraphy-button-space">
+                    <p>Indulge in an unforgettable fine dining experience surrounded by timeless Parisian elegance.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <div class="section-2 text-white-color container">
+
+    <div class="section-2 section-2-title text-white-color container">
         <div class="section-title">
             <p>Welcome to Romaliya
             </p>
@@ -282,14 +283,13 @@
         <div class="hr"></div>
     </div>
 
-    <div class="section-2">
-        <div class="under-restaurant-outside-space"><img src="images/restaurant-outside.jpg"
-                alt="A modern building with traditional architectural elements, warm lighting, and elegant outdoor seating surrounded by greenery."
-                width="100%"></div>
-    </div>
+    <div class="restaurant-outside-space"><img src="images/restaurant-outside.jpg"
+            alt="A modern building with traditional architectural elements, warm lighting, and elegant outdoor seating surrounded by greenery."
+            width="100%"></div>
 
 
-    <div class="section-2 text-white-color container paragraph">
+
+    <div class="section-2 text-white-color section-2-container paragraph">
         <p>Our elegant exterior blends timeless architecture with contemporary design, creating a warm and
             sophisticated first impression. From the welcoming entrance to the beautifully illuminated façade, every
             detail reflects our commitment to exceptional dining and unforgettable experiences.</p>
@@ -459,6 +459,59 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
     <script src="js/common.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+    <script src="js/common.js"></script>
+
+    <script>
+        gsap.fromTo(
+            "#KL-location",
+            { x: -200, opacity: 0 },
+            { x: 0, opacity: 1, duration: 1 }
+        );
+
+        gsap.fromTo("#Tokyo-location",
+            {
+                x: 200,
+                opacity: 0,
+            },
+
+            {
+                x: 0,
+                opacity: 1,
+                duration: 1.5,
+                scrollTrigger:
+                {
+                    trigger: "#KL-location",
+                    start: "top 30%",
+                    end: "300 40%",
+                    scrub: 1,
+                }
+            }
+        );
+
+        gsap.fromTo("#Dubai-location",
+            {
+                x: -200,
+                opacity: 0,
+            },
+
+            {
+                x: 0,
+                opacity: 1,
+                duration: 1.5,
+                scrollTrigger:
+                {
+                    trigger: "#Tokyo-location",
+                    start: "top 30%",
+                    end: "300 40%",
+                    scrub: 1,
+                }
+            }
+        );
+    </script>
 </body>
 
 </html>
