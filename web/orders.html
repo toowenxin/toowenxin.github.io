@@ -213,13 +213,111 @@
 
     <!-- ======== Section-1 ======== -->
 
+    <div class="order order-banner ">
+        <div class="eyebrow-heading fade-in">YOUR ORDER</div>
+        <div class="hero-title fade-in">CART</div>
+    </div>
 
 
+    <div class="order-cart-container">
+
+        <div class="cart-left">
+            <div class="cart-table">
+                <div class="cart-header object-title">
+                    <span class="col-product">PRODUCT</span>
+                    <span class="col-price">PRICE</span>
+                    <span class="col-qty">QUANTITY</span>
+                    <span class="col-subtotal">SUBTOTAL</span>
+                </div>
+
+                <div class="cart-item">
+                    <div class="product-pic col-product">
+                        <img src="images/lobster.png" alt="Lobster">
+                        <span class="paragraph">Butter-Poached Lobster</span>
+                    </div>
+                    <div class="col-price paragraph">RM 88</div>
+                    <div class="col-qty">
+                        <div class="qty-box">
+                            <button>-</button>
+                            <input type="text" value="1">
+                            <button>+</button>
+                        </div>
+                    </div>
+                    <div class="col-subtotal paragraph">RM 88</div>
+                </div>
+            </div>
+
+            <div class="shipping-section ">
+                <p class="object-title">SHIPPING INFORMATION</p>
+                <div class="form-row ">
+                    <input type="text " value="Malaysia" class="input-full paragraph" readonly>
+                </div>
+                <div class="form-grid">
+                    <select class="input-field paragraph">
+                        <option>State / Country</option>
+                    </select>
+                    <select class="input-field paragraph">
+                        <option>Town / City</option>
+                    </select>
+                    <input type="text " placeholder="Postcode / ZIP" class="input-field paragraph">
+                    <button class="btn-update paragraph">UPDATE</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-right">
+            <div class="total-card">
+                <p class="object-title">CART TOTAL: 1 ITEM</p>
+
+                <div class="price-line paragraph">
+                    <span>SUBTOTAL</span>
+                    <span>RM88</span>
+                </div>
+
+                <div class="price-line paragraph">
+                    <span>SHIPMENT</span>
+                    <span></span>
+                </div>
+
+                <div class="price-detail paragraph">
+                    <p>Flat rate: <strong>RM30</strong></p>
+                    <p class="ship-to">Shiping to <strong>KL, Malaysia.</strong></p>
+                </div>
+                <div class="price-line total-line paragraph">
+                    <span>TOTAL</span>
+                    <span>RM118</span>
+                </div>
+
+                <button class="btn-font-white btn-outline">UPDATE CART</button>
+                <button class="btn-gold btn-white">PROCEED TO CHECKOUT</button>
+            </div>
+
+            <div class="coupon-card">
+                <p>Got a coupon? Use it here.</p>
+                <input type="text" placeholder="Coupon code">
+                <button class="btn-font-white btn-white">APPLY COUPON</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======== Section-2 ======== -->
 
 
-
-
-
+    <div class="section-2  section-2-banner-img">
+        <div class="section-2-recommended">
+            <div class="section-title .margin-bottom-medium white-color">
+                <p>Choice for You</p>
+            </div>
+            <div class="hr"></div>
+            <div class="title section-3-under-eyebrow-heading white-color">
+                <p>Recommended</p>
+            </div>
+            <div class="paragraph white-color">
+                <p>The best seller of our restaurant.
+                    And also most ordered by our regular.</p>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -290,3 +388,26 @@
             </div>
         </div>
     </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+    <script src="js/common.js"></script>
+
+    <script>
+
+        gsap.fromTo(
+            ".fade-in",
+            { y: 0, opacity: 0 },
+            { y: -30, opacity: 1, duration: 1, stagger: 0.5 }
+        );
+
+
+    </script>
+
+</body>
+
+</html>

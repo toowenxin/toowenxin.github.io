@@ -252,3 +252,11 @@ body {}
         display: block;
     }
 }
+
+.dish-des-container {
+    width: 100%;
+}
+
+.related-products-container {
+    width: 100%;
+}

@@ -209,8 +209,8 @@
     </div>
 
     <div class="faq faq-banner">
-        <div class="eyebrow-heading">Frequently Asked Questions</div>
-        <div class="hero-title">FAQS</div>
+        <div class="eyebrow-heading fade-in">Frequently Asked Questions</div>
+        <div class="hero-title fade-in">FAQS</div>
     </div>
 
     <div class="faq-container">
@@ -361,13 +361,12 @@
 
     <script>
 
+        gsap.fromTo(
+            ".fade-in",
+            { y: 0, opacity: 0 },
+            { y: -30, opacity: 1, duration: 1, stagger: 0.5 }
+        );
 
-        faqBoxes.forEach(box => {
-            const summary = box.querySelector('.faq-question');
-            const arrow = box.querySelector('.arrow');
-            summary.addEventListener('click', (e) => {
-            });
-        });
 
     </script>
 </body>
