@@ -7,7 +7,7 @@
 }
 
 .hero-image {
-    background-image: url("../images/half-restaurant.png");
+    background-image: url("../images/half-restaurant.jpg");
     background-size: cover;
     background-position: center;
     min-height: 120vh;
@@ -102,7 +102,7 @@
 /* === SECTION 3 ===*/
 
 .atmosphere-relative {
-    background-image: url(../images/atmosphere-romaliya.png);
+    background-image: url(../images/atmosphere-romaliya.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

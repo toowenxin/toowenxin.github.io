@@ -23,7 +23,7 @@
 
 /* === SECTION 1 === */
 .section-1 {
-    background-image: url(../images/section1-commingsoon.png);
+    background-image: url(../images/section1-commingsoon.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -165,12 +165,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 350px;
+    width: 30%;
     margin: 0 10px 5% 0;
 }
 
 .event-news {
-    width: 500px;
+    width: 40%;
     margin: 0 10px 5%;
 }
 
@@ -178,18 +178,48 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 300px;
+    width: 25%;
     margin: 0 0 5% 10px;
 }
 
 .chef-table-news {
-    width: 800px;
+    width: 60%;
     margin: 0 10px 5% 0;
 }
 
 .wine-news {
-    width: 350px;
+    width: 30%;
     margin: 0 0 5%;
+}
+
+@media only screen and (max-width: 1370px) {
+
+    /* === SECTION 2 === */
+    .column-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo-chef {
+        width: 100%;
+        padding-bottom: 4%;
+    }
+
+    .award-text {
+        width: 100%;
+    }
+
+    .award-certificate {
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1314px) {
+    .section-4 .sub-title {
+        font-size: var(--font-object-title);
+        line-height: 36px;
+    }
 }
 
 @media only screen and (max-width: 1160px) {
@@ -223,28 +253,10 @@
         margin: 0 0 5%;
         width: 60%;
     }
-}
 
-@media only screen and (max-width: 1370px) {
-
-    /* === SECTION 2 === */
-    .column-2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .photo-chef {
-        width: 100%;
-        padding-bottom: 4%;
-    }
-
-    .award-text {
-        width: 100%;
-    }
-
-    .award-certificate {
-        max-width: 50%;
+    .section-4 .sub-title {
+        font-size: var(--font-sub-title);
+        line-height: 64px;
     }
 }
 

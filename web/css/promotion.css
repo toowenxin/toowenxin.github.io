@@ -76,6 +76,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 2%;
     flex-wrap: wrap;
 }
 
@@ -120,7 +121,7 @@
 
 /* === SECTION 3 === */
 .section-3-relativ-img {
-    background-image: url(../images/section-3-romantic-dining.png);
+    background-image: url(../images/section-3-romantic-dining.jpg);
 }
 
 .section-3-relative,
@@ -214,7 +215,7 @@
 
 /* === SECTION 4 === */
 .section-4-relative-img {
-    background-image: url(../images/section-4-pour-wine.png);
+    background-image: url(../images/section-4-pour-wine.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -234,11 +235,10 @@
     background-repeat: no-repeat;
     background-position: center;
     width: 365px;
-    height: 475px;
 }
 
 .card-classic {
-    background-image: url(../images/section-4-classic.png);
+    background-image: url(../images/section-4-classic.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -246,14 +246,14 @@
 }
 
 .card-prestige {
-    background-image: url(../images/section-4-prestige.png);
+    background-image: url(../images/section-4-prestige.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .card-elite {
-    background-image: url(../images/section-4-elite.png);
+    background-image: url(../images/section-4-elite.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -275,11 +275,16 @@
     margin-bottom: 4%;
 }
 
-@media only screen and (max-width: 1383px) {
+@media only screen and (max-width: 1440px) {
 
     .card-classic,
     .card-prestige {
         margin-bottom: 10%;
+    }
+
+    .section-4-three-picture {
+        display: flex;
+        justify-content: space-around;
     }
 }
 
