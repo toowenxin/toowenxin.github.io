@@ -255,10 +255,8 @@ a {
 
 .sub-navbar a {
     color: var(--color-text-light);
-}
-
-.sub-navbar div {
     padding: 12px 20px;
+    display: block;
 }
 
 .bar-icon:hover a {
@@ -304,7 +302,7 @@ a {
 
 /* === FOOTER === */
 .footer {
-    background-image: url("../images/image-footer.jpgromaliya logo.svg");
+    background-image: url("../images/image-footer.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -391,6 +389,11 @@ a {
 
     .mobile-navbar a {
         color: var(--color-text-light);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 55px;
+        cursor: pointer;
     }
 
     .mobile-navbar {
@@ -400,7 +403,7 @@ a {
         transition: all 1s ease;
         left: 0%;
         width: 100%;
-        background-color: #333333;
+        background-color: var(--color-nav-background);
         z-index: 1000;
     }
 
@@ -408,9 +411,7 @@ a {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        min-height: 55px;
         padding: 0 4%;
-        cursor: pointer;
     }
 
     .mobile-bar-icon img {
@@ -420,7 +421,7 @@ a {
     .mobile-sub-navbar div {
         display: flex;
         align-items: center;
-        background-color: #333333;
+        background-color: var(--color-nav-background);
         padding: 0 6%;
         min-height: 55px;
         width: 100%;
@@ -441,11 +442,7 @@ a {
 
     .mobile-bar-icon:hover,
     .mobile-sub-navbar div:hover {
-        background-color: #BDA16B;
-    }
-
-    .mobile-bar-icon.active {
-        background-color: #BDA16B;
+        background-color: var(--color-hover);
     }
 
     .mobile-navbar.active {
@@ -453,6 +450,7 @@ a {
     }
 
     .change-icon {
+        padding: 2%;
         transition: all 1s ease;
     }
 
