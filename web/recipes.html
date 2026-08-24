@@ -20,7 +20,7 @@
 
         <div class="navbar eyebrow-heading">
             <div class="has-sub-navbar">
-                <div class="bar-icon">
+                <div class="bar-icon navbar-active">
                     <div>
                         <a href="menu.html">Menu</a>
                     </div>
@@ -70,7 +70,7 @@
             </div>
 
             <div class="has-sub-navbar">
-                <div class="bar-icon navbar-active">
+                <div class="bar-icon">
                     <div>
                         <a href="about.html">About us</a>
                     </div>
@@ -211,10 +211,10 @@
 
 
     <div class="recipes-hero">
-        <img src="images/recipes-hero.png" alt="recipes-img" width="100%">
+        <img src="images/recipes-hero.jpg" alt="recipes-img" width="100%">
     </div>
 
-    <div class="container">
+    <div class="recipes-container">
         <div class="section-header">
             <p class="hero-title">OUR SIGNATURE RECIPES</p>
             <p class="paragraph">Discover handcrafted dishes prepared with carefully selected ingredients, combining
@@ -303,7 +303,7 @@
     <div class="ingredient-container">
         <p class="sub-title">Our Ingredients</p>
         <div class="ingredient-three-container">
-            <div class="ingredient-card fade-in">
+            <div class="ingredient-card">
                 <div><img src="images/premium-beef.png" alt="premium-beef" width="100%"></div>
                 <p class="object-title">Premium Beef</p>
                 <p class="paragraph">Sourced from pasture-raised cattle, dry-aged for a minimum of 28 days to
@@ -313,7 +313,7 @@
                     result is beef that tastes of the land it came from — deep, rich, and unmistakably honest.</p>
             </div>
 
-            <div class="ingredient-card fade-in">
+            <div class="ingredient-card">
                 <div><img src="images/fresh-seafood.png" alt="fresh-seafood" width="100%"></div>
                 <p class="object-title">Fresh Seafood</p>
                 <p class="paragraph">Delivered daily from coastal waters, never frozen. Our fish and shellfish are
@@ -323,7 +323,7 @@
                     appear on our menu. Simple as that.</p>
             </div>
 
-            <div class="ingredient-card fade-in">
+            <div class="ingredient-card">
                 <div><img src="images/farm-fresh.png" alt="farm-fresh" width="100%"></div>
                 <p class="object-title">Farm Fresh</p>
                 <p class="paragraph">Produce that travels from soil to plate in hours, not days. We partner with local
@@ -336,7 +336,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="preparation-container">
         <p class="sub-title">Preparation Process</p>
 
         <div class="column-four">
@@ -387,22 +387,27 @@
     <div class="chef-note-container">
         <p class="sub-title">Chef’s Note</p>
         <div class="chef-note">
-            <div><img src="images/chef-note.png" alt="chef-note-img"></div>
+            <img src="images/chef-note.png" alt="chef-note-img">
             <div class="note-container">
                 <p class="paragraph">“One cannot think well, love well, sleep well, if one has not dined well.”
                     --Marco Rossi</p>
             </div>
         </div>
-        <p class="paragraph">
-            Our kitchen runs on a simple belief: the best dish is the one that lets its ingredients speak for
-            themselves.
-            We
-            do not chase trends or complicate the plate with unnecessary flourishes. Instead, we focus on technique that
-            serves the ingredient, not the other way around. Every sauce is made from scratch, every herb picked at its
-            peak, every plate finished with the same care we would demand for ourselves. This is not just how we cook,
-            it is
-            who we are.
-        </p>
+        <div class="chef-note-description">
+            <p class="paragraph">
+                Our kitchen runs on a simple belief: the best dish is the one that lets its ingredients speak for
+                themselves.
+                We
+                do not chase trends or complicate the plate with unnecessary flourishes. Instead, we focus on technique
+                that
+                serves the ingredient, not the other way around. Every sauce is made from scratch, every herb picked at
+                its
+                peak, every plate finished with the same care we would demand for ourselves. This is not just how we
+                cook,
+                it is
+                who we are.
+            </p>
+        </div>
     </div>
 
     <div class="footer paragraph">
@@ -464,25 +469,11 @@
             </div>
         </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
-    <script>
-        gsap.from(".fade-in", {
-            y: 200,
-            opacity: 0.5,
-            ease: "power2.out",
-            duration: 1,
-            scrollTrigger: {
-                trigger: ".ingredient-card",
-                start: "top 100%",
-                scrub: true,
-
-            }
-
-        });
-
-    </script>
+    <script src="js/common.js"></script>
 
 </body>
 
