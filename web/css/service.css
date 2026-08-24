@@ -32,40 +32,69 @@
 }
 
 .private-dining {
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .private-dining-text {
-    padding: 60px;
-    min-width: 300px;
-    min-height: 300px;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    padding: 40px;
+    width: 30%;
+    min-width: 320px;
     color: var(--color-text-light);
     background-color: var(--color-black);
 }
 
-.private-dining-text p {
-    padding: 50px 0;
+.private-dining-text p,
+.perfect-event-text p {
+    padding: 30px 0;
 }
+
+.private-dining,
+.perfect-event {
+    margin-bottom: 150px;
+}
+
+.perfect-event {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.perfect-event-text {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    padding: 40px;
+    width: 35%;
+    color: var(--color-text-light);
+    background-color: var(--color-black);
+}
+
 
 .wine-pairing {
     display: flex;
-
+    justify-content: space-between;
+    gap: 40px;
+    padding: 7%;
     background-image: url(../images/wine-pairing.png);
     color: var(--color-text-light);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .wine-pairing-left {
-    padding: 8%;
-}
-
-.wine-pairing-left .hero-title {
-    max-width: 40%;
+    max-width: 30%;
 }
 
 .wine-pairing-left p {
     margin-top: 3%;
-    max-width: 30%;
 }
 
 .wine-product {
@@ -82,6 +111,65 @@
     padding: 25px;
 }
 
+.wine-pairing-right {
+    position: relative;
+    width: 30%;
+}
+
+.wine-pairing-right {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.wine-right-top {
+    position: absolute;
+    top: 80px;
+    right: 10px;
+}
+
+.wine-left-bottom {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+}
+
+.wine-right-bottom {
+    position: absolute;
+    bottom: 30px;
+    right: 5px;
+}
+
+@media screen and (max-width: 1290px) {
+    .private-dining-text {
+        right: 7%;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1258px) {
+    .perfect-event-text {
+        left: 5%;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .wine-pairing-right {
+        display: none;
+    }
+
+    .wine-pairing-left {
+        max-width: 40%;
+    }
+
+    .private-dining-text {
+        right: 5%;
+        width: 40%;
+    }
+}
+
+
 @media screen and (max-width: 1024px) {
     .banner-background-personalized {
         padding: 100px 20px;
@@ -90,11 +178,62 @@
     .personalized p {
         max-width: 60%;
     }
+
+    .wine-pairing {
+        flex-direction: column;
+    }
+
+    .wine-pairing-left {
+        max-width: 80%;
+    }
+
+    .private-dining,
+    .perfect-event {
+        margin-bottom: 200px;
+    }
+
+    .private-dining-text {
+        right: 10%;
+        top: 50%;
+        width: 45%;
+    }
+
+    .perfect-event-text {
+        left: 10%;
+        top: 50%;
+        width: 45%;
+    }
 }
 
 @media screen and (max-width: 640px) {
     .personalized p {
         max-width: none;
         padding: 30px;
+    }
+
+    .wine-pairing {
+        flex-direction: column;
+
+    }
+
+    .wine-pairing-left {
+        padding: 8%;
+    }
+
+    .private-dining,
+    .perfect-event {
+        margin-bottom: 60%;
+    }
+
+    .private-dining-text {
+        right: 15%;
+        top: 50%;
+        width: 70%;
+    }
+
+    .perfect-event-text {
+        left: 15%;
+        top: 50%;
+        width: 70%;
     }
 }
