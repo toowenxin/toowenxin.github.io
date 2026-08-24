@@ -181,19 +181,22 @@
     display: flex;
     flex-direction: row;
     gap: 25px;
+    align-items: center
 }
 
 .training-description {
-    max-width: 250px;
+    max-width: 350px;
     text-align: center;
+    gap: 20px;
 }
 
 .training-card-left {
     position: relative;
-    left: 250px;
+    left: 280px;
+    bottom: 20px;
 }
 
 .training-card-right {
     position: relative;
-    right: 250px;
+    right: 280px;
 }
