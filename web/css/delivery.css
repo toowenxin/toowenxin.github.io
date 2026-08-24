@@ -1,3 +1,8 @@
+body {
+
+}
+
+
 .delivery {
     display: flex;
     flex-direction: column;
@@ -5,7 +10,6 @@
     justify-content: center;
     color: var(--color-text-light);
 }
-
 
 .delivery-banner {
     background-image: url('../images/delivery-banner.png');
@@ -15,10 +19,53 @@
 }
 
 
-.lobster-img {
-    display: block;
+/* === .section-1-delivery === */
+
+.delivery-container {
+    background-color: black;
+    color: white;
+    padding: 7% 10%
+}
+
+.delivery-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.delivery-row img {
     width: 100%;
-    background-size: cover;
-    background-position: center;
-    padding: 260px 20px;
+    height: auto;
+    display: block;
+}
+
+.deli-pic-box {
+    width: 70%;
+}
+
+.deli-pic-box img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+}
+
+.row-left-pic {
+    align-items: flex-start;
+}
+
+.row-left-pic .object-title {
+    text-align: right;
+    width: 100%;
+    margin-top: 12px;
+}
+
+.row-right-pic {
+    align-items: flex-end;
+    margin-top: 50px;
+}
+
+.row-right-pic .object-title {
+    text-align: left;
+    width: 100%;
+    margin-top: 12px;
 }
