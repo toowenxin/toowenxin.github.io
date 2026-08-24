@@ -78,11 +78,113 @@ body {}
 
 .dish-card {
     display: flex;
-    background-color: black;
-    color: white;
-    min-height: 320px;
+    background-color: #000000;
+    color: #FFFFFF;
+    width: 100%;
 }
 
+.dish-image {
+    flex: 1;
+}
+
+.dish-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.product-detail-container .paragraph {
+    text-align: left;
+}
+
+.dish-des-container {
+    flex: 1;
+    padding: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.button-row {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.quantity-selector {
+    display: flex;
+    border: 1px solid #333333;
+}
+
+.quantity-selector button {
+    background: transparent;
+    color: #FFFFFF;
+    border: none;
+    padding: 16px 30px;
+    cursor: pointer;
+}
+
+.sub-title {
+    margin-bottom: 50px;
+}
+
+
+.quantity-selector span {
+    display: flex;
+    align-items: center;
+}
+
+.add-to-cart-btn {
+    padding: 16px 30px;
+    cursor: pointer;
+}
+
+
+
+/* ====== .section-3. ====== */
+
+.info-section {
+    display: flex;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.info-text {
+    flex: 1;
+}
+
+.info-text p {
+    margin-bottom: 20px;
+}
+
+
+.info-table {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.table-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 30px;
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #ffffff;
+}
+
+.table-row:last-child {
+    border-bottom: none;
+}
+
+.value,
+.paragraph {
+    text-align: left;
+}
 
 
 
@@ -95,6 +197,11 @@ body {}
     align-items: center;
 }
 
+.section-4-related,
+.sub-title {
+    margin-bottom: 0%;
+}
+
 .related-products-container {
     max-width: 1024px;
     display: flex;
@@ -102,6 +209,7 @@ body {}
     padding: 7% 10%;
     justify-content: space-between;
 }
+
 
 .dish-image {
     flex: 1;
@@ -122,4 +230,25 @@ body {}
 .text-align {
     max-width: 370px;
     text-align: center;
+}
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+
+    /* === HERO SECTION === */
+    .half {
+        width: 100%;
+    }
+
+    .hero-image {
+        background-image: none;
+        min-height: 0vh;
+    }
+
+    .hero-image-hidden {
+        display: block;
+    }
 }
