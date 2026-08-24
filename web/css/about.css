@@ -94,7 +94,7 @@
 }
 
 .achiement {
-    background-image: url('../images/achiement-background.png');
+    background-image: url('../images/achiement-background.jpg');
     padding: 100px 0;
     background-size: cover;
     background-position: right;
@@ -139,6 +139,28 @@
     .commitment-right2-none {
         display: none;
     }
+
+}
+
+@media screen and (max-width: 1287px) {
+    .hero-left {
+        max-width: 50%;
+        width: 100%;
+    }
+
+    .hero-right {
+        flex-basis: 50%;
+    }
+
+    .about-hero-text {
+        padding: 5%;
+    }
+}
+
+@media screen and (max-width: 1255px) {
+    .about-hero-text {
+        padding: 10% 5%;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -150,8 +172,11 @@
         padding: 30px;
     }
 
+}
+
+@media screen and (max-width: 1160px) {
     .about-hero-text {
-        padding: 6%;
+        padding: 0;
     }
 }
 
@@ -166,10 +191,6 @@
 
     .about-hero-text p {
         padding: 0;
-    }
-
-    .about-hero-text {
-        padding: 10%;
     }
 
     .commitment-right {
