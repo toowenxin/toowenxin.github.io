@@ -149,6 +149,10 @@
     .about-hero-text p {
         padding: 30px;
     }
+
+    .about-hero-text {
+        padding: 6%;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -162,6 +166,10 @@
 
     .about-hero-text p {
         padding: 0;
+    }
+
+    .about-hero-text {
+        padding: 10%;
     }
 
     .commitment-right {
