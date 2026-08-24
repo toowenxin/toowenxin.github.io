@@ -8,10 +8,10 @@
 }
 
 .banner-background-team {
-    background-image: url('../images/team-hero.png');
+    background-image: url('../images/meet-our-team.jpg');
     background-size: cover;
     background-position: center;
-    padding: 100px 20px;
+    padding: 5% 3%;
 }
 
 .team p {
@@ -23,13 +23,13 @@
 .team-container {
     color: var(--color-text-light);
     background-color: #000000;
-    padding: 100px 150px;
+    padding: 5% 7%;
 }
 
 .team-contents {
     display: flex;
     flex-direction: column;
-    padding: 100px 0px;
+    padding: 5% 0;
     gap: 100px;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .chef-info {
-    padding: 20px 0px;
+    padding: 3% 0;
     line-height: 50px;
     display: flex;
     flex-direction: column;
@@ -54,7 +54,7 @@
 }
 
 .chef-specialties {
-    padding: 20px 0px;
+    padding: 3% 0;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -80,7 +80,7 @@
     flex-direction: column;
     gap: 50px;
     text-align: center;
-    padding: 100px 150px;
+    padding: 5% 7%;
 }
 
 .value-three-container {
@@ -107,7 +107,7 @@
 .three-column {
     color: var(--color-text-light);
     background-color: #000000;
-    padding: 100px 150px;
+    padding: 5% 7%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -125,11 +125,21 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+.grow-card img {
+    width: 100%;
+    padding: 0 5%;
 }
 
 .grow-card .object-title {
     position: absolute;
-    bottom: 180px;
+    bottom: 15px;
+    right: 15px;
+    padding: 10px
 }
 
 .grow-card .paragraph {
@@ -154,7 +164,7 @@
 }
 
 .training {
-    padding: 100px 150px;
+    padding: 5% 7%;
 }
 
 
@@ -173,7 +183,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 0px;
+    padding: 5% 0;
 }
 
 .training-card-right,
@@ -199,4 +209,10 @@
 .training-card-right {
     position: relative;
     right: 280px;
+}
+
+@media only screen and (max-width: 1280px) {
+    .grow-card .object-title {
+        bottom: 210px;
+    }
 }
