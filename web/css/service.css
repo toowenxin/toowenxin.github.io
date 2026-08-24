@@ -205,6 +205,22 @@
     }
 }
 
+@media screen and (max-width: 900px) {
+    .perfect-event-text {
+        left: 10%;
+        top: 40%;
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 819px) {
+    .perfect-event-text {
+        left: 10%;
+        top: 40%;
+        width: 50%;
+    }
+}
+
 @media screen and (max-width: 640px) {
     .personalized p {
         max-width: none;
@@ -227,13 +243,31 @@
 
     .private-dining-text {
         right: 15%;
-        top: 50%;
+        top: 40%;
         width: 70%;
     }
 
     .perfect-event-text {
         left: 15%;
-        top: 50%;
+        top: 30%;
         width: 70%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .offer {
+        padding: 20px;
+    }
+
+    .perfect-event-text {
+        padding: 30px;
+    }
+
+    .private-dining img {
+        margin-bottom: 150px;
+    }
+
+    .perfect-event img {
+        margin-bottom: 150px;
     }
 }
