@@ -148,6 +148,12 @@
     }
 }
 
+@media screen and (max-width: 1316px) {
+    .dessert {
+        margin: 0 20%;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .crocktails-text p {
         max-width: 50%;
@@ -155,6 +161,12 @@
 
     .main-course-right {
         flex-basis: 70%;
+    }
+}
+
+@media screen and (max-width: 1043px) {
+    .dessert {
+        margin: 0 20%;
     }
 }
 
