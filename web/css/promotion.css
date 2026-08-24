@@ -120,7 +120,7 @@
 
 /* === SECTION 3 === */
 .section-3-relativ-img {
-    background-image: url(../images/section-3-romantic-dining.png);
+    background-image: url(../images/section-3-romantic-dining.jpg);
 }
 
 .section-3-relative,
@@ -214,7 +214,7 @@
 
 /* === SECTION 4 === */
 .section-4-relative-img {
-    background-image: url(../images/section-4-pour-wine.png);
+    background-image: url(../images/section-4-pour-wine.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -238,7 +238,7 @@
 }
 
 .card-classic {
-    background-image: url(../images/section-4-classic.png);
+    background-image: url(../images/section-4-classic.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -246,14 +246,14 @@
 }
 
 .card-prestige {
-    background-image: url(../images/section-4-prestige.png);
+    background-image: url(../images/section-4-prestige.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .card-elite {
-    background-image: url(../images/section-4-elite.png);
+    background-image: url(../images/section-4-elite.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
