@@ -23,7 +23,7 @@
 }
 
 .history-text {
-    width: 46%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,9 +41,6 @@
     display: block;
 }
 
-.grey-color {
-    color: #D6D6D6;
-}
 
 /* === .section-1-founder === */
 
@@ -72,14 +69,10 @@
 
 .founder-text .section-title {
     font-size: 55px;
-    font-style: italic;
-    color: white;
 }
 
 .founder-text .paragraph-grey-color {
     margin-top: 10px;
-    color: #ffffff;
-    font-size: 18px;
 }
 
 
@@ -304,9 +297,6 @@
 
 @media screen and (max-width: 1024px) {
 
-    .gallery-top-header .hero-title {
-        font-size: 38px;
-    }
 
     /* ====== section-1- ====== */
 
@@ -392,7 +382,7 @@
     /* ====== section-3- ====== */
 
     .section-3-bts {
-        padding: 8% 5%；
+        padding: 8% 5%,
     }
 
     .bts-header {
@@ -435,10 +425,7 @@
         text-align: center;
     }
 
-    .section-4-experience .hero-title {
-        font-size: 63px;
-    }
-
+ 
 
     .experience-text {
         width: 90%;
@@ -527,6 +514,36 @@
             font-size: 32px;
             text-align: center;
         }
+
+
+        .atmos-row {
+            padding: 8%;
+        }
+
+
+
+
+
+        xxx @media only screen and (max-width: 640px) {
+
+            /* === SECTION 3 === */
+            .section-3-absolute,
+            .section-4-absolute {
+                max-width: 100%;
+                padding: 0 10%;
+            }
+
+            .section-3-group-food-hidden {
+                max-width: 100%;
+                margin-bottom: 8%;
+            }
+
+
+            /* === SECTION 4 === */
+            .card-space {}
+        }
+
+        xxx
     }
 
 }
