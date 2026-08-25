@@ -210,7 +210,8 @@
     filter: brightness(0) invert(1);
 }
 
-.mobile-navbar-active {
+.mobile-navbar-active,
+.sub-navbar-active {
     background-color: #BDA16B;
 }
 
@@ -416,13 +417,14 @@ a {
     .mobile-bar-icon a {
         padding: 2% 4%;
         background-color: var(--color-nav-background);
-        display: block;
+        display: inline-block;
     }
 
-    /*.mobile-bar-icon {
-        display: flex;
-        flex-direction: row;
-    }*/
+    .change-icon {
+        filter: brightness(0) invert(1);
+        padding: 2%;
+        transition: all 1s ease;
+    }
 
     .mobile-sub-navbar a {
         display: flex;
@@ -453,12 +455,6 @@ a {
 
     .mobile-navbar.active {
         opacity: 1;
-    }
-
-    .change-icon {
-        filter: brightness(0) invert(1);
-        padding: 2%;
-        transition: all 1s ease;
     }
 
     .change-icon.rotate {
