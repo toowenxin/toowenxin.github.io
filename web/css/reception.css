@@ -11,7 +11,7 @@
     background-image: url('../images/reception&bar-hero.jpg');
     background-size: cover;
     background-position: center;
-    padding: 100px 20px;
+    padding: 10% 7%;
 }
 
 .fine-dining-title {
@@ -29,17 +29,16 @@
 }
 
 .reception .paragraph {
-    padding-top: 30px;
     padding-bottom: 30px;
     margin: auto;
-    max-width: 40%;
+    max-width: 60%;
 }
 
 .fine-dining-container {
     display: flex;
     color: var(--color-text-light);
     background-color: #000000;
-    padding: 100px 150px;
+    padding: 7% 10%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -54,31 +53,254 @@
 .fine-dining-contents {
     display: flex;
     flex-direction: column;
-    padding: 50px 0px;
+    padding: 2% 0;
     gap: 50px;
     line-height: 20px;
 }
 
-.signature-container {
+.cocktails-container {
     display: flex;
     color: var(--color-text-light);
     background-color: #000000;
-    padding: 100px 150px;
+    padding: 7% 10%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 25px;
+    gap: 50px;
 }
 
-.signature-eyebrow {
+.cocktails-title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.cocktails-eyebrow {
     display: flex;
     flex-direction: row;
     align-items: center;
     white-space: nowrap;
     gap: 15px;
+    text-align: center;
+    align-items: center;
 }
 
-.signature-container p {
+.cocktails-container p {
     max-width: 1000px;
+}
+
+.cocktails-text {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.cocktails {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.cocktails-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 250px;
+    height: auto;
+    gap: 20px;
+}
+
+.cocktails-card-text {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.bartender-container {
+    padding: 7% 10%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.bartender-contents {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bartender-text {
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    line-height: 50px;
+    max-width: 50%;
+}
+
+.bartender-text .bartender-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bartender-text .awards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.bar-container {
+    color: var(--color-text-light);
+    background-color: #000000;
+    padding: 0% 7%;
+    padding-top: 7%;
+}
+
+.bar-title {
+    padding-bottom: 5%;
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    gap: 15px;
+}
+
+.bar-contents {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 3%;
+}
+
+.bar-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 369px;
+    padding-bottom: 7%;
+}
+
+.bar-description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bar-middle {
+    margin-top: 5%;
+}
+
+.bar-down {
+    margin-top: 10%;
+}
+
+
+
+@media only screen and (max-width: 1280px) {
+    .bartender-contents {
+        align-items: flex-start;
+    }
+
+    .bartender-text {
+        max-width: 40%;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .cocktails-container {
+        padding: 10% 10%;
+    }
+
+    .bartender-container {
+        display: flex;
+        align-items: center
+    }
+
+    .bartender-contents {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .bartender-container .title {
+        text-align: center;
+    }
+
+    .bartender-img {
+        display: contents;
+    }
+
+    .bartender-text {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .bar-contents {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bar-title {
+        max-width: 500px;
+        padding-bottom: 7%;
+    }
+
+    .bar-card {
+        gap: 20px;
+    }
+
+    .bar-middle {
+        margin-top: 0;
+    }
+
+    .bar-down {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 728px) {
+    .cocktails-down {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .cocktails {
+        flex-direction: column;
+    }
+
+    .cocktails-card {
+        padding-bottom: 10%;
+    }
+
+    .bar-container {
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .text-line {
+        display: none;
+    }
+
+    .bartender-text .bartender-intro {
+        gap: 5px;
+    }
 }
