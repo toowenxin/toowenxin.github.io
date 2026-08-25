@@ -8,28 +8,35 @@
 }
 
 .banner-background-team {
-    background-image: url('../images/team-hero.png');
+    background-image: url('../images/meet-our-team.jpg');
     background-size: cover;
     background-position: center;
-    padding: 100px 20px;
+    padding: 10% 5%;
+}
+
+.team-img {
+    width: 500px;
 }
 
 .team p {
-    padding-top: 50px;
     margin: auto;
-    max-width: 40%;
+    padding: 0% 7%;
+}
+
+.team .hero-title {
+    padding-top: 5%;
 }
 
 .team-container {
     color: var(--color-text-light);
     background-color: #000000;
-    padding: 100px 150px;
+    padding: 7% 10%;
 }
 
 .team-contents {
     display: flex;
     flex-direction: column;
-    padding: 100px 0px;
+    padding: 5% 0;
     gap: 100px;
 }
 
@@ -38,14 +45,15 @@
     flex-direction: row;
     gap: 50px;
     align-items: center;
+    justify-content: space-between;
 }
 
 .team-text {
-    max-width: 45%;
+    max-width: 55%;
 }
 
 .chef-info {
-    padding: 20px 0px;
+    padding: 5% 0;
     line-height: 50px;
     display: flex;
     flex-direction: column;
@@ -54,7 +62,7 @@
 }
 
 .chef-specialties {
-    padding: 20px 0px;
+    padding: 5% 0;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -64,82 +72,110 @@
 .landmark-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 5%;
+    padding-top: 7%;
 }
 
 .landmark {
     border: 1px solid white;
-    height: 250px;
+    height: 240px;
     width: 300px;
     text-align: center;
     align-content: center;
+    margin-bottom: 7%;
 }
 
 .value-container {
     display: flex;
     flex-direction: column;
-    gap: 50px;
     text-align: center;
-    padding: 100px 150px;
+    padding: 7% 10%;
 }
 
 .value-three-container {
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 3%;
+    flex-wrap: wrap;
+    padding-top: 3%;
 }
 
 .value-intro {
     max-width: 90%;
     margin: auto;
+    text-align: center;
+    align-content: center;
 }
 
 .value-card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    max-width: 350px;
+    margin-bottom: 7%;
+}
+
+.hr {
+    background-color: var(--color-grey);
+    height: 0.8px;
+    width: 70px;
+    margin-top: 20px;
+    margin-bottom: 4%;
 }
 
 .value-card p {
-    max-width: 90%;
+    max-width: 70%;
+    padding: 1%;
 }
 
 .three-column {
     color: var(--color-text-light);
     background-color: #000000;
-    padding: 100px 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 100px;
+    padding: 7% 10%;
 }
 
-.grow-intro p {
+.grow-intro {
+    padding-bottom: 5%;
     max-width: 90%;
-    text-align: center;
     margin: auto;
+    text-align: center;
+    align-content: center;
+}
+
+.grow-contents {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 3%;
 }
 
 .grow-card {
+    padding-bottom: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    text-align: center;
+    max-width: 370px;
+}
+
+.grow-card img {
+    width: 370px;
 }
 
 .grow-card .object-title {
-    position: absolute;
-    bottom: 180px;
+    position: relative;
+    top: 530px;
 }
 
 .grow-card .paragraph {
-    max-width: 85%;
     padding-top: 20px;
-}
-
-.grow-contents {
-    display: flex;
-    flex-direction: row;
 }
 
 .journey-container {
@@ -147,6 +183,11 @@
     flex-direction: column;
     text-align: center;
     gap: 20px;
+    padding: 3% 0;
+}
+
+.journey-container img {
+    width: 70%;
 }
 
 .btn {
@@ -154,10 +195,12 @@
 }
 
 .training {
-    padding: 100px 150px;
+    padding: 5% 7%;
 }
 
-
+.training-title {
+    text-align: center;
+}
 
 .training-card-right .sub-title,
 .training-card-left .sub-title {
@@ -167,13 +210,19 @@
     border: 1px solid var(--color-black);
     display: inline-flex;
     justify-content: center;
+    align-items: center
+}
+
+.training-card-right .object-title,
+.training-card-left .object-title {
+    padding-bottom: 3%;
 }
 
 .training-contents {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 0px;
+    padding: 5% 0;
 }
 
 .training-card-right,
@@ -192,11 +241,93 @@
 
 .training-card-left {
     position: relative;
-    left: 280px;
-    bottom: 20px;
+    left: 15%;
+    display: flex;
+    flex-direction: column;
 }
 
 .training-card-right {
     position: relative;
-    right: 280px;
+    right: 15%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@media only screen and (max-width: 1280px) {
+
+    .team-member {
+        align-items: flex-start;
+    }
+
+    .landmark {
+        height: 230px;
+    }
+}
+
+@media only screen and (max-width: 1160px) {
+    .team .hero-title {
+        padding-top: 0%;
+    }
+
+    .team-text {
+        max-width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .team-member {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        text-align: center;
+    }
+
+    .landmark {
+        height: 210px;
+    }
+
+    .team-text {
+        max-width: 65%;
+    }
+
+    .chef-info {
+        padding: 0;
+    }
+
+    .training-contents {
+        gap: 50px;
+    }
+
+    .training-card-right {
+        right: 0;
+    }
+
+    .training-card-left {
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .team-text {
+        max-width: 80%;
+    }
+
+    .landmark {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .team-title {
+        display: flex;
+        justify-content: center;
+    }
+
+    .team .hero-title {
+        padding-top: 0%;
+    }
+
+    .team-text {
+        max-width: 90%;
+    }
 }
