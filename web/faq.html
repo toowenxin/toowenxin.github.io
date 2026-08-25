@@ -277,8 +277,8 @@
 
     <div class="feedback-card">
         <p class="feedback-title section-title">Customer Feedback Form</p>
-        <p class="feedback-subtitle paragraph">Please let us know your experience in our restaurant. We're happy to hear
-            that.</p>
+        <p class="feedback-subtitle paragraph">Please share your dining experience with us. We would love to hear your
+            feedback.</p>
 
         <form class="feedback-form paragraph">
             <div class="form-group">
@@ -359,6 +359,26 @@
                     </select>
                 </div>
             </div>
+
+            <div class="form-group">
+                <p>Did you: *</p>
+                <label class="radio-label">
+                    <input type="radio" name="dining-type" value="dine-in" required>
+                    <span>Dine in</span>
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="dining-type" value="order-online" required>
+                    <span>Order Online</span>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Tell us more about your experience:</label>
+                <textarea id="experience" name="experience" class="form-textarea" rows="6"></textarea>
+            </div>
+        </form>
+    </div>
+
 
 
 

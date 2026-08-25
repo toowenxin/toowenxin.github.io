@@ -114,10 +114,10 @@ faq-box[open] .faq-question .arrow {
     flex: 1;
 }
 
-
-
-
-
+.form-textarea {
+    height: 140px;
+    resize: vertical;
+}
 
 
 
