@@ -103,9 +103,9 @@
 
                 <div class="sub-navbar">
                     <div class="sub-navbar-first">
-                        <a href="recipes.html">Reception & Bar</a>
+                        <a href="reception.html">Reception & Bar</a>
                     </div>
-                    <div class="sub-navar-last">
+                    <div class="sub-navbar-last">
                         <a href="visual.html">Visual Gallery</a>
                     </div>
                 </div>
@@ -123,7 +123,8 @@
                 <div>
                     <a href="menu.html">Menu</a>
                 </div>
-                <div class="change-icon click-icon"><img src="images/down-arrow.svg" alt="down-arrow" width="10px">
+                <div class="change-icon click-icon">
+                    <img src="images/down-arrow.svg" alt="down-arrow" width="10px">
                 </div>
             </div>
             <div class="mobile-sub-navbar submenu">
@@ -200,7 +201,7 @@
             </div>
             <div class="mobile-sub-navbar">
                 <div>
-                    <a href="recipes.html">Reception & Bar</a>
+                    <a href="reception.html">Reception & Bar</a>
                 </div>
                 <div>
                     <a href="visual.html">Visual Gallery</a>
@@ -388,12 +389,14 @@
     <script src="js/common.js"></script>
 
     <script>
+        //section 1
         gsap.fromTo(
             ".section-1-content-container",
             { x: -100, opacity: 0 },
             { x: 0, opacity: 1, duration: 1 }
         );
 
+        //section 2
         gsap.fromTo(".section-2-content",
             {
                 opacity: 0,
@@ -411,6 +414,7 @@
                 }
             }
         );
+
 
         gsap.fromTo(".three-picture",
             {
@@ -432,6 +436,7 @@
             }
         );
 
+        //section 3
         gsap.fromTo(".atmosphere-relative",
             {
                 y: 100,

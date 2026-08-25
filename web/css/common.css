@@ -210,7 +210,7 @@
     filter: brightness(0) invert(1);
 }
 
-.mobile-navbar-active {
+.sub-navbar-active {
     background-color: #BDA16B;
 }
 
@@ -394,15 +394,6 @@ a {
 
     }
 
-    .mobile-navbar a {
-        color: var(--color-text-light);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        min-height: 55px;
-        cursor: pointer;
-    }
-
     .mobile-navbar {
         display: block;
         position: absolute;
@@ -414,22 +405,29 @@ a {
     }
 
     .mobile-bar-icon a {
-        padding: 2% 4%;
+        padding: 25px 4%;
+        width: 100%;
         background-color: var(--color-nav-background);
+        color: var(--color-text-light);
         display: block;
     }
 
-    /*.mobile-bar-icon {
+    .mobile-bar-icon {
         display: flex;
-        flex-direction: row;
-    }*/
+        align-items: center;
+    }
+
+    .change-icon {
+        filter: brightness(0) invert(1);
+        transition: all 1s ease;
+    }
 
     .mobile-sub-navbar a {
         display: flex;
         align-items: center;
         background-color: var(--color-nav-background);
-        padding: 0 6%;
-        min-height: 55px;
+        color: var(--color-text-light);
+        padding: 25px 6%;
         width: 100%;
     }
 
@@ -453,12 +451,6 @@ a {
 
     .mobile-navbar.active {
         opacity: 1;
-    }
-
-    .change-icon {
-        filter: brightness(0) invert(1);
-        padding: 2%;
-        transition: all 1s ease;
     }
 
     .change-icon.rotate {
