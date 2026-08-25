@@ -414,10 +414,16 @@ a {
 
     .mobile-bar-icon {
         display: flex;
+        justify-content: space-between;
         align-items: center;
     }
 
+    .mobile-link {
+        width: 95%;
+    }
+
     .change-icon {
+        width: 5%;
         filter: brightness(0) invert(1);
         transition: all 1s ease;
     }
