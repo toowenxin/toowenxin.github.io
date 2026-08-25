@@ -119,9 +119,10 @@ faq-box[open] .faq-question .arrow {
     resize: vertical;
 }
 
-
-
-
+.form-submit-wrapper {
+    text-align: center;
+    margin-top: 30px;
+}
 
 
 /* === .section-3 === */
@@ -175,18 +176,34 @@ faq-box[open] .faq-question .arrow {
     margin-top: 12px;
 }
 
+.form-submit {
+    text-align: center;
+    margin-top: 30px;
+}
 
+/* === .section-4 === */
 
+.ready-section {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 7% 10%;
+    text-align: center;
+    margin: 0 auto;
+}
 
+.ready-header {
+    margin-bottom: 100px;
+}
 
+.ready-header .section-title {
+    margin-bottom: 20px;
+}
 
-
-
-
-
-
-
-
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
 
 
 
