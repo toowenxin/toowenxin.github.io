@@ -172,8 +172,8 @@
 
 /* ====== section3-bts ====== */
 .section-3-bts {
-    background-color: #000;
-    color: white;
+    background-color: #000000;
+    color: #FFFFFF;
     padding: 7% 10%;
     width: 100%;
 }
@@ -425,7 +425,7 @@
         text-align: center;
     }
 
- 
+
 
     .experience-text {
         width: 90%;
@@ -522,28 +522,5 @@
 
 
 
-
-
-        xxx @media only screen and (max-width: 640px) {
-
-            /* === SECTION 3 === */
-            .section-3-absolute,
-            .section-4-absolute {
-                max-width: 100%;
-                padding: 0 10%;
-            }
-
-            .section-3-group-food-hidden {
-                max-width: 100%;
-                margin-bottom: 8%;
-            }
-
-
-            /* === SECTION 4 === */
-            .card-space {}
-        }
-
-        xxx
     }
-
 }

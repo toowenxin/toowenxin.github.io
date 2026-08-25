@@ -46,14 +46,17 @@
 
 .order-menu-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .order-dish-card {
     background-color: #333333;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .order-dish-image {
@@ -86,8 +89,19 @@
     color: #BDA16B;
 }
 
+.button-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: auto;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
 
-
+.quantity-selector {
+    display: flex;
+    align-items: center;
+}
 
 
 /* ====== .section-3-. ====== */
@@ -164,7 +178,6 @@
 
 
 /* ====== .section-4-. ====== */
-
 .related-fav-section {
     background-color: #000000;
     color: #FFFFFF;
@@ -180,7 +193,7 @@
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 25px;
 }
 
@@ -208,7 +221,6 @@
     flex-direction: column;
     flex-grow: 1;
 }
-
 
 .button-col {
     display: flex;
@@ -269,6 +281,31 @@
 
 
 
+@media only screen and (max-width: 1170px) {
+
+    /* === section-1 === */
+    .order-intro {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .order-intro-text {
+        max-width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+    /* === section-2 === */
+
+    .order-menu-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
 
 
 
+    }
+}
