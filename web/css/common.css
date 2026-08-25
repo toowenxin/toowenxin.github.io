@@ -137,6 +137,7 @@
     padding: var(--btn-padding);
     background-color: var(--color-hover);
     color: var(--color-white);
+    border: none;
 }
 
 .btn-black:hover {
