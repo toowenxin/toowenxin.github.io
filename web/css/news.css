@@ -93,6 +93,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 0 10% 7%;
+    overflow: hidden;
 }
 
 .photo-chef {

@@ -536,6 +536,112 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
     <script src="js/common.js"></script>
+
+    <script>
+        //section 2
+        gsap.fromTo(".photo-chef",
+            {
+                x: -200,
+                opacity: 0,
+            },
+
+            {
+                x: 0,
+                opacity: 1,
+                duration: 1.5,
+                stagger: 1,
+                scrollTrigger:
+                {
+                    trigger: ".section-1-content",
+                    start: "50% 30%",
+                    end: "bottom 20%",
+                    scrub: 1,
+                }
+            }
+        );
+
+        gsap.fromTo(".award-text",
+            {
+                x: 200,
+                opacity: 0,
+            },
+
+            {
+                x: 0,
+                opacity: 1,
+                duration: 1.5,
+                stagger: 1,
+                scrollTrigger:
+                {
+                    trigger: ".section-1-content",
+                    start: "50% 30%",
+                    end: "bottom 20%",
+                    scrub: 1,
+                }
+            }
+        );
+
+        //section 3
+        gsap.fromTo(".section-3-title",
+            {
+                opacity: 0,
+            },
+
+            {
+                opacity: 1,
+                duration: 1.5,
+                stagger: 1,
+                scrollTrigger:
+                {
+                    trigger: ".award-text",
+                    start: "top 30%",
+                    end: "bottom 20%",
+                    scrub: 1,
+                }
+            }
+        );
+
+        gsap.fromTo(".picture-2",
+            {
+                opacity: 0,
+            },
+
+            {
+                opacity: 1,
+                duration: 1.5,
+                stagger: 1,
+                scrollTrigger:
+                {
+                    trigger: ".section-3-title",
+                    start: "top 30%",
+                    end: "bottom 10%",
+                    scrub: 1,
+                }
+            }
+        );
+
+        //section 4
+        gsap.fromTo(".section-4-img-same-size",
+            {
+                y: 200,
+                opacity: 0,
+            },
+
+            {
+                y: 0,
+                opacity: 1,
+                duration: 1.5,
+                stagger: 1,
+                scrollTrigger:
+                {
+                    trigger: ".section-4-title",
+                    start: "top 40%",
+                    end: "bottom 0%",
+                    scrub: 1,
+                }
+            }
+        );
+    </script>
 </body>
 
 </html>
