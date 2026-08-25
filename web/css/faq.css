@@ -105,7 +105,14 @@ faq-box[open] .faq-question .arrow {
     outline: none;
 }
 
+.date-select-group {
+    display: flex;
+    gap: 20px;
+}
 
+.date-select-group .form-select {
+    flex: 1;
+}
 
 
 
