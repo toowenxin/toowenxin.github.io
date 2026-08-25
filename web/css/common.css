@@ -135,9 +135,8 @@
 
 .btn-gold {
     padding: var(--btn-padding);
-    background-color: #BDA16B;
-    color: var(--color-text-light);
-    border: 1px solid var(--color-white);
+    background-color: var(--color-hover);
+    color: var(--color-white);
 }
 
 .btn-black:hover {
