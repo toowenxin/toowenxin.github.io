@@ -14,22 +14,18 @@ menuIcon.addEventListener("click", () => {
 });
 
 //subNavbar
-const submenus = document.querySelectorAll(".mobile-has-sub-navbar");
+const icons = document.querySelectorAll(".click-icon");
 
-submenus.forEach((submenu) => {
-
-    submenu.addEventListener("click", () => {
-
-        const sub = submenu.querySelector(".mobile-sub-navbar");
-
+icons.forEach((icon) => {
+    icon.addEventListener("click", () => {
+        // 找到共同的父元素
+        const parent = icon.closest(".mobile-has-sub-navbar");
+        // 在父元素里面找到 submenu
+        const sub = parent.querySelector(".mobile-sub-navbar");
         sub.classList.toggle("active");
 
-        const changeIcon = submenu.querySelector(".change-icon");
-
-        changeIcon.classList.toggle("rotate");
-
+        icon.classList.toggle("rotate");
     });
-
 });
 
 //haeder
