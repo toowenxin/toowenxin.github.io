@@ -1,17 +1,33 @@
-.rerservation-hero-contents {
+.reservation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-light);
+    text-align: center;
+}
+
+.reservation p {
+    padding-top: 7%;
+    max-width: 40%;
+}
+
+.banner-background-reservation {
+    background-image: url('../images/reserve-your-table.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+}
+
+.reservation-hero-contents {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 60px;
-    position: relative;
-    bottom: 450px;
-    margin-left: 100px;
+    left: auto;
 }
 
-.rerservation-hero-contents .hero-title {
+.reservation-hero-contents .hero-title {
     max-width: 400px;
-    width: 450px;
-    height: 20%;
     border-right: 1px solid white;
     color: white;
 }
@@ -24,12 +40,11 @@
 .horizontal-line {
     background-color: white;
     height: 1px;
-    width: 250px;
-    height: 20%;
+    width: 200px;
 }
 
 .reservation-container {
-    padding: 0px 150px;
+    padding: 5% 7%;
     text-align: center;
     padding-bottom: 150px;
 }
@@ -50,6 +65,7 @@
 
 .form-group .paragraph {
     text-align: left;
+    padding-bottom: 20px;
 }
 
 .form-group label {
@@ -70,17 +86,22 @@
     background-color: var(--btn-background-color);
     color: var(--color-text-black);
     border: 1px solid var(--color-grey);
+    background-image: url('../images/down-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 12px;
+    appearance: none;
+
 }
 
 .form-group input {
     font-family: var(--font-heading);
     font-size: var(--font-button);
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     line-height: 18px;
     letter-spacing: 1px;
-    padding: var(--btn-padding);
+    padding: 2% 5%;
     background-color: var(--btn-background-color);
     color: var(--color-text-black);
     border: 1px solid var(--color-grey);
@@ -94,6 +115,10 @@
     letter-spacing: 1px;
 }
 
+.btn.active {
+    border-color: var(--color-black);
+}
+
 .time-slots-container {
     line-height: 150px;
 }
@@ -101,16 +126,21 @@
 .time-slots-container .paragraph {
     text-align: left;
     padding-top: 40px;
+    padding-bottom: 20px;
 }
 
 .reserve-button {
     padding-top: 50px;
 }
 
+.reserve- button a {
+    color: var(--color-black);
+}
+
 .dining-guidelines-container {
     color: var(--color-text-light);
     background-color: #000000;
-    padding: 100px 150px;
+    padding: 5% 7%;
     display: flex;
     gap: 80px;
     flex-direction: column;
@@ -124,7 +154,7 @@
 .dining-guidelines-card-right {
     display: flex;
     flex-direction: row;
-    gap: 100px;
+    gap: 5%;
     align-items: center
 }
 
@@ -140,7 +170,7 @@
 .experiences-container {
     color: var(--color-text-light);
     background-color: #000000;
-    padding: 100px 150px;
+    padding: 5% 7%;
     text-align: center;
     padding-bottom: 150px;
 }
@@ -148,7 +178,7 @@
 .experiences-card {
     position: relative;
     margin: 70px 0;
-    padding: 10px;
+    padding: 3%;
     display: flex;
     justify-content: center;
 }
@@ -164,7 +194,7 @@
 }
 
 .google-map-container {
-    padding: 100px 0px;
+    padding: 5% 0;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -172,7 +202,7 @@
 }
 
 .google-map-description {
-    padding: 0px 200px;
+    padding: 0px 7%;
 }
 
 .google-map-description .object-title {
@@ -236,7 +266,7 @@
     .rerservation-hero-contents {
         color: var(--color-text-light);
         background-color: #000000;
-        padding: 100px 50px;
+        padding: 5% 7%;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -251,7 +281,7 @@
     }
 
     .reservation-container {
-        padding: 100px 50px;
+        padding: 5% 3%;
     }
 
     .reservation-form {
@@ -267,11 +297,11 @@
     }
 
     .dining-guidelines-container {
-        padding: 100px 100px;
+        padding: 5%;
     }
 
     .experiences-container {
-        padding: 100px 0px;
+        padding: 5% 0;
     }
 }
 
