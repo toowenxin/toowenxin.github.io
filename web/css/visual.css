@@ -229,7 +229,7 @@
 }
 
 .bts-text,
-.object-title h2 {
+.object-title p {
     display: block;
     margin-bottom: 20px;
 }
@@ -436,9 +436,9 @@
     }
 
     .section-4-experience .hero-title {
-        font-size: 32px;
-        text-align: center;
+        font-size: 63px;
     }
+
 
     .experience-text {
         width: 90%;
@@ -522,8 +522,10 @@
 
         /* ====== section-4- ====== */
 
+
         .section-4-experience .hero-title {
-            font-size: 63px;
+            font-size: 32px;
+            text-align: center;
         }
     }
 

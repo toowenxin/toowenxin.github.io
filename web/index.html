@@ -103,9 +103,9 @@
 
                 <div class="sub-navbar">
                     <div class="sub-navbar-first">
-                        <a href="recipes.html">Reception & Bar</a>
+                        <a href="reception.html">Reception & Bar</a>
                     </div>
-                    <div class="sub-navar-last">
+                    <div class="sub-navbar-last">
                         <a href="visual.html">Visual Gallery</a>
                     </div>
                 </div>
@@ -120,10 +120,11 @@
         </div>
         <div class="mobile-has-sub-navbar">
             <div class="mobile-bar-icon">
-                <div>
+                <div class="mobile-link">
                     <a href="menu.html">Menu</a>
                 </div>
-                <div class="change-icon"><img src="images/down-arrow.svg" alt="down-arrow" width="10px">
+                <div class="change-icon click-icon">
+                    <img src="images/down-arrow.svg" alt="down-arrow" width="10px">
                 </div>
             </div>
             <div class="mobile-sub-navbar submenu">
@@ -141,7 +142,7 @@
                 <div>
                     <a href="orders.html">Orders</a>
                 </div>
-                <div class="change-icon"><img src="images/down-arrow.svg" alt="down-arrow" width="10px">
+                <div class="change-icon click-icon"><img src="images/down-arrow.svg" alt="down-arrow" width="10px">
                 </div>
             </div>
             <div class="mobile-sub-navbar">
@@ -156,7 +157,7 @@
                 <div>
                     <a href="reservation.html">Reservations</a>
                 </div>
-                <div class="change-icon"><img src="images/down-arrow.svg" alt="down-arrow" width="10px">
+                <div class="change-icon click-icon"><img src="images/down-arrow.svg" alt="down-arrow" width="10px">
                 </div>
             </div>
             <div class="mobile-sub-navbar">
@@ -171,7 +172,7 @@
                 <div>
                     <a href="about.html">About us</a>
                 </div>
-                <div class="change-icon"><img src="images/down-arrow.svg" alt="down-arrow" width="10px">
+                <div class="change-icon click-icon"><img src="images/down-arrow.svg" alt="down-arrow" width="10px">
                 </div>
             </div>
             <div class="mobile-sub-navbar">
@@ -195,12 +196,12 @@
                 <div>
                     <a href="restaurant.html">Our Restaurant</a>
                 </div>
-                <div class="change-icon"><img src="images/down-arrow.svg" alt="down-arrow" width="10px">
+                <div class="change-icon click-icon"><img src="images/down-arrow.svg" alt="down-arrow" width="10px">
                 </div>
             </div>
             <div class="mobile-sub-navbar">
                 <div>
-                    <a href="recipes.html">Reception & Bar</a>
+                    <a href="reception.html">Reception & Bar</a>
                 </div>
                 <div>
                     <a href="visual.html">Visual Gallery</a>
@@ -263,7 +264,9 @@
 
         <div class="three-picture">
             <div class="under-picture-content dessert-img">
-                <div><img src="images/dessert.jpg" alt="a white color ice cream cake" width="100%"></div>
+                <div><img src="images/dessert 3.jpg"
+                        alt="A stack of chocolate brownies drizzled with melted chocolate, with a milk chocolate bar on the side."
+                        width="100%"></div>
                 <div class="object-title picture-title">
                     <p>DESSERT
                     </p>
@@ -272,7 +275,9 @@
             </div>
 
             <div class="under-picture-content chef-specials-img">
-                <div><img src="images/chef specials.jpg" alt="a plate of spicy dumplings" width="100%"></div>
+                <div><img src="images/chef specials 2.jpg"
+                        alt="Salmon fillet on creamy mashed potatoes, garnished with chives, herbs, and edible flowers."
+                        width="100%"></div>
                 <div class="sub-title picture-title change-font-size">
                     <p>CHEF SPECIALS
                     </p>
@@ -281,7 +286,7 @@
             </div>
 
             <div class="under-picture-content seasonal-img">
-                <div><img src="images/seasonal.jpg"
+                <div><img src="images/seasonal-2.jpg"
                         alt="A gold nugget is held by tweezers above a small. The gold nugget and the circular object are both dusted with gold glitter."
                         width="100%"></div>
                 <div class="object-title picture-title">
@@ -384,12 +389,14 @@
     <script src="js/common.js"></script>
 
     <script>
+        //section 1
         gsap.fromTo(
             ".section-1-content-container",
             { x: -100, opacity: 0 },
             { x: 0, opacity: 1, duration: 1 }
         );
 
+        //section 2
         gsap.fromTo(".section-2-content",
             {
                 opacity: 0,
@@ -407,6 +414,7 @@
                 }
             }
         );
+
 
         gsap.fromTo(".three-picture",
             {
@@ -428,6 +436,7 @@
             }
         );
 
+        //section 3
         gsap.fromTo(".atmosphere-relative",
             {
                 y: 100,

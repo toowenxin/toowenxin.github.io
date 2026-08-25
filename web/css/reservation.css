@@ -1,3 +1,26 @@
+.reservation-hero-contents {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+    bottom: 450px;
+    margin-left: 100px;
+}
+
+.reservation-hero-contents .hero-title {
+    max-width: 400px;
+    width: 450px;
+    height: 20%;
+    border-right: 1px solid white;
+    color: white;
+}
+
+.reservation-hero-contents .paragraph {
+    max-width: 400px;
+    color: white;
+}
+
 .reservation {
     display: flex;
     flex-direction: column;
@@ -8,34 +31,16 @@
 }
 
 .reservation p {
-    padding-top: 7%;
     max-width: 40%;
+    padding-left: 3%;
 }
 
 .banner-background-reservation {
-    background-image: url('../images/reserve-your-table.jpg');
     background-size: cover;
     background-position: center;
-    padding: 100px 20px;
+    padding: 7% 7%;
 }
 
-.reservation-hero-contents {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    left: auto;
-}
-
-.reservation-hero-contents .hero-title {
-    max-width: 400px;
-    border-right: 1px solid white;
-    color: white;
-}
-
-.rerservation-hero-contents .paragraph {
-    max-width: 400px;
-    color: white;
-}
 
 .horizontal-line {
     background-color: white;
@@ -44,14 +49,16 @@
 }
 
 .reservation-container {
-    padding: 5% 7%;
+    padding: 0 7%;
     text-align: center;
     padding-bottom: 150px;
+    position: relative;
+    bottom: 90px;
 }
 
 .reservation-form {
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-evenly;
+    gap: 15%;
     line-height: 30px;
     padding-bottom: 50px;
     display: flex;
@@ -61,6 +68,11 @@
 
 .reservation-contents {
     line-height: 150px;
+}
+
+
+.form-group {
+    max-width: 300px;
 }
 
 .form-group .paragraph {
@@ -91,6 +103,7 @@
     background-position: right 16px center;
     background-size: 12px;
     appearance: none;
+    padding: 15% 35%;
 
 }
 
@@ -105,6 +118,7 @@
     background-color: var(--btn-background-color);
     color: var(--color-text-black);
     border: 1px solid var(--color-grey);
+    padding: 8% 20%;
 }
 
 .time-slots {
@@ -113,6 +127,14 @@
     gap: 20px;
     line-height: 18px;
     letter-spacing: 1px;
+    justify-items: center;
+    padding: 1% 12%;
+}
+
+.btn {
+    width: 150px;
+    display: flex;
+    justify-content: center;
 }
 
 .btn.active {
@@ -121,26 +143,28 @@
 
 .time-slots-container {
     line-height: 150px;
+    padding-top: 3%;
 }
 
 .time-slots-container .paragraph {
-    text-align: left;
     padding-top: 40px;
     padding-bottom: 20px;
 }
 
 .reserve-button {
-    padding-top: 50px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
 }
 
-.reserve- button a {
+.reserve-button a {
     color: var(--color-black);
 }
 
 .dining-guidelines-container {
     color: var(--color-text-light);
     background-color: #000000;
-    padding: 5% 7%;
+    padding: 7% 10%;
     display: flex;
     gap: 80px;
     flex-direction: column;
@@ -164,23 +188,28 @@
 }
 
 .dining-guidelines-card-text .object-title {
-    padding-bottom: 30px;
+    padding-bottom: 15px;
 }
 
 .experiences-container {
     color: var(--color-text-light);
     background-color: #000000;
-    padding: 5% 7%;
+    padding: 7% 10%;
     text-align: center;
     padding-bottom: 150px;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
 }
 
 .experiences-card {
-    position: relative;
-    margin: 70px 0;
-    padding: 3%;
+    padding-bottom: 2%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    max-width: 366px;
 }
 
 .experiences-card .object-title {
@@ -190,23 +219,28 @@
 
 .experiences-contents {
     display: flex;
+    justify-content: space-evenly;
     gap: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center
 }
 
 .google-map-container {
-    padding: 5% 0;
+    padding: 7% 0;
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 50px;
 }
 
 .google-map-description {
     padding: 0px 7%;
-}
-
-.google-map-description .object-title {
-    padding-bottom: 30px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
 }
 
 .google-map-container .location-img {
@@ -223,24 +257,108 @@
 
 
 @media only screen and (max-width: 1280px) {
-    .rerservation-hero-contents {
+    .reservation-hero-contents {
         bottom: 400px;
     }
 
     .google-map iframe {
-        width: 1280px;
         height: 500px;
     }
 }
 
+@media only screen and (max-width: 1280px) {
+    .form-group select {
+        padding: 15% 35%;
+    }
+
+    .reservation-contents {
+        padding: 0 7%;
+    }
+
+    .reservation-hero-contents {
+        color: var(--color-text-light);
+        background-color: #000000;
+        padding: 7%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: auto;
+        bottom: 10px;
+    }
+
+    .reservation-hero-contents .hero-title {
+        border-right: 0px;
+        border-bottom: 1px solid white;
+        padding-bottom: 1%;
+    }
+
+    .reservation-container {
+        padding: 7%;
+        padding-top: 15%;
+    }
+
+    .reservation-hero-contents .hero-title {
+        border-right: 0px;
+        border-bottom: 1px solid white;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
+    .reservation-form {
+        border-bottom: 0px;
+    }
+
+    .reservation-form .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-group input {
+        padding: 10% 10%;
+    }
+
+    .form-group select {
+        padding: 10% 35%;
+    }
+
+    .time-slots-container {
+        padding: 0% 10%;
+        padding-bottom: 5%;
+    }
+
+    .time-slots-container .paragraph {
+        text-align: center;
+    }
+
+    .time-slots {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .reservation-contents {
+        display: flex;
+        justify-content: center;
+    }
+
+    .reservation p {
+        padding-top: 3%;
+    }
+
+    .reserve-button {
+        padding: 0 10%;
+    }
+
     .reservation-form {
         display: flex;
         flex-direction: column;
     }
 
     .google-map iframe {
-        width: 1024px;
         height: 325px;
     }
 
@@ -248,12 +366,14 @@
         display: flex;
         flex-direction: column;
         text-align: center;
+        gap: 30px;
     }
 
     .dining-guidelines-card-right {
         display: flex;
         flex-direction: column-reverse;
         text-align: center;
+        gap: 30px;
     }
 
     .experiences-contents {
@@ -263,51 +383,21 @@
 }
 
 @media only screen and (max-width: 890px) {
-    .rerservation-hero-contents {
-        color: var(--color-text-light);
-        background-color: #000000;
-        padding: 5% 7%;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        margin: auto;
-        bottom: 10px;
-    }
-
-    .rerservation-hero-contents .hero-title {
-        border-right: 0px;
-        border-bottom: 1px solid white;
-    }
-
-    .reservation-container {
-        padding: 5% 3%;
-    }
-
-    .reservation-form {
-        border-bottom: 0px;
-    }
-
-    .time-slots-container {
-        display: none;
-    }
-
-    .reserve-button {
-        padding-top: 0px;
-    }
-
     .dining-guidelines-container {
-        padding: 5%;
+        padding: 7%;
     }
 
-    .experiences-container {
-        padding: 5% 0;
+    .reservation-container .sub-title {
+        padding-top: 7%;
     }
 }
 
 @media only screen and (max-width: 640px) {
     .google-map iframe {
-        width: 640px;
         height: 250px;
+    }
+
+    .google-map-container {
+        padding: 10% 0;
     }
 }
