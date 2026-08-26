@@ -170,7 +170,7 @@
     flex-direction: column;
 }
 
-.dining-guidelines-container .sub-title {
+.dining-guidelines-container .title {
     text-align: center;
 }
 
@@ -387,7 +387,7 @@
         padding: 7%;
     }
 
-    .reservation-container .sub-title {
+    .reservation-container .title {
         padding-top: 7%;
     }
 }
