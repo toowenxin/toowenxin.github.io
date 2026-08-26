@@ -264,9 +264,7 @@
     .google-map iframe {
         height: 500px;
     }
-}
 
-@media only screen and (max-width: 1280px) {
     .form-group select {
         padding: 15% 35%;
     }
@@ -295,7 +293,7 @@
 
     .reservation-container {
         padding: 7%;
-        padding-top: 15%;
+        padding-top: 20%;
     }
 
     .reservation-hero-contents .hero-title {
