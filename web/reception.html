@@ -323,9 +323,9 @@
         <div class="title">Meet the bartender</div>
 
         <div class="bartender-contents">
-            <div class="bartender-img"><img src="images/bartender.jpg" width="100%"></div>
+            <div class="bartender-img img-fade-in"><img src="images/bartender.jpg" width="100%"></div>
 
-            <div class="bartender-text">
+            <div class="bartender-text text-fade-in">
 
                 <div class="quotes">
                     <p class="paragraph">“The bar is where the evening finds its first note. The lounge is where it
@@ -359,7 +359,7 @@
                 reservation required.</p>
         </div>
         <div class="bar-contents">
-            <div class="bar-card bar-up">
+            <div class="bar-card bar-up bar-fade-in">
                 <div><img src="images/open-late.jpg" width="369px" height="492px"></div>
                 <div class="bar-description">
                     <p class="object-title">Open Late</p>
@@ -367,7 +367,7 @@
                 </div>
             </div>
 
-            <div class="bar-card bar-middle">
+            <div class="bar-card bar-middle bar-fade-in">
                 <div><img src="images/full-bar-service.jpg" width="369px" height="492px"></div>
                 <div class="bar-description">
                     <p class="object-title">Full Bar Service</p>
@@ -375,7 +375,7 @@
                 </div>
             </div>
 
-            <div class="bar-card bar-down">
+            <div class="bar-card bar-down bar-fade-in">
                 <div><img src="images/lounge-seating.jpg" width="369px" height="492px"></div>
                 <div class="bar-description">
                     <p class="object-title">Lounge Seating</p>
@@ -452,6 +452,59 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
     <script src="js/common.js"></script>
+    <script>
+        gsap.from(".img-fade-in",
+            {
+                x: -200,
+                opacity: 0,
+                duration: 1,
+                scrollTrigger:
+                {
+                    trigger: ".bartender-container .title",
+                    start: "top 60%",
+                    end: "bottom 0%",
+                    scrub: 1,
+                    markers: true,
+                }
+            }
+        );
+    </script>
+
+    <script>
+        gsap.from(".text-fade-in",
+            {
+                x: 200,
+                opacity: 0,
+                duration: 1,
+                scrollTrigger:
+                {
+                    trigger: ".bartender-container .title",
+                    start: "top 60%",
+                    end: "bottom 0%",
+                    scrub: 1,
+                    markers: true,
+                }
+            }
+        );
+    </script>
+
+    <script>
+        gsap.from(".bar-fade-in",
+            {
+                y: 200,
+                opacity: 0,
+                duration: 1.5,
+                stagger: 1,
+                scrollTrigger:
+                {
+                    trigger: ".bar-title",
+                    start: "top 60%",
+                    end: "bottom 0%",
+                    scrub: 1,
+                }
+            }
+        );
+    </script>
 
 </body>
 
