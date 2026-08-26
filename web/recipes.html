@@ -225,11 +225,11 @@
 
         <div class="featured">
             <div class="featured-img">
-                <p class="sub-title">Featured Recipes</p>
+                <p class="title">Featured Recipes</p>
                 <img src="images/featured-recipes-img.png" alt="featured-recipes-img" width="100%">
             </div>
 
-            <div class="featured-content">
+            <div class="featured-content recipes-text">
                 <p class="object-title">Chef's Special</p>
 
                 <div class="ingredients paragraph">
@@ -302,9 +302,9 @@
     </div>
 
     <div class="ingredient-container">
-        <p class="sub-title">Our Ingredients</p>
+        <p class="title">Our Ingredients</p>
         <div class="ingredient-three-container">
-            <div class="ingredient-card">
+            <div class="ingredient-card fade-in">
                 <div><img src="images/premium-beef.png" alt="premium-beef" width="100%"></div>
                 <p class="object-title">Premium Beef</p>
                 <p class="paragraph">Sourced from pasture-raised cattle, dry-aged for a minimum of 28 days to
@@ -314,7 +314,7 @@
                     result is beef that tastes of the land it came from — deep, rich, and unmistakably honest.</p>
             </div>
 
-            <div class="ingredient-card">
+            <div class="ingredient-card fade-in">
                 <div><img src="images/fresh-seafood.png" alt="fresh-seafood" width="100%"></div>
                 <p class="object-title">Fresh Seafood</p>
                 <p class="paragraph">Delivered daily from coastal waters, never frozen. Our fish and shellfish are
@@ -324,7 +324,7 @@
                     appear on our menu. Simple as that.</p>
             </div>
 
-            <div class="ingredient-card">
+            <div class="ingredient-card fade-in">
                 <div><img src="images/farm-fresh.png" alt="farm-fresh" width="100%"></div>
                 <p class="object-title">Farm Fresh</p>
                 <p class="paragraph">Produce that travels from soil to plate in hours, not days. We partner with local
@@ -338,13 +338,13 @@
     </div>
 
     <div class="preparation-container">
-        <p class="sub-title">Preparation Process</p>
+        <p class="title">Preparation Process</p>
 
         <div class="column-four">
 
             <div class="process-card">
 
-                <div class="preparation-content">
+                <div class="preparation-content fade-in-ingredient">
                     <p class="sub-title">1</p>
                     <div><img src="images/ingredients.svg" alt="ingredients" width="80%"></div>
                     <p class="object-title">Ingredients</p>
@@ -353,7 +353,7 @@
                         garden, picked just hours before service.</p>
                 </div>
 
-                <div class="preparation-content">
+                <div class="preparation-content fade-in-ingredient">
                     <p class="sub-title">2</p>
                     <div><img src="images/preparation.svg" alt="preparation" width="60%"></div>
                     <p class="object-title">Preparation</p>
@@ -362,7 +362,7 @@
                         washed and spun dry. Every element prepped to precision.</p>
                 </div>
 
-                <div class="preparation-content">
+                <div class="preparation-content fade-in-ingredient">
                     <p class="sub-title">3</p>
                     <div><img src="images/cooking.svg" alt="cooking" width="75%"></div>
                     <p class="object-title">Cooking</p>
@@ -371,7 +371,7 @@
                         sauce, shallots are sweated, deglazed, and mounted with cold butter for a silky emulsion.</p>
                 </div>
 
-                <div class="preparation-content">
+                <div class="preparation-content fade-in-ingredient">
                     <p class="sub-title">4</p>
                     <div><img src="images/plating.svg" alt="plating" width="85%"></div>
                     <p class="object-title">Plating</p>
@@ -386,7 +386,7 @@
     </div>
 
     <div class="chef-note-container">
-        <p class="sub-title">Chef's Note</p>
+        <p class="title">Chef's Note</p>
         <div class="chef-note">
             <img src="images/chef-note.png" alt="chef-note-img">
             <div class="note-container">
@@ -475,6 +475,94 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
     <script src="js/common.js"></script>
+    <script>
+        gsap.from(".featured-img img",
+            {
+                x: -200,
+                opacity: 0,
+                duration: 1,
+                scrollTrigger:
+                {
+                    trigger: ".section-header",
+                    start: "top 30%",
+                    end: "bottom 00%",
+                    scrub: 1,
+                }
+            }
+        );
+    </script>
+
+    <script>
+        gsap.from(".recipes-text",
+            {
+                x: 200,
+                opacity: 0,
+                duration: 1.5,
+                scrollTrigger:
+                {
+                    trigger: ".section-header",
+                    start: "top 30%",
+                    end: "bottom 0%",
+                    scrub: 1,
+                }
+            }
+        );
+    </script>
+
+    <script>
+        gsap.from(".fade-in",
+            {
+                y: 200,
+                opacity: 0,
+                duration: 1,
+                stagger: 0.5,
+                scrollTrigger:
+                {
+                    trigger: ".ingredient-container .title",
+                    start: "top 50%",
+                    end: "bottom 20%",
+                    scrub: 1,
+                    markers: true,
+                }
+            }
+        );
+    </script>
+
+    <script>
+        gsap.from(".fade-in-ingredient",
+            {
+                y: 200,
+                opacity: 0,
+                duration: 1.5,
+                stagger: 1,
+                scrollTrigger:
+                {
+                    trigger: ".preparation-container .title",
+                    start: "top 50%",
+                    end: "bottom 20%",
+                    scrub: 1,
+                    markers: true,
+                }
+            }
+        );
+    </script>
+
+    <script>
+        gsap.from(".chef-note",
+            {
+                x: -200,
+                opacity: 0,
+                duration: 1,
+                scrollTrigger:
+                {
+                    trigger: ".chef-note-container .title",
+                    start: "top 50%",
+                    end: "bottom 20%",
+                    scrub: 1,
+                }
+            }
+        );
+    </script>
 
 </body>
 
