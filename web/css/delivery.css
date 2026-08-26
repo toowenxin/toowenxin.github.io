@@ -178,6 +178,9 @@
 .gift-section {
     background-color: #000000;
     color: #ffffff;
+}
+
+.gift-container {
     padding: 7% 10%;
     text-align: center;
     margin: 0 auto;
