@@ -209,11 +209,13 @@
         </div>
     </div>
 
+
     <div class="faq faq-banner">
         <div class="eyebrow-heading fade-in">Frequently Asked Questions</div>
         <div class="hero-title fade-in">FAQS</div>
     </div>
 
+    <!-- ======== Section-1 ======== -->
     <div class="faq-container">
         <details class="faq-box" open>
             <summary class="faq-question sub-title">
@@ -283,12 +285,12 @@
 
         <form class="feedback-form paragraph">
             <div class="form-group">
-                <label for="name">Name: (optional)</label>
+                <label for="name">Name: *</label>
                 <input type="text" id="name" name="name" class="form-input">
             </div>
 
             <div class="form-group">
-                <label for="email">E-mail: (optional)</label>
+                <label for="email">E-mail: *</label>
                 <input type="email" id="email" name="email" class="form-input">
             </div>
 
@@ -350,8 +352,8 @@
                         <option value="7">July</option>
                         <option value="8">August</option>
                         <option value="9">September</option>
-                        <option value="10">Octoebr</option>
-                        <option value="11">Novenber</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
                         <option value="12">December</option>
                     </select>
                     <select name="year" class="form-select" required>
@@ -391,18 +393,18 @@
         <div class="delivery-row row-left">
             <div class="deli-card">
                 <div class="deli-pic-box">
-                    <img src="images/lobster.png" alt="lobster">
+                    <img src="images/faq-bar.jpg" alt="bar">
                 </div>
-                <p class="object-title">BUTTER-POACHED LOBSTER</p>
+                <p class="object-title">Our Bar Station</p>
             </div>
         </div>
 
         <div class="delivery-row row-right">
             <div class="deli-card">
                 <div class="deli-pic-box">
-                    <img src="images/duck-breast.png" alt="duck-breast">
+                    <img src="images/faq-eat.jpg" alt="eat">
                 </div>
-                <p class="object-title">Duck Breast with Cherry Sauce</p>
+                <p class="object-title">Enjoy your meal!</p>
             </div>
         </div>
     </div>
@@ -504,8 +506,23 @@
             { y: -30, opacity: 1, duration: 1, stagger: 0.5 }
         );
 
-
+        gsap.from(".deli-card",
+            {
+                x: -200,
+                opacity: 0,
+                duration: 1,
+                scrollTrigger:
+                {
+                    trigger: ".section-header",
+                    start: "top 70%",
+                    end: "bottom 80%",
+                    scrub: 1
+                }
+            }
+        );
     </script>
+
+
 </body>
 
 </html>

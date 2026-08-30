@@ -1,3 +1,4 @@
+/* === .section-1 === */
 .faq {
     display: flex;
     flex-direction: column;
@@ -215,6 +216,31 @@ faq-box[open] .faq-question .arrow {
 }
 
 @media screen and (max-width: 640px) {
+
+    /* === section-1 === */
+    .faq-container {
+        gap: 15px;
+    }
+
+    .faq-question {
+        padding: 2% 5%;
+    }
+
+    .faq-question.sub-title {
+        font-size: 30px;
+        text-align: left;
+        line-height: 1.4;
+    }
+
+    .faq-answer {
+        padding: 2% 5%;
+    }
+
+    .faq-answer p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
 
     /* === section-3 === */
     .deli-card {

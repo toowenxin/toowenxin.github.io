@@ -209,6 +209,7 @@
     text-align: center;
 }
 
+
 /* ====== .section-3. ====== */
 
 .product-detail-container {
@@ -330,7 +331,6 @@
 
 .tips-bottom {
     text-align: right;
-    max-width: 400px;
     align-self: flex-end;
 }
 
