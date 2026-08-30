@@ -241,16 +241,14 @@
 
 .training-card-left {
     position: relative;
-    left: 15%;
+    left: 14%;
     display: flex;
-    flex-direction: column;
 }
 
 .training-card-right {
     position: relative;
     right: 15%;
     display: flex;
-    flex-direction: column-reverse;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -300,10 +298,12 @@
 
     .training-card-right {
         right: 0;
+        flex-direction: column-reverse;
     }
 
     .training-card-left {
         left: 0;
+        flex-direction: column;
     }
 }
 

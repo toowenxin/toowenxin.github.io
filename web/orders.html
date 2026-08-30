@@ -239,8 +239,8 @@
         </div>
 
 
-        <div class="order-menu-container">
-            <div class="order-dish-card fade-in">
+        <div class="order-menu-container ">
+            <div class="order-dish-card">
                 <div class="order-dish-image">
                     <img src="images/lobster.png" alt="Butter-Poached Lobster">
                 </div>
@@ -256,13 +256,13 @@
                             <span>1</span>
                             <button>+</button>
                         </div>
-                        <button class="btn btn-gold btn-white">ADD TO CART</button>
+                        <a href="delivery.html" class="btn btn-gold btn-white">ADD TO CART</a>
                         <a href="delivery.html" class="btn btn-font-white btn-white">VIEW IN CART</a>
                     </div>
                 </div>
             </div>
 
-            <div class="order-dish-card fade-in">
+            <div class="order-dish-card">
                 <div class="order-dish-image">
                     <img src="images/duck-breast.png" alt="duck breast">
                 </div>
@@ -279,7 +279,7 @@
                             <span>1</span>
                             <button>+</button>
                         </div>
-                        <button class="btn btn-gold btn-white">ADD TO CART</button>
+                        <a href="delivery.html" class="btn btn-gold btn-white">ADD TO CART</a>
                         <a href="delivery.html" class="btn btn-font-white btn-white">VIEW IN CART</a>
                     </div>
                 </div>
@@ -298,7 +298,8 @@
             <div class="dish-des-container">
                 <p class="eyebrow-heading">HOUSE FAVOURITE</p>
                 <p class="sub-title">TWICE COOKED PORK</p>
-                <p class="dish-desc paragraph"> Tender sliced pork stir-fried with vegetables in a fragrant spicy sauce.
+                <p class="dish-desc paragraph"> Tender sliced pork stir-fried with vegetables in a fragrant spicy
+                    sauce.
                 </p>
 
                 <div class="button-row">
@@ -307,7 +308,7 @@
                         <span>1</span>
                         <button>+</button>
                     </div>
-                    <button class="btn btn-font-white btn-white">ADD TO CART</button>
+                    <a href="delivery.html" class="btn btn-font-white btn-white">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -338,7 +339,7 @@
                             <span>1</span>
                             <button>+</button>
                         </div>
-                        <button class="fav-button btn btn-gold btn-white">ADD TO CART</button>
+                        <a href="delivery.html" class="fav-button btn btn-gold btn-white">ADD TO CART</a>
                         <a href="delivery.html" class="fav-button btn btn-outline btn-white">VIEW CART</a>
                     </div>
                 </div>
@@ -360,7 +361,7 @@
                             <span>1</span>
                             <button>+</button>
                         </div>
-                        <button class="fav-button btn btn-gold btn-white">ADD TO CART</button>
+                        <a href="delivery.html" class="fav-button btn btn-gold btn-white">ADD TO CART</a>
                         <a href="delivery.html" class="fav-button btn btn-outline btn-white">VIEW CART</a>
                     </div>
                 </div>
@@ -372,7 +373,8 @@
                 </div>
                 <div class="fav-dish-content">
                     <p class="object-title">California Rolls</p>
-                    <p class="paragraph">Fresh sushi rolls filled with crab, avocado, cucumber, and creamy mayonnaise.
+                    <p class="paragraph">Fresh sushi rolls filled with crab, avocado, cucumber, and creamy
+                        mayonnaise.
                     </p>
                     <p class="price eyebrow-heading">$ 22</p>
 
@@ -382,7 +384,7 @@
                             <span>1</span>
                             <button>+</button>
                         </div>
-                        <button class="fav-button btn btn-gold btn-white">ADD TO CART</button>
+                        <a href="delivery.html" class="fav-button btn btn-gold btn-white">ADD TO CART</a>
                         <a href="delivery.html" class="fav-button btn btn-outline btn-white">VIEW CART</a>
                     </div>
                 </div>
@@ -468,7 +470,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
-    <script src="js/common.js"></script>
+
 
     <script>
 
@@ -478,8 +480,39 @@
             { y: -30, opacity: 1, duration: 1, stagger: 0.5 }
         );
 
+        gsap.fromTo(
+            ".order-dish-card",
+            { y: -30, opacity: 0 },
+            {
+                y: 0, opacity: 1, duration: 1, stagger: 0.5,
+                scrollTrigger:
+                {
+                    trigger: ".order-dish-card",
+                    start: "top 50%",
+                    end: "center 80%",
+                    scrub: 1
+                }
+            }
+        );
+
+
+        gsap.fromTo(
+            ".fav-dish-card",
+            { y: -30, opacity: 0 },
+            {
+                y: 0, opacity: 1, duration: 1, stagger: 1,
+                scrollTrigger:
+                {
+                    trigger: ".fav-dish-card",
+                    start: "top 50%",
+                    end: "center 80%",
+                    scrub: 1
+                }
+            }
+        );
 
     </script>
+    <script src="js/common.js"></script>
 
 </body>
 

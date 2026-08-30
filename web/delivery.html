@@ -211,15 +211,12 @@
     </div>
 
 
-    <!-- ======== Section-1-header ======== -->
+    <!-- ======== Section-1 ======== -->
 
     <div class="delivery delivery-banner">
-        <p class="eyebrow-heading">YOUR ORDER</p>
-        <p class="hero-title">CART & CHECKOUT</p>
+        <p class="eyebrow-heading fade-in">YOUR ORDER</p>
+        <p class="hero-title fade-in">CART & CHECKOUT</p>
     </div>
-
-
-    <!-- ======== Section-1 ======== -->
 
     <div class="order-cart-container">
 
@@ -297,7 +294,7 @@
             <div class="coupon-card">
                 <p>Got a coupon? Use it here.</p>
                 <input type="text" placeholder="Coupon code">
-                <button class="btn-outline btn-font-white">APPLY COUPON</button>
+                <button type="submit" class="btn-outline btn-font-white">APPLY COUPON</button>
             </div>
         </div>
     </div>
@@ -306,23 +303,24 @@
     <!-- ======== Section-2 ======== -->
 
     <div class="gift-section">
-        <div class="gift-header">
-            <p class="section-title">Our Small Gift</p>
-            <p class="title">FREE STAINLESS CUTLERY</p>
-        </div>
+        <div class="gift-container">
+            <div class="gift-header">
+                <p class="section-title">Our Small Gift</p>
+                <p class="title">FREE STAINLESS CUTLERY</p>
+            </div>
 
-        <div class="gift-image-wrapper">
-            <img src="images/cutlery.jpg" alt="Free Gift">
-        </div>
+            <div class="gift-image-wrapper">
+                <img src="images/cutlery.jpg" alt="Free Gift">
+            </div>
 
-        <div class="gift-des paragraph">
-            <p>We offer complimentary stainless cutlery for orders over $60 (excluding delivery
-                fees). </p>
-            <p>A small token of our appreciation for dining with us.
-            </p>
+            <div class="gift-des paragraph">
+                <p>We offer complimentary stainless cutlery for orders over $60 (excluding delivery
+                    fees). </p>
+                <p>A small token of our appreciation for dining with us.
+                </p>
+            </div>
         </div>
     </div>
-
 
     <!-- ======== Section-3 ======== -->
 
@@ -334,7 +332,8 @@
             <div class="dish-des-container">
                 <p class="sub-title">Butter-Poached Lobster</p>
                 <div class="hr"></div>
-                <p class="dish-desc paragraph"> Succulent fresh lobster gently poached in rich, cultured French butter,
+                <p class="dish-desc paragraph"> Succulent fresh lobster gently poached in rich, cultured French
+                    butter,
                     infused with fresh herbs and a subtle touch of citrus for an extraordinarily tender finish.
                 </p>
 
@@ -344,9 +343,12 @@
         <div class="info-section">
             <div class="info-text">
                 <p class="sub-title">ADDITIONAL INFORMATIONS</p>
-                <p class="dish-desc paragraph">Our signature Butter-Poached Lobster is wild-caught and prepared fresh
-                    daily. Slow-poached at a precise temperature to preserve its natural sweetness and delicate texture,
-                    this dish is elevated with artisan herbs and served alongside microgreens. Perfectly paired with a
+                <p class="dish-desc paragraph">Our signature Butter-Poached Lobster is wild-caught and prepared
+                    fresh
+                    daily. Slow-poached at a precise temperature to preserve its natural sweetness and delicate
+                    texture,
+                    this dish is elevated with artisan herbs and served alongside microgreens. Perfectly paired with
+                    a
                     glass of crisp Chardonnay.
                 </p>
             </div>
@@ -393,11 +395,7 @@
             <p class="paragraph">Put the deli into the microwave and heat at 180°C for 5 minutes.
             </p>
         </div>
-
     </div>
-
-
-
 
 
     <!-- ======== Footer ======== -->
@@ -467,18 +465,59 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
-    <script src="js/common.js"></script>
 
     <script>
 
         gsap.fromTo(
-            ".fade-in",
+            ".gift-container",
             { y: 0, opacity: 0 },
-            { y: -30, opacity: 1, duration: 1, stagger: 0.5 }
+
+            {
+                y: -30, opacity: 1, duration: 1, stagger: 0.5,
+                scrollTrigger:
+                {
+                    trigger: ".gift-container",
+                    start: "top 50%",
+                    end: "center 80%",
+                    scrub: 1
+                }
+            }
         );
 
 
+        gsap.fromTo(
+            ".order-dish-card",
+            { y: -30, opacity: 0 },
+            {
+                y: 0, opacity: 1, duration: 1, stagger: 0.5,
+                scrollTrigger:
+                {
+                    trigger: ".order-dish-card",
+                    start: "top 50%",
+                    end: "center 80%",
+                    scrub: 1
+                }
+            }
+        );
+
+        gsap.fromTo(
+            ".dish-card",
+            { y: -30, opacity: 0 },
+            {
+                y: 0, opacity: 1, duration: 1, stagger: 1,
+                scrollTrigger:
+                {
+                    trigger: ".dish-card",
+                    start: "top 50%",
+                    end: "center 80%",
+                    scrub: 1
+                }
+            }
+        );
+
     </script>
+    <script src="js/common.js"></script>
+
 </body>
 
 </html>

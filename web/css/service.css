@@ -195,29 +195,21 @@
     .private-dining-text {
         right: 10%;
         top: 50%;
-        width: 45%;
+        width: 60%;
     }
 
     .perfect-event-text {
         left: 10%;
         top: 50%;
-        width: 45%;
+        width: 60%;
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
     .perfect-event-text {
         left: 10%;
-        top: 40%;
-        width: 45%;
-    }
-}
-
-@media screen and (max-width: 819px) {
-    .perfect-event-text {
-        left: 10%;
-        top: 40%;
-        width: 50%;
+        top: 50%;
+        width: 70%;
     }
 }
 
@@ -244,13 +236,13 @@
     .private-dining-text {
         right: 15%;
         top: 40%;
-        width: 70%;
+        width: 75%;
     }
 
     .perfect-event-text {
-        left: 15%;
+        left: 10%;
         top: 30%;
-        width: 70%;
+        width: 75%;
     }
 }
 

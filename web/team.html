@@ -226,10 +226,10 @@
 
         <div class="team-contents">
             <div class="team-member">
-                <div class="team-img">
+                <div class="team-img executive-img">
                     <img src="images/executive-chef.jpg" alt="executive-chef" width="100%">
                 </div>
-                <div class="team-text">
+                <div class="team-text executive-text">
                     <div class="chef-info">
                         <p class="eyebrow-heading">Executive Chef</p>
                         <p class="sub-title">Marco Rossi</p>
@@ -260,10 +260,10 @@
             </div>
 
             <div class="team-member">
-                <div class="team-img">
+                <div class="team-img chef-img">
                     <img src="images/chef.jpg" alt="chef" width="100%">
                 </div>
-                <div class="team-text">
+                <div class="team-text chef-text">
                     <div class="chef-info">
                         <p class="eyebrow-heading">Chef</p>
                         <p class="sub-title">Yuki Tanaka</p>
@@ -353,7 +353,7 @@
         </div>
 
         <div class="grow-contents">
-            <div class="grow-card">
+            <div class="grow-card fade-in">
                 <div class="object-title">
                     <span style="color: var(--color-text-light);">Supportive Team Culture</span>
                 </div>
@@ -363,7 +363,7 @@
                     and encouraged to succeed together.</p>
             </div>
 
-            <div class="grow-card">
+            <div class="grow-card fade-in">
                 <div class="object-title">
                     <span style="color: var(--color-text-light);">Professional Training</span>
                 </div>
@@ -372,7 +372,7 @@
                     develop practical skills and industry knowledge.</p>
             </div>
 
-            <div class="grow-card">
+            <div class="grow-card fade-in">
                 <div class="object-title">
                     <span style="color: var(--color-text-light);">Career Development</span>
                 </div>
@@ -399,7 +399,7 @@
         </div>
 
         <div class="training-contents">
-            <div class="training-card-right">
+            <div class="training-card-right training-left">
                 <div class="training-description">
                     <p class="object-title">Orientation</p>
                     <p class="paragraph">Become part of a passionate team dedicated to creating unforgettable dining
@@ -410,7 +410,7 @@
                 </div>
             </div>
 
-            <div class="training-card-left">
+            <div class="training-card-left training-right">
                 <div class="number">
                     <p class="sub-title">2</p>
                 </div>
@@ -421,7 +421,7 @@
                 </div>
             </div>
 
-            <div class="training-card-right">
+            <div class="training-card-right training-left">
                 <div class="training-description">
                     <p class="object-title">Customer Service Training</p>
                     <p class="paragraph">Staff receive hospitality training focused on communication, professionalism,
@@ -432,7 +432,7 @@
                 </div>
             </div>
 
-            <div class="training-card-left">
+            <div class="training-card-left training-right">
                 <div class="number">
                     <p class="sub-title">4</p>
                 </div>
@@ -511,6 +511,127 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
     <script src="js/common.js"></script>
+    <script>
+        gsap.from(".executive-img",
+            {
+                x: -200,
+                opacity: 0,
+                duration: 1,
+                scrollTrigger:
+                {
+                    trigger: ".team-title",
+                    start: "top 50%",
+                    end: "bottom 20%",
+                    scrub: 1,
+                }
+            }
+        );
+    </script>
+
+    <script>
+        gsap.from(".executive-text",
+            {
+                x: 200,
+                opacity: 0,
+                duration: 1.5,
+                scrollTrigger:
+                {
+                    trigger: ".team-title",
+                    start: "top 50%",
+                    end: "bottom 0%",
+                    scrub: 1,
+                }
+            }
+        );
+    </script>
+
+    <script>
+        gsap.from(".chef-img",
+            {
+                x: -200,
+                opacity: 0,
+                duration: 1,
+                scrollTrigger:
+                {
+                    trigger: ".team-member",
+                    start: "top 40%",
+                    end: "bottom 0%",
+                    scrub: 1,
+                }
+            }
+        );
+    </script>
+
+    <script>
+        gsap.from(".chef-text",
+            {
+                x: 200,
+                opacity: 0,
+                duration: 1,
+                scrollTrigger:
+                {
+                    trigger: ".team-member",
+                    start: "top 40%",
+                    end: "bottom 0%",
+                    scrub: 1,
+                }
+            }
+        );
+    </script>
+
+    <script>
+        gsap.from(".fade-in",
+            {
+                y: 200,
+                opacity: 0,
+                duration: 1.5,
+                stagger: 0.5,
+                scrollTrigger:
+                {
+                    trigger: ".grow-intro",
+                    start: "top 50%",
+                    end: "bottom 0%",
+                    scrub: 1,
+                }
+            }
+        );
+    </script>
+
+    <script>
+        gsap.from(".training-left",
+            {
+                x: -200,
+                opacity: 0,
+                duration: 1,
+                stagger: 1,
+                scrollTrigger:
+                {
+                    trigger: ".training-title",
+                    start: "70% 50%",
+                    end: "bottom 0%",
+                    scrub: 1,
+                }
+            }
+        );
+    </script>
+
+    <script>
+        gsap.from(".training-right",
+            {
+                x: 200,
+                opacity: 0,
+                duration: 1,
+                stagger: 1,
+                scrollTrigger:
+                {
+                    trigger: ".training-title",
+                    start: "70% 50%",
+                    end: "bottom 0%",
+                    scrub: 1,
+                }
+            }
+        );
+    </script>
 
 </body>
 
