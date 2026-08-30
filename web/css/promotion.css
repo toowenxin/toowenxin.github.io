@@ -184,7 +184,7 @@
 }
 
 .section-3-group-wine {
-    max-width: 68%;
+    max-width: 65%;
     top: 1400px;
     left: 25%;
 }
@@ -294,7 +294,7 @@
 }
 
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1550px) {
 
     /* === SECTION 3 === */
     .section-3-relative-menu {
