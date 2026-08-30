@@ -104,7 +104,7 @@
 }
 
 .ingredient-card {
-    width: 280px;
+    max-width: 300px;
     background: black;
 }
 
@@ -161,7 +161,7 @@
     height: 60px;
     border-radius: 50%;
     border: 1px solid var(--color-white);
-    display: inline-flex;
+    display: flex;
     justify-content: center;
 }
 
