@@ -157,7 +157,7 @@
 .section-3-relative-menu {
     position: relative;
     max-width: 80%;
-    height: 2130px;
+    height: 2000px;
     margin: auto;
     padding: 7% 0;
     display: flex;
@@ -294,7 +294,7 @@
 }
 
 
-@media only screen and (max-width: 1550px) {
+@media only screen and (max-width: 1500px) {
 
     /* === SECTION 3 === */
     .section-3-relative-menu {
