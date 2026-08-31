@@ -1,3 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .team {
     display: flex;
     flex-direction: column;
@@ -15,7 +34,9 @@
 }
 
 .team-img {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 }
 
 .team p {
