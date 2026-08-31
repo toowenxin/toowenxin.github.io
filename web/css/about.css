@@ -227,6 +227,9 @@
 
 @media screen and (max-width: 640px) {
 
+    .about-hero-text {
+        padding: 50px;
+    }
 
     .hero-eyebrow .hr {
         margin: 0 10px;
@@ -234,6 +237,10 @@
 
     .culinary img {
         width: 400px;
+    }
+
+    .achiement-text .hero-title {
+        font-size: 70px;
     }
 
     .achiement-text p {
