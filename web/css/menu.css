@@ -233,7 +233,7 @@
 
 @media screen and (max-width: 640px) {
     .recommendation .hero-title {
-        font-size: 85px;
+        font-size: 60px;
     }
 
     .dish-card img {
